@@ -10,7 +10,7 @@ public class CharacterMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        cam = Camera.main;         anim = mc.GetComponent<Animator>();         //currentSprite = mc.GetComponent<SpriteRenderer>();         conversing = false;         countdownTimer = 1.3f; 
+        cam = Camera.main;         anim = mc.GetComponent<Animator>();         //currentSprite = mc.GetComponent<SpriteRenderer>();         conversing = false;         countdownTimer = .6f; 
     }
 
     // Update is called once per frame
