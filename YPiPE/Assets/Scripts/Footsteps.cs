@@ -5,22 +5,23 @@ using UnityEngine;
 public class Footsteps : MonoBehaviour
 {
     public Transform dustLocation;
+    public bool particlesFlipped;
 
     private float distance = 1.5f;
     private AudioSource footstepPlayer;
     private AudioClip footstepSound;
+    private GameObject footstepParticles;
+    private Quaternion particleRotation;
 
     // Start is called before the first frame update
     void Start()
     {
         footstepPlayer = GetComponent<AudioSource>();
-    }
-
-    // Update is called once per frame
-    void FixedUpdate()
-    {
-        //MaterialCheck();
-        //Debug.DrawRay(transform.position, Vector2.down * distance, Color.magenta);
+        footstepParticles = Resources.Load<GameObject>("SandParticles");
+        if (footstepParticles != null)
+        {
+            particleRotation = footstepParticles.transform.rotation;
+        }
     }
 
     void MaterialCheck()
@@ -29,6 +30,21 @@ public class Footsteps : MonoBehaviour
 
         hit = Physics2D.Raycast(transform.position, Vector2.down, distance, 1 << 31);
 
+        if (particlesFlipped)
+        {
+            float x = footstepParticles.transform.eulerAngles.x;
+            float y = footstepParticles.transform.eulerAngles.y;
+            float z = 180f;
+            Vector3 newRot = new Vector3(x, y, z);
+            particleRotation = Quaternion.Euler(newRot);
+            Debug.Log(footstepParticles.transform.eulerAngles);
+            
+        } else
+        {
+            particleRotation = footstepParticles.transform.rotation;
+            Debug.Log(footstepParticles.transform.eulerAngles);
+        }
+
         if (hit.collider)
         {
             if (hit.collider.tag == "Material: Dirt")
@@ -36,10 +52,13 @@ public class Footsteps : MonoBehaviour
                 //Debug.Log("you're standing on dirt");
                 footstepPlayer.clip = Resources.Load<AudioClip>("footstep_test01");
                 footstepPlayer.Play();
-                Instantiate(Resources.Load<Transform>("SandParticles"), dustLocation.transform.position, transform.rotation);
+                footstepParticles = Resources.Load<GameObject>("SandParticles");
+                Instantiate(footstepParticles, dustLocation.transform.position, particleRotation);
             } else if (hit.collider.tag == "Material: Grass")
             {
                 footstepPlayer.clip = Resources.Load<AudioClip>("footstep_test02");
+                footstepParticles = Resources.Load<GameObject>("GrassParticles");
+                Instantiate(footstepParticles, dustLocation.transform.position, particleRotation);
                 footstepPlayer.Play();
             } else
             {

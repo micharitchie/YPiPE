@@ -5,7 +5,7 @@ using UnityEngine;
 public class CharacterMovement : MonoBehaviour
 {
     
-    public Transform player;//reference to player character     public Transform touchParticles;//reference to particles     public GameObject directionHint;     public GameObject mc;//reference to player as game object     public float speed = 5f;//speed of character movement     //public AudioSource footsteps;      private bool touchStart;//checks to see if player is dragging     private bool conversing;//I added this to keep the player from moving while talking, it's not being used rn     private bool roryFlipped;//this keeps the character from flipping constantly     private bool timerStart;     private bool hintShow;     private Vector2 pointA;//start of screen press     private Vector2 pointB;//where player drags to     private Vector2 playerStart;//stores where the player's 2D position at the start of screen press     private Vector2 playerEnd;//stores player's 2D position during the drag     private Vector2 playerOffset;//player end - player start     private Camera cam;//reference to main camera     private Animator anim;//allows me to update state machine     private float countdownTimer;//Counts down to remind the player to drag     private GameObject myHint;     //private SpriteRenderer currentSprite;
+    public Transform player;//reference to player character     public Transform touchParticles;//reference to particles     public GameObject directionHint;     public GameObject mc;//reference to player as game object     public float speed = 5f;//speed of character movement     public Footsteps FSREf;     //public AudioSource footsteps;      private bool touchStart;//checks to see if player is dragging     private bool conversing;//I added this to keep the player from moving while talking, it's not being used rn     private bool roryFlipped;//this keeps the character from flipping constantly     private bool timerStart;     private bool hintShow;     private Vector2 pointA;//start of screen press     private Vector2 pointB;//where player drags to     private Vector2 playerStart;//stores where the player's 2D position at the start of screen press     private Vector2 playerEnd;//stores player's 2D position during the drag     private Vector2 playerOffset;//player end - player start     private Camera cam;//reference to main camera     private Animator anim;//allows me to update state machine     private float countdownTimer;//Counts down to remind the player to drag     private GameObject myHint;     //private SpriteRenderer currentSprite;
 
     // Start is called before the first frame update
     void Start()
@@ -35,7 +35,7 @@ public class CharacterMovement : MonoBehaviour
             countdownTimer -= Time.deltaTime;
         } else
         {
-            countdownTimer = 2.0f;
+            countdownTimer = .6f;
             if (myHint != null)
             {
                 Destroy(myHint.gameObject);
@@ -58,12 +58,14 @@ public class CharacterMovement : MonoBehaviour
                         {
                             player.localScale = new Vector3(player.localScale.x * -1, player.localScale.y, player.localScale.z);
                             roryFlipped = false;
+                            FSREf.particlesFlipped = false;
                         }
                     }                     else if (direction.x < 0)                     {
                         if (!roryFlipped)
                         {
                             player.localScale = new Vector3(player.localScale.x * -1, player.localScale.y, player.localScale.z);
                             roryFlipped = true;
+                            FSREf.particlesFlipped = true;
                         }
                                              }                     timerStart = false;                     /*if (!footsteps.isPlaying)                     {                         //footsteps.Play();                     }*/
                 }                 else                 {                     anim.SetBool("IsRunning", false);//changes to idle animation                     //footsteps.Stop();                 }              }         }     }      private void moveCharacter(Vector2 direction)
