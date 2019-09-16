@@ -37,29 +37,40 @@ public class Footsteps : MonoBehaviour
             float z = 180f;
             Vector3 newRot = new Vector3(x, y, z);
             particleRotation = Quaternion.Euler(newRot);
-            Debug.Log(footstepParticles.transform.eulerAngles);
+            //Debug.Log(footstepParticles.transform.eulerAngles);
             
         } else
         {
             particleRotation = footstepParticles.transform.rotation;
-            Debug.Log(footstepParticles.transform.eulerAngles);
+            //Debug.Log(footstepParticles.transform.eulerAngles);
         }
-
+        Debug.Log(hit.collider.tag);
         if (hit.collider)
         {
             if (hit.collider.tag == "Material: Dirt")
             {
-                //Debug.Log("you're standing on dirt");
-                footstepPlayer.clip = Resources.Load<AudioClip>("footstep_test01");
-                footstepPlayer.Play();
+                footstepPlayer.clip = Resources.Load<AudioClip>("sandSteps");
+                //footstepPlayer.Play();
                 footstepParticles = Resources.Load<GameObject>("SandParticles");
                 Instantiate(footstepParticles, dustLocation.transform.position, particleRotation);
             } else if (hit.collider.tag == "Material: Grass")
             {
-                footstepPlayer.clip = Resources.Load<AudioClip>("footstep_test02");
+                footstepPlayer.clip = Resources.Load<AudioClip>("carpetSteps");
                 footstepParticles = Resources.Load<GameObject>("GrassParticles");
                 Instantiate(footstepParticles, dustLocation.transform.position, particleRotation);
-                footstepPlayer.Play();
+                //footstepPlayer.Play();
+            } else if (hit.collider.tag == "Material: Gravel")
+            {
+                footstepPlayer.clip = Resources.Load<AudioClip>("gravelSteps");
+                //footstepPlayer.Play();
+                footstepParticles = Resources.Load<GameObject>("GravelParticles");
+                Instantiate(footstepParticles, dustLocation.transform.position, particleRotation);
+            } else if (hit.collider.tag == "Material: Hardfloor")
+            {
+                footstepPlayer.clip = Resources.Load<AudioClip>("hardfloorSteps");
+                //footstepPlayer.Play();
+                footstepParticles = Resources.Load<GameObject>("HardfloorParticles");
+                Instantiate(footstepParticles, dustLocation.transform.position, particleRotation);
             } else
             {
                 Debug.Log("I don't know what the fuck you're standing on");
