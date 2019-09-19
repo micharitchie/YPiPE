@@ -1808,9 +1808,8 @@ MonoBehaviour:
   directionHint: {fileID: 6210301812596694930, guid: caa420acf72ae491e97d2cf0068d9dbb,
     type: 3}
   mc: {fileID: 1829106874}
-  speed: 5
+  speed: 10
   FSREf: {fileID: 1829106880}
-  footsteps: {fileID: 1829106881}
 --- !u!61 &1829106878
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1886,7 +1885,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

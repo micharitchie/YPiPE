@@ -44,31 +44,35 @@ public class Footsteps : MonoBehaviour
             particleRotation = footstepParticles.transform.rotation;
             //Debug.Log(footstepParticles.transform.eulerAngles);
         }
-        Debug.Log(hit.collider.tag);
         if (hit.collider)
         {
             if (hit.collider.tag == "Material: Dirt")
             {
-                footstepPlayer.clip = Resources.Load<AudioClip>("sandSteps");
-                //footstepPlayer.Play();
+                int sandTrack = Random.Range(1, 5);
+                //Debug.Log("sandStep0" + sandTrack);
+                footstepPlayer.clip = Resources.Load<AudioClip>("sandStep0" + sandTrack);
+                footstepPlayer.Play();
                 footstepParticles = Resources.Load<GameObject>("SandParticles");
                 Instantiate(footstepParticles, dustLocation.transform.position, particleRotation);
             } else if (hit.collider.tag == "Material: Grass")
             {
-                footstepPlayer.clip = Resources.Load<AudioClip>("carpetSteps");
+                int carpetTrack = Random.Range(1, 5);
+                footstepPlayer.clip = Resources.Load<AudioClip>("carpetStep0" + carpetTrack);
                 footstepParticles = Resources.Load<GameObject>("GrassParticles");
                 Instantiate(footstepParticles, dustLocation.transform.position, particleRotation);
-                //footstepPlayer.Play();
+                footstepPlayer.Play();
             } else if (hit.collider.tag == "Material: Gravel")
             {
-                footstepPlayer.clip = Resources.Load<AudioClip>("gravelSteps");
-                //footstepPlayer.Play();
+                int gravelTrack = Random.Range(1, 5);
+                footstepPlayer.clip = Resources.Load<AudioClip>("gravelStep0" + gravelTrack);
+                footstepPlayer.Play();
                 footstepParticles = Resources.Load<GameObject>("GravelParticles");
                 Instantiate(footstepParticles, dustLocation.transform.position, particleRotation);
             } else if (hit.collider.tag == "Material: Hardfloor")
             {
-                footstepPlayer.clip = Resources.Load<AudioClip>("hardfloorSteps");
-                //footstepPlayer.Play();
+                int hardfloorTrack = Random.Range(1, 5);
+                footstepPlayer.clip = Resources.Load<AudioClip>("hardfloorStep0" + hardfloorTrack);
+                footstepPlayer.Play();
                 footstepParticles = Resources.Load<GameObject>("HardfloorParticles");
                 Instantiate(footstepParticles, dustLocation.transform.position, particleRotation);
             } else
