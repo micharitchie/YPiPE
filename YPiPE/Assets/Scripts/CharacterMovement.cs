@@ -30,7 +30,7 @@ public class CharacterMovement : MonoBehaviour
         }
         #endregion 
         else
-        {             touchStart = false;             timerStart = false;             anim.SetBool("IsRunning", false);//changes to idle animation             //footsteps.Stop();         }         playerOffset = playerEnd - playerStart;         if (timerStart)
+        {             touchStart = false;             timerStart = false;             anim.SetBool("IsRunning", false);//changes to idle animation             anim.SetInteger("RunSelector", 0);             //footsteps.Stop();         }         playerOffset = playerEnd - playerStart;         if (timerStart)
         {
             countdownTimer -= Time.deltaTime;
         } else
@@ -71,4 +71,9 @@ public class CharacterMovement : MonoBehaviour
                 }                 else                 {                     anim.SetBool("IsRunning", false);//changes to idle animation                     //footsteps.Stop();                 }              }         }     }      private void moveCharacter(Vector2 direction)
     {
         //the final movement calculation
-        player.Translate(direction * speed * Time.deltaTime);     }      public void toggleCharacterMove()//fungus was calling this function when I was using it     {         conversing = !conversing;     } } 
+        player.Translate(direction * speed * Time.deltaTime);     }      public void toggleCharacterMove()//fungus was calling this function when I was using it     {         conversing = !conversing;     }      public void RunSelect()
+    {
+        int runNumber = Random.Range(1, 6);
+        anim.SetInteger("RunSelector",runNumber);
+        //Debug.Log(runNumber);
+    } } 

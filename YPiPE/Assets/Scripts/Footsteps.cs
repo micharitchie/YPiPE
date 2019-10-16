@@ -44,6 +44,7 @@ public class Footsteps : MonoBehaviour
             particleRotation = footstepParticles.transform.rotation;
             //Debug.Log(footstepParticles.transform.eulerAngles);
         }
+        //may want to move PLay and Instantiate outside of conditionals
         if (hit.collider)
         {
             if (hit.collider.tag == "Material: Dirt")

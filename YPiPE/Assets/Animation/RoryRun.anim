@@ -2247,7 +2247,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: BodyPivot
+    path: LegRPivot/CalfRPivot
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -2257,17 +2257,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: BodyPivot
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: BodyPivot
+    path: LegRPivot/CalfRPivot
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -2286,8 +2276,18 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: BodyPivot
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: LegRPivot/CalfRPivot
+    path: BodyPivot
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -2297,7 +2297,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: LegRPivot/CalfRPivot
+    path: BodyPivot
     classID: 4
     script: {fileID: 0}
   m_HasGenericRootTransform: 0
@@ -2312,6 +2312,13 @@ AnimationClip:
     messageOptions: 0
   - time: 0.3
     functionName: MaterialCheck
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.5
+    functionName: RunSelect
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
