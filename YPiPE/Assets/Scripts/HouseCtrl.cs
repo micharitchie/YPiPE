@@ -23,7 +23,7 @@ public class HouseCtrl : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.name == "Rory")
+        if(collision.name == "VirtualRory")
         {
             mySpriteRenderer.sprite = openDoor;
         }
@@ -31,7 +31,7 @@ public class HouseCtrl : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if(collision.name == "Rory")
+        if(collision.name == "VirtualRory")
         {
             mySpriteRenderer.sprite = closedDoor;
         }
