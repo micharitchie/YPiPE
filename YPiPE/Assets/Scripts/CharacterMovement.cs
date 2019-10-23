@@ -76,4 +76,8 @@ public class CharacterMovement : MonoBehaviour
         int runNumber = Random.Range(1, 6);
         anim.SetInteger("RunSelector",runNumber);
         //Debug.Log(runNumber);
+    }      public void FlipRory()
+    {
+        player.localScale = new Vector3(player.localScale.x * -1, player.localScale.y, player.localScale.z);
+        roryFlipped = !roryFlipped;
     } } 

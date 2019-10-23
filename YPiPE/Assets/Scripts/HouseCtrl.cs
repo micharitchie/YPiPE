@@ -6,6 +6,9 @@ public class HouseCtrl : MonoBehaviour
 {
     public Sprite openDoor;
     public Sprite closedDoor;
+    public GameObject doorUI;
+    public Transform transportLoc;
+    public Transform playerLoc;
 
     SpriteRenderer mySpriteRenderer;
 
@@ -26,6 +29,9 @@ public class HouseCtrl : MonoBehaviour
         if(collision.name == "VirtualRory")
         {
             mySpriteRenderer.sprite = openDoor;
+            //Debug.Log(transportLoc.position);
+            //playerLoc.position = transportLoc.position;
+            doorUI.SetActive(true);
         }
     }
 
@@ -34,6 +40,12 @@ public class HouseCtrl : MonoBehaviour
         if(collision.name == "VirtualRory")
         {
             mySpriteRenderer.sprite = closedDoor;
+            doorUI.SetActive(false);
         }
+    }
+
+    public void goInside()
+    {
+        playerLoc.position = transportLoc.position;
     }
 }
