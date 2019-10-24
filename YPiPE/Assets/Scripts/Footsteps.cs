@@ -9,7 +9,7 @@ public class Footsteps : MonoBehaviour
 
     private float distance = 1.5f;
     private AudioSource footstepPlayer;
-    private AudioClip footstepSound;
+    //private AudioClip footstepSound;
     private GameObject footstepParticles;
     private Quaternion particleRotation;
 
@@ -57,8 +57,8 @@ public class Footsteps : MonoBehaviour
                 Instantiate(footstepParticles, dustLocation.transform.position, particleRotation);
             } else if (hit.collider.tag == "Material: Grass")
             {
-                int carpetTrack = Random.Range(1, 5);
-                footstepPlayer.clip = Resources.Load<AudioClip>("carpetStep0" + carpetTrack);
+                int grassTrack = Random.Range(1, 5);
+                footstepPlayer.clip = Resources.Load<AudioClip>("grassSteps0" + grassTrack);
                 footstepParticles = Resources.Load<GameObject>("GrassParticles");
                 Instantiate(footstepParticles, dustLocation.transform.position, particleRotation);
                 footstepPlayer.Play();
