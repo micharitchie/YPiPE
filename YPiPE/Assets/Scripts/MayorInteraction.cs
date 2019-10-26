@@ -5,7 +5,6 @@ using UnityEngine;
 public class MayorInteraction : MonoBehaviour
 {
     public GameObject Rory;
-    //private SpriteRenderer mayorSprite;
     public GameObject MayorHead;
     public GameObject MayorBody;
     public GameObject MayorArmR;
@@ -13,6 +12,9 @@ public class MayorInteraction : MonoBehaviour
     public GameObject MayorLegR;
     public GameObject MayorLegL;
     public GameObject speachBubble;
+    public bool mayorDeactivated;
+    public bool mayorWalk;
+    public Sprite speakSprite;
 
     private SpriteRenderer MH;
     private SpriteRenderer MB;
@@ -20,6 +22,9 @@ public class MayorInteraction : MonoBehaviour
     private SpriteRenderer MAL;
     private SpriteRenderer MLR;
     private SpriteRenderer MLL;
+    private SpriteRenderer speachGraphic;
+    private Animator anim;
+    private Collider2D interactableArea;
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +36,13 @@ public class MayorInteraction : MonoBehaviour
         MAL = MayorArmL.GetComponent<SpriteRenderer>();
         MLR = MayorLegR.GetComponent<SpriteRenderer>();
         MLL = MayorLegL.GetComponent<SpriteRenderer>();
+        speachGraphic = speachBubble.GetComponent<SpriteRenderer>();
+        anim = GetComponent<Animator>();
+        interactableArea = GetComponent<Collider2D>();
+        if (mayorDeactivated)
+        {
+            interactableArea.enabled = false;
+        }
     }
 
     // Update is called once per frame
@@ -43,6 +55,10 @@ public class MayorInteraction : MonoBehaviour
     {
         if (collision.name == "VirtualRory")
         {
+            if (speachGraphic.sprite != speakSprite)
+            {
+                speachGraphic.sprite = speakSprite;
+            } 
             speachBubble.SetActive(true);
             if (Rory.transform.position.x <= transform.position.x)
             {
@@ -54,7 +70,6 @@ public class MayorInteraction : MonoBehaviour
             }
             if(Rory.transform.position.y <= transform.position.y)
             {
-                //mayorSprite.sortingLayerName =
                 MH.sortingLayerName = "NPC Behind";
                 MB.sortingLayerName = "NPC Behind";
                 MAL.sortingLayerName = "NPC Behind";
@@ -90,7 +105,6 @@ public class MayorInteraction : MonoBehaviour
             }
             if (Rory.transform.position.y <= transform.position.y)
             {
-                //mayorSprite.sortingLayerName =
                 MH.sortingLayerName = "NPC Behind";
                 MB.sortingLayerName = "NPC Behind";
                 MAL.sortingLayerName = "NPC Behind";
@@ -116,6 +130,15 @@ public class MayorInteraction : MonoBehaviour
         {
             speachBubble.SetActive(false);
         }
+    }
+    public void toggleWalk()
+    {
+        anim.SetBool("MayorWalking", true);
+    }
+
+    public void toggleInteractable()
+    {
+        interactableArea.enabled = !interactableArea.enabled;
     }
 
 }
