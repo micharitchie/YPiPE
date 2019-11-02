@@ -43,6 +43,10 @@ public class MayorInteraction : MonoBehaviour
         {
             interactableArea.enabled = false;
         }
+        if (mayorWalk)
+        {
+            toggleWalk();
+        }
     }
 
     // Update is called once per frame
