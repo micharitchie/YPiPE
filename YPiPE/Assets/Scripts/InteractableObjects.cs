@@ -1,11 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Fungus;
 
 public class InteractableObjects : MonoBehaviour
 {
 
-	public GameObject wordBubble;
+	public GameObject lookUI;
+    public GameObject lookIndicator;
+    public string fungusBool;
+    public Flowchart partyFlowchart;
 
     // Start is called before the first frame update
     void Start()
@@ -20,10 +24,14 @@ public class InteractableObjects : MonoBehaviour
     }
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
-        wordBubble.SetActive(true);
-	}
+        lookUI.SetActive(true);
+        lookIndicator.SetActive(true);
+        partyFlowchart.SetBooleanVariable(fungusBool, true);
+    }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        wordBubble.SetActive(false);
+        lookUI.SetActive(false);
+        lookIndicator.SetActive(false);
+        partyFlowchart.SetBooleanVariable(fungusBool, false);
     }
 }

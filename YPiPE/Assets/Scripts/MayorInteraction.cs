@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Fungus;
 
 public class MayorInteraction : MonoBehaviour
 {
@@ -12,9 +13,12 @@ public class MayorInteraction : MonoBehaviour
     public GameObject MayorLegR;
     public GameObject MayorLegL;
     public GameObject speachBubble;
+    public GameObject speachButton;
     public bool mayorDeactivated;
     public bool mayorWalk;
     public Sprite speakSprite;
+    public string fungusBool;
+    public Flowchart partyFlowchart;
 
     private SpriteRenderer MH;
     private SpriteRenderer MB;
@@ -45,6 +49,7 @@ public class MayorInteraction : MonoBehaviour
         }
         if (mayorWalk)
         {
+            mayorWalk = false;
             toggleWalk();
         }
     }
@@ -64,6 +69,8 @@ public class MayorInteraction : MonoBehaviour
                 speachGraphic.sprite = speakSprite;
             } 
             speachBubble.SetActive(true);
+            speachButton.SetActive(true);
+            partyFlowchart.SetBooleanVariable(fungusBool, true);
             if (Rory.transform.position.x <= transform.position.x)
             {
                 transform.localScale = new Vector3(1, 1, 1);
@@ -133,11 +140,15 @@ public class MayorInteraction : MonoBehaviour
         if(collision.name == "VirtualRory")
         {
             speachBubble.SetActive(false);
+            speachButton.SetActive(false);
+            partyFlowchart.SetBooleanVariable(fungusBool, false);
         }
     }
     public void toggleWalk()
     {
-        anim.SetBool("MayorWalking", true);
+        mayorWalk = !mayorWalk;
+        anim.SetBool("MayorWalking", mayorWalk);
+        
     }
 
     public void toggleInteractable()

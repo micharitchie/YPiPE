@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class PodInteraction : MonoBehaviour
 {
-    public GameObject wordBubble;
+    public GameObject doorUI;
+    public GameObject doorIndicator;
+
     private Animator doorAnimator;
     //private Animation doorAnimation;
 
@@ -20,7 +22,8 @@ public class PodInteraction : MonoBehaviour
     {
         doorAnimator.SetFloat("Direction", 1);
         doorAnimator.Play("DoorOpen");
-        wordBubble.SetActive(true);
+        doorUI.SetActive(true);
+        doorIndicator.SetActive(true);
         
     }
     
@@ -28,7 +31,8 @@ public class PodInteraction : MonoBehaviour
     {
         doorAnimator.SetFloat("Direction", -1);
         doorAnimator.Play("DoorOpen");
-        wordBubble.SetActive(false);
+        doorUI.SetActive(false);
+        doorIndicator.SetActive(true);
         //Debug.Log(doorAnimator.GetCurrentAnimatorStateInfo(0).speed);
     }
      

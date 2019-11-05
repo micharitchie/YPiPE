@@ -7,6 +7,7 @@ public class HouseCtrl : MonoBehaviour
     public Sprite openDoor;
     public Sprite closedDoor;
     public GameObject doorUI;
+    public GameObject doorIndicator;
     public Transform transportLoc;
     public Transform playerLoc;
 
@@ -34,6 +35,7 @@ public class HouseCtrl : MonoBehaviour
             //Debug.Log(transportLoc.position);
             //playerLoc.position = transportLoc.position;
             doorUI.SetActive(true);
+            doorIndicator.SetActive(true);
             doorAudio.Stop();
             doorAudio.clip = Resources.Load<AudioClip>("DoorOpen");
             doorAudio.Play();
@@ -46,6 +48,7 @@ public class HouseCtrl : MonoBehaviour
         {
             mySpriteRenderer.sprite = closedDoor;
             doorUI.SetActive(false);
+            doorIndicator.SetActive(false);
             doorAudio.Stop();
             doorAudio.clip = Resources.Load<AudioClip>("DoorClose");
             doorAudio.Play();
