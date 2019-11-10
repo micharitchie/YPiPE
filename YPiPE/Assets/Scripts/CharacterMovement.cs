@@ -5,7 +5,7 @@ using UnityEngine;
 public class CharacterMovement : MonoBehaviour
 {
     
-    public Transform player;//reference to player character     public Transform touchParticles;//reference to particles     public Transform seeButton;     public Transform doorButton;     public Transform speakButton;     public GameObject directionHint;     public GameObject mc;//reference to player as game object     public float speed = 5f;//speed of character movement     public Footsteps FSREf;     //public AudioSource footsteps;      private bool touchStart;//checks to see if player is dragging     private bool conversing;//I added this to keep the player from moving while talking, it's not being used rn     private bool roryFlipped;//this keeps the character from flipping constantly     private bool timerStart;     private bool hintShow;     private Vector2 pointA;//start of screen press     private Vector2 pointB;//where player drags to     private Vector2 playerStart;//stores where the player's 2D position at the start of screen press     private Vector2 playerEnd;//stores player's 2D position during the drag     private Vector2 playerOffset;//player end - player start     private Camera cam;//reference to main camera     private Animator anim;//allows me to update state machine     private float countdownTimer;//Counts down to remind the player to drag     private GameObject myHint;     private AudioSource tapSounds;     //private SpriteRenderer currentSprite;
+    public Transform player;//reference to player character     public Transform touchParticles;//reference to particles     //public Transform seeButton;     //public Transform doorButton;     //public Transform speakButton;     public GameObject directionHint;     public GameObject mc;//reference to player as game object     public float speed = 5f;//speed of character movement     public Footsteps FSREf;     //public AudioSource footsteps;      private bool touchStart;//checks to see if player is dragging     private bool conversing;//I added this to keep the player from moving while talking, it's not being used rn     private bool roryFlipped;//this keeps the character from flipping constantly     private bool timerStart;     private bool hintShow;     private Vector2 pointA;//start of screen press     private Vector2 pointB;//where player drags to     private Vector2 playerStart;//stores where the player's 2D position at the start of screen press     private Vector2 playerEnd;//stores player's 2D position during the drag     private Vector2 playerOffset;//player end - player start     private Camera cam;//reference to main camera     private Animator anim;//allows me to update state machine     private float countdownTimer;//Counts down to remind the player to drag     private GameObject myHint;     private AudioSource tapSounds;     //private SpriteRenderer currentSprite;
 
     // Start is called before the first frame update
     void Start()
@@ -34,13 +34,13 @@ public class CharacterMovement : MonoBehaviour
                     timerStart = true;
                 }
             }             if (Input.touches[0].phase == TouchPhase.Moved || Input.touches[0].phase == TouchPhase.Stationary)
-            {                 touchStart = true;                 pointB = cam.ScreenToWorldPoint(new Vector3(Input.touches[0].position.x, Input.touches[0].position.y, cam.transform.position.z));                 playerEnd = new Vector2(player.position.x, player.position.y);                 seeButton.position = cam.ScreenToWorldPoint(new Vector3(Input.touches[0].position.x, Input.touches[0].position.y, 100f));
-                doorButton.position = cam.ScreenToWorldPoint(new Vector3(Input.touches[0].position.x, Input.touches[0].position.y, 100f));             }
-            if (Input.touches[0].phase == TouchPhase.Ended)
+            {                 touchStart = true;                 pointB = cam.ScreenToWorldPoint(new Vector3(Input.touches[0].position.x, Input.touches[0].position.y, cam.transform.position.z));                 playerEnd = new Vector2(player.position.x, player.position.y);                 //seeButton.position = cam.ScreenToWorldPoint(new Vector3(Input.touches[0].position.x, Input.touches[0].position.y, 100f));
+                //doorButton.position = cam.ScreenToWorldPoint(new Vector3(Input.touches[0].position.x, Input.touches[0].position.y, 100f));             }
+            /*if (Input.touches[0].phase == TouchPhase.Ended)
             {
                 seeButton.position = cam.ScreenToWorldPoint(new Vector3(Input.touches[0].position.x, Input.touches[0].position.y, 100f));
                 speakButton.position = doorButton.position = cam.ScreenToWorldPoint(new Vector3(Input.touches[0].position.x, Input.touches[0].position.y, 100f));
-            }
+            }*/
         }
         #endregion 
         else

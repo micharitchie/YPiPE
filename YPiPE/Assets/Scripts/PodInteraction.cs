@@ -5,7 +5,7 @@ using UnityEngine;
 public class PodInteraction : MonoBehaviour
 {
     public GameObject doorUI;
-    public GameObject doorIndicator;
+    //public GameObject doorIndicator;
 
     private Animator doorAnimator;
     //private Animation doorAnimation;
@@ -22,8 +22,9 @@ public class PodInteraction : MonoBehaviour
     {
         doorAnimator.SetFloat("Direction", 1);
         doorAnimator.Play("DoorOpen");
+        doorUI.transform.position = transform.position;
         doorUI.SetActive(true);
-        doorIndicator.SetActive(true);
+        //doorIndicator.SetActive(true);
         
     }
     
@@ -32,7 +33,7 @@ public class PodInteraction : MonoBehaviour
         doorAnimator.SetFloat("Direction", -1);
         doorAnimator.Play("DoorOpen");
         doorUI.SetActive(false);
-        doorIndicator.SetActive(true);
+        //doorIndicator.SetActive(true);
         //Debug.Log(doorAnimator.GetCurrentAnimatorStateInfo(0).speed);
     }
      

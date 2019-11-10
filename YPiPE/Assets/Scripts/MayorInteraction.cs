@@ -12,8 +12,9 @@ public class MayorInteraction : MonoBehaviour
     public GameObject MayorArmL;
     public GameObject MayorLegR;
     public GameObject MayorLegL;
-    public GameObject speachBubble;
+    //public GameObject speachBubble;
     public GameObject speachButton;
+    public GameObject lookButton;
     public bool mayorDeactivated;
     public bool mayorWalk;
     public Sprite speakSprite;
@@ -26,7 +27,7 @@ public class MayorInteraction : MonoBehaviour
     private SpriteRenderer MAL;
     private SpriteRenderer MLR;
     private SpriteRenderer MLL;
-    private SpriteRenderer speachGraphic;
+    //private SpriteRenderer speachGraphic;
     private Animator anim;
     private Collider2D interactableArea;
 
@@ -40,7 +41,7 @@ public class MayorInteraction : MonoBehaviour
         MAL = MayorArmL.GetComponent<SpriteRenderer>();
         MLR = MayorLegR.GetComponent<SpriteRenderer>();
         MLL = MayorLegL.GetComponent<SpriteRenderer>();
-        speachGraphic = speachBubble.GetComponent<SpriteRenderer>();
+        //speachGraphic = speachBubble.GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
         interactableArea = GetComponent<Collider2D>();
         if (mayorDeactivated)
@@ -64,12 +65,13 @@ public class MayorInteraction : MonoBehaviour
     {
         if (collision.name == "VirtualRory")
         {
-            if (speachGraphic.sprite != speakSprite)
+            /*if (speachGraphic.sprite != speakSprite)
             {
                 speachGraphic.sprite = speakSprite;
-            } 
-            speachBubble.SetActive(true);
+            } */
+            //speachBubble.SetActive(true);
             speachButton.SetActive(true);
+            speachButton.transform.position = new Vector3(transform.position.x, transform.position.y + 3.5f, transform.position.z);
             partyFlowchart.SetBooleanVariable(fungusBool, true);
             if (Rory.transform.position.x <= transform.position.x)
             {
@@ -139,7 +141,7 @@ public class MayorInteraction : MonoBehaviour
     {
         if(collision.name == "VirtualRory")
         {
-            speachBubble.SetActive(false);
+            //speachBubble.SetActive(false);
             speachButton.SetActive(false);
             partyFlowchart.SetBooleanVariable(fungusBool, false);
         }
@@ -154,6 +156,14 @@ public class MayorInteraction : MonoBehaviour
     public void toggleInteractable()
     {
         interactableArea.enabled = !interactableArea.enabled;
+    }
+
+    public void moveLookButton()
+    {
+        if (lookButton != null)
+        {
+            lookButton.transform.position = new Vector3(transform.position.x, transform.position.y + 1.75f, transform.position.z);
+        }
     }
 
 }
