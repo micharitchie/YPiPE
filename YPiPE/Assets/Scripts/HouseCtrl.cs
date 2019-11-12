@@ -1,14 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Fungus;
 
 public class HouseCtrl : MonoBehaviour
 {
     public Sprite openDoor;
     public Sprite closedDoor;
     public GameObject doorUI;
+    //public GameObject doorIndicator;
     public Transform transportLoc;
     public Transform playerLoc;
+    public Flowchart targetFlowchart;
+    public string fugusBool;
 
     private SpriteRenderer mySpriteRenderer;
     private AudioSource doorAudio;
@@ -31,8 +35,10 @@ public class HouseCtrl : MonoBehaviour
         if(collision.name == "VirtualRory")
         {
             mySpriteRenderer.sprite = openDoor;
-            //Debug.Log(transportLoc.position);
-            //playerLoc.position = transportLoc.position;
+            if (targetFlowchart != null) { 
+                targetFlowchart.SetBooleanVariable(fugusBool, true);
+            }   
+            doorUI.transform.position = transform.position;
             doorUI.SetActive(true);
             doorAudio.Stop();
             doorAudio.clip = Resources.Load<AudioClip>("DoorOpen");
@@ -45,6 +51,10 @@ public class HouseCtrl : MonoBehaviour
         if(collision.name == "VirtualRory")
         {
             mySpriteRenderer.sprite = closedDoor;
+            if (targetFlowchart != null)
+            {
+                targetFlowchart.SetBooleanVariable(fugusBool, false);
+            }
             doorUI.SetActive(false);
             doorAudio.Stop();
             doorAudio.clip = Resources.Load<AudioClip>("DoorClose");
@@ -55,5 +65,10 @@ public class HouseCtrl : MonoBehaviour
     public void goInside()
     {
         playerLoc.position = transportLoc.position;
+    }
+
+    public void changeFlowchart(Flowchart newFlow)
+    {
+        targetFlowchart = newFlow;
     }
 }
