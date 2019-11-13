@@ -8,6 +8,6 @@ public class DeactivateSelf : MonoBehaviour
 
     public void DeactivateMe()
 	{
-		gameObject.SetActive(false);
+		gameObject.active = false;
 	}
 }
