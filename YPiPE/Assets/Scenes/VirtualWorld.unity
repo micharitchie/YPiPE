@@ -39864,7 +39864,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 1202272542}
+  selectedFlowchart: {fileID: 361329521}
 --- !u!4 &340960997
 Transform:
   m_ObjectHideFlags: 1
@@ -39973,7 +39973,6 @@ GameObject:
   - component: {fileID: 361329519}
   - component: {fileID: 361329518}
   - component: {fileID: 361329517}
-  - component: {fileID: 361329516}
   - component: {fileID: 361329515}
   - component: {fileID: 361329514}
   - component: {fileID: 361329523}
@@ -40019,33 +40018,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 3
   indentLevel: 0
---- !u!114 &361329516
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 361329513}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 2
-  indentLevel: 1
-  storyText: Rory has visited the Mayor's Party
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
 --- !u!114 &361329517
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -40165,7 +40137,6 @@ MonoBehaviour:
   eventHandler: {fileID: 361329519}
   commandList:
   - {fileID: 361329517}
-  - {fileID: 361329516}
   - {fileID: 361329523}
   - {fileID: 361329515}
   - {fileID: 361329514}
@@ -40193,15 +40164,8 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-<<<<<<< HEAD
   selectedBlocks: []
   selectedCommands: []
-=======
-  selectedBlocks:
-  - {fileID: 361329520}
-  selectedCommands:
-  - {fileID: 361329515}
->>>>>>> parent of d7ab0ae... Building game levels
   variables:
   - {fileID: 361329518}
   description: 
@@ -96111,7 +96075,6 @@ GameObject:
   - component: {fileID: 1202272573}
   - component: {fileID: 1202272572}
   - component: {fileID: 1202272570}
-  - component: {fileID: 1202272569}
   - component: {fileID: 1202272568}
   - component: {fileID: 1202272567}
   - component: {fileID: 1202272566}
@@ -96139,6 +96102,7 @@ GameObject:
   - component: {fileID: 1202272571}
   - component: {fileID: 1202272574}
   - component: {fileID: 1202272592}
+  - component: {fileID: 1202272569}
   m_Layer: 0
   m_Name: AfterParty
   m_TagString: Untagged
@@ -96243,11 +96207,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 421.54456, y: 190.05917}
+  scrollPos: {x: 594.60657, y: 147.6224}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.65457344
+  zoom: 0.6562167
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -96255,9 +96219,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1202272572}
+  - {fileID: 1202272541}
   selectedCommands:
-  - {fileID: 1202272591}
+  - {fileID: 1202272538}
   variables:
   - {fileID: 1202272597}
   - {fileID: 1202272549}
@@ -97063,7 +97027,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 476.84018
     y: 233.10887
-    width: 120.27477
+    width: 120.0988
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -97075,31 +97039,23 @@ MonoBehaviour:
   - {fileID: 1202272567}
 --- !u!114 &1202272569
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1202272537}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Script: {fileID: 11500000, guid: 00d03ae0919f04264b018681ed534177, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 25
+  itemId: 53
   indentLevel: 0
-  storyText: School House
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
+  _sceneName:
+    stringRef: {fileID: 0}
+    stringVal: SchoolHouse
+  loadingImage: {fileID: 0}
+  sceneNameOLD: 
 --- !u!114 &1202272570
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -97206,7 +97162,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 492.95544
     y: 23.61139
-    width: 120.27477
+    width: 120.0988
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -97642,7 +97598,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -144.23227
     y: 74.49691
-    width: 131.73262
+    width: 131.52795
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
