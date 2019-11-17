@@ -16,7 +16,7 @@ public class RoryPartSwap : MonoBehaviour
     private Transform LegL;
     private Transform LegR;
     private Transform BodyParent;
-    private Transform noParent;
+    private Transform parentHolder;
     private Vector3[] slotPositions;
 
     // Start is called before the first frame update
@@ -28,21 +28,12 @@ public class RoryPartSwap : MonoBehaviour
         ArmR = transform.Find("VRMover/VRBody/VirtualRoryBody/VRArmR");
         LegL = transform.Find("VRMover/VRLegL");
         LegR = transform.Find("VRMover/VRLegR");
-        BodyParent = transform.Find("VRMover/VRBody/VirtualRoryBody");
-        noParent = transform.Find("VRMover");
+        BodyParent = transform.Find("VRMover/VRBody/VirtualRoryBody"); 
+        //noParent = transform.Find("VRMover");
         //slotPositions = new Vector3[] { Head.position, Body.position, ArmR.position, LegR.position, LegL.position, ArmL.position };
         slotPositions = new Vector3[] { locationRef[0].position, locationRef[1].position, locationRef[2].position, locationRef[3].position, locationRef[4].position, locationRef[5].position };
     }
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-       
-    }
+    
     public void ClearParent()
     {
         Transform[] tempChildren = new Transform[BodyParent.childCount];
@@ -73,6 +64,15 @@ public class RoryPartSwap : MonoBehaviour
         locationRef[FlowInput.GetIntegerVariable("LegLLocation")] = LegL;
         locationRef[FlowInput.GetIntegerVariable("ArmLLocation")] = ArmL;
         SetRotation();
+        //SetParent();
+    }
+
+    void SetParent()
+    {
+        BodyParent = locationRef[1].GetChild(0);
+        locationRef[0].parent = BodyParent;
+        locationRef[2].parent = BodyParent;
+        locationRef[5].parent = BodyParent;
     }
 
     void SetRotation()
@@ -146,17 +146,29 @@ public class RoryPartSwap : MonoBehaviour
         {
             LegR.rotation = Quaternion.Euler(0, 0, 180);
         }
-        else
+        else if(legRInt == 2)
+        {
+            LegR.rotation = Quaternion.Euler(0, 0, 90);
+        } else if(legRInt == 3 || legRInt == 4)
         {
             LegR.rotation = Quaternion.Euler(0, 0, 0);
+        } else if (legRInt == 5)
+        {
+            LegR.rotation = Quaternion.Euler(0, 0, -90);
         }
         if (legLInt <= 1)
         {
             LegL.rotation = Quaternion.Euler(0, 0, 180);
         }
-        else
+        else if(legLInt == 2)
+        {
+            LegL.rotation = Quaternion.Euler(0, 0, 90);
+        } else if(legLInt == 3 || legLInt == 4)
         {
             LegL.rotation = Quaternion.Euler(0, 0, 0);
+        } else if (legLInt == 5)
+        {
+            LegL.rotation = Quaternion.Euler(0, 0, -90);
         }
         #endregion
     }

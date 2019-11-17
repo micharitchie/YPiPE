@@ -6,22 +6,22 @@ using Fungus;
 
 public class Draggable : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler
 {
-    public GameObject[] dropTargets;
-    public int startTarget;
-    public int partDirection;
-    public Flowchart flowOutput;
-    public string fungusVariable;
+    public GameObject[] dropTargets;//stores the droppable locations
+    public int startTarget;//stores which drop target body part starts on
+    public int partDirection;//0=up, 1=right, 2=down, 3=left
+    public Flowchart flowOutput;//stores a reference to the Fungus flowchart
+    public string fungusVariable;//targets flowchart variable to store body part location
 
-    private GameObject itemBeingDragged;
-    private Vector3 startPos;
-    private GameObject swapRef;
-    private Droppable[] dropScripts;
-    private Draggable[] otherParts;
-    private RoryPartSwap RPSScript;
+    private GameObject itemBeingDragged;//temporarily stores object being dragged
+    private Vector3 startPos;//stores body part starting location, updates with each drag
+    private GameObject swapRef;//temporarily stores object being replaced at a drop target
+    private Droppable[] dropScripts;//provides access to drop target variables 
+    private Draggable[] otherParts;//provides access to variables on other body parts
+    //private RoryPartSwap RPSScript;//was storing a reference to player, but no longer accessing those methods from this script
 
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         dropScripts = new Droppable[dropTargets.Length];
         otherParts = new Draggable[dropTargets.Length];
@@ -31,7 +31,7 @@ public class Draggable : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDra
             otherParts[i] = dropScripts[i].dropContents.GetComponent<Draggable>();
         }
         startPos = transform.position;
-        RPSScript = GameObject.Find("VirtualRory").GetComponent<RoryPartSwap>();
+        //RPSScript = GameObject.Find("VirtualRory").GetComponent<RoryPartSwap>();
     }
 
     public void OnBeginDrag(PointerEventData eventData)
@@ -69,6 +69,16 @@ public class Draggable : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDra
         swapRef = null;
         rotateBodyParts();
         
+    }
+
+    public void pullPartLoc()
+    {
+        startTarget = flowOutput.GetIntegerVariable(fungusVariable);
+        startPos = dropTargets[startTarget].transform.position;
+        transform.position = startPos;
+        dropScripts[startTarget].dropContents = gameObject;
+        rotateBodyParts();
+        //this needs to set the position based off the fungus variable
     }
 
     public void rotateBodyParts()
