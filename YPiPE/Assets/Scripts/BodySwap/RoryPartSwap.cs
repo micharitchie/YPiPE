@@ -92,13 +92,27 @@ public class RoryPartSwap : MonoBehaviour
             Head.rotation = Quaternion.Euler(0, 0, 0);
         } else if (headInt == 2)
         {
-            Head.rotation = Quaternion.Euler(0, 0, -90);
+            if (transform.localScale.x < 0)
+            {
+                Head.rotation = Quaternion.Euler(0, 0, 90);
+            }
+            else
+            {
+                Head.rotation = Quaternion.Euler(0, 0, -90);
+            }
         } else if(headInt == 3 || headInt == 4)
         {
             Head.rotation = Quaternion.Euler(0, 0, 180);
         } else if(headInt == 5)
         {
-            Head.rotation = Quaternion.Euler(0, 0, 90);
+            if (transform.localScale.x < 0)
+            {
+                Head.rotation = Quaternion.Euler(0, 0, -90);
+            }
+            else
+            {
+                Head.rotation = Quaternion.Euler(0, 0, 90);
+            }
         }
         #endregion
         #region Body Conditionals
@@ -112,7 +126,14 @@ public class RoryPartSwap : MonoBehaviour
         }
         else if (bodyInt == 2)
         {
-            Body.rotation = Quaternion.Euler(0, 0, -90);
+            if (transform.localScale.x < 0)
+            {
+                Body.rotation = Quaternion.Euler(0, 0, 90);
+            }
+            else
+            {
+                Body.rotation = Quaternion.Euler(0, 0, -90);
+            }
         }
         else if (bodyInt == 3 || bodyInt == 4)
         {
@@ -120,7 +141,14 @@ public class RoryPartSwap : MonoBehaviour
         }
         else if (bodyInt == 5)
         {
-            Body.rotation = Quaternion.Euler(0, 0, 90);
+            if (transform.localScale.x < 0)
+            {
+                Body.rotation = Quaternion.Euler(0, 0, -90);
+            }
+            else
+            {
+                Body.rotation = Quaternion.Euler(0, 0, 90);
+            }
         }
         #endregion
         #region Arm Conditionals
@@ -146,15 +174,29 @@ public class RoryPartSwap : MonoBehaviour
         {
             LegR.rotation = Quaternion.Euler(0, 0, 180);
         }
-        else if(legRInt == 2)
+        else if (legRInt == 2)
         {
-            LegR.rotation = Quaternion.Euler(0, 0, 90);
-        } else if(legRInt == 3 || legRInt == 4)
+            if (transform.localScale.x < 0)
+            {
+                LegR.rotation = Quaternion.Euler(0, 0, -90);
+            }
+            else
+            {
+                LegR.rotation = Quaternion.Euler(0, 0, 90);
+            }
+        } else if (legRInt == 3 || legRInt == 4)
         {
             LegR.rotation = Quaternion.Euler(0, 0, 0);
         } else if (legRInt == 5)
         {
-            LegR.rotation = Quaternion.Euler(0, 0, -90);
+            if (transform.localScale.x < 0)
+            {
+                LegR.rotation = Quaternion.Euler(0, 0, 90);
+            }
+            else
+            {
+                LegR.rotation = Quaternion.Euler(0, 0, -90);
+            }
         }
         if (legLInt <= 1)
         {
@@ -162,13 +204,27 @@ public class RoryPartSwap : MonoBehaviour
         }
         else if(legLInt == 2)
         {
-            LegL.rotation = Quaternion.Euler(0, 0, 90);
+            if (transform.localScale.x < 0)
+            {
+                LegL.rotation = Quaternion.Euler(0, 0, -90);
+            }
+            else
+            {
+                LegL.rotation = Quaternion.Euler(0, 0, 90);
+            }
         } else if(legLInt == 3 || legLInt == 4)
         {
             LegL.rotation = Quaternion.Euler(0, 0, 0);
         } else if (legLInt == 5)
         {
-            LegL.rotation = Quaternion.Euler(0, 0, -90);
+            if (transform.localScale.x < 0)
+            {
+                LegL.rotation = Quaternion.Euler(0, 0, 90);
+            }
+            else
+            {
+                LegL.rotation = Quaternion.Euler(0, 0, -90);
+            }
         }
         #endregion
     }

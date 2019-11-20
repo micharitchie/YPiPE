@@ -16,5 +16,9 @@ public class RoryAnimStates : MonoBehaviour
 	{
 		anim.SetBool("RoryLook", false);
 	}
+    public void StopReact()
+    {
+        anim.SetBool("RoryReact", false);
+    }
     
 }

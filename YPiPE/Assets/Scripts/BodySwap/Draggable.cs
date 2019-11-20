@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+//using UnityEngine.UI;
 using Fungus;
 
 public class Draggable : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler
@@ -44,6 +45,20 @@ public class Draggable : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDra
     public void OnDrag(PointerEventData eventData)
     {
         transform.position = Input.mousePosition;
+        for(int i = 0; i < dropTargets.Length; i++)
+        {
+            float distance = Vector3.Distance(itemBeingDragged.transform.position, dropTargets[i].transform.position);
+            GameObject glow = dropTargets[i].transform.GetChild(0).gameObject;
+            if (distance < 100)
+            {
+                //dropTargets[i].GetComponent<Image>().color = new Color(1f, 0f, 0f, 1f);
+                glow.SetActive(true);
+            } else
+            {
+                //dropTargets[i].GetComponent<Image>().color = new Color(.5f, .5f, .5f, .5f);
+                glow.SetActive(false);
+            }
+        }
     }
 
     public void OnEndDrag(PointerEventData eventData)
@@ -51,8 +66,11 @@ public class Draggable : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDra
         for(int i = 0; i < dropTargets.Length; i++)
         {
             float distance = Vector3.Distance(itemBeingDragged.transform.position, dropTargets[i].transform.position);
-            if (distance < 50)
+            GameObject glow = dropTargets[i].transform.GetChild(0).gameObject;
+            if (distance < 100)
             {
+                //dropTargets[i].GetComponent<Image>().color = new Color(.5f, .5f, .5f, .5f);
+                glow.SetActive(false);
                 otherParts[i] = dropScripts[i].dropContents.GetComponent<Draggable>();
                 dropScripts[i].dropContents.transform.position = startPos;
                 otherParts[i].startTarget = startTarget;
