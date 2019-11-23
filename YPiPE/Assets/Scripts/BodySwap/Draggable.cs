@@ -7,11 +7,14 @@ using Fungus;
 
 public class Draggable : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler
 {
+    public static int[] partLocations = { 0, 1, 2, 3, 4, 5 };
+
     public GameObject[] dropTargets;//stores the droppable locations
     public int startTarget;//stores which drop target body part starts on
     public int partDirection;//0=up, 1=right, 2=down, 3=left
-    public Flowchart flowOutput;//stores a reference to the Fungus flowchart
-    public string fungusVariable;//targets flowchart variable to store body part location
+    //public Flowchart flowOutput;//stores a reference to the Fungus flowchart
+    //public string fungusVariable;//targets flowchart variable to store body part location
+    public int partLocationRef;
 
     private GameObject itemBeingDragged;//temporarily stores object being dragged
     private Vector3 startPos;//stores body part starting location, updates with each drag
@@ -51,11 +54,9 @@ public class Draggable : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDra
             GameObject glow = dropTargets[i].transform.GetChild(0).gameObject;
             if (distance < 100)
             {
-                //dropTargets[i].GetComponent<Image>().color = new Color(1f, 0f, 0f, 1f);
                 glow.SetActive(true);
             } else
             {
-                //dropTargets[i].GetComponent<Image>().color = new Color(.5f, .5f, .5f, .5f);
                 glow.SetActive(false);
             }
         }
@@ -69,7 +70,6 @@ public class Draggable : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDra
             GameObject glow = dropTargets[i].transform.GetChild(0).gameObject;
             if (distance < 100)
             {
-                //dropTargets[i].GetComponent<Image>().color = new Color(.5f, .5f, .5f, .5f);
                 glow.SetActive(false);
                 otherParts[i] = dropScripts[i].dropContents.GetComponent<Draggable>();
                 dropScripts[i].dropContents.transform.position = startPos;
@@ -91,7 +91,8 @@ public class Draggable : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDra
 
     public void pullPartLoc()
     {
-        startTarget = flowOutput.GetIntegerVariable(fungusVariable);
+        startTarget = partLocations[partLocationRef];
+        //startTarget = flowOutput.GetIntegerVariable(fungusVariable);
         startPos = dropTargets[startTarget].transform.position;
         transform.position = startPos;
         dropScripts[startTarget].dropContents = gameObject;
@@ -179,10 +180,12 @@ public class Draggable : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDra
 
     public void FinishSwap()
     {
+        //write part location to static int variable
+        partLocations[partLocationRef] = startTarget;
         //write to global variable in Fungus
-        if (flowOutput != null)
+        /*if (flowOutput != null)
         {
             flowOutput.SetIntegerVariable(fungusVariable, startTarget);
-        }
+        }*/
     }
 }

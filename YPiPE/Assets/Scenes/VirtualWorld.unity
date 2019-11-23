@@ -2981,8 +2981,7 @@ MonoBehaviour:
   - {fileID: 1941719461}
   startTarget: 5
   partDirection: 3
-  flowOutput: {fileID: 1202272542}
-  fungusVariable: ArmLLocation
+  partLocationRef: 5
 --- !u!224 &165798265
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4628,10 +4627,8 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 196556148}
-  selectedCommands:
-  - {fileID: 196556502}
+  selectedBlocks: []
+  selectedCommands: []
   variables:
   - {fileID: 196556126}
   - {fileID: 196556118}
@@ -21313,7 +21310,7 @@ MonoBehaviour:
   waitUntilFinished: 0
 --- !u!114 &196556502
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -42305,7 +42302,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 196555991}
+  selectedFlowchart: {fileID: 361329521}
 --- !u!4 &340960997
 Transform:
   m_ObjectHideFlags: 1
@@ -42611,7 +42608,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scope: 2
   key: VisitParty
-  value: 0
+  value: 1
 --- !u!114 &361329519
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -53503,8 +53500,7 @@ MonoBehaviour:
   - {fileID: 1941719461}
   startTarget: 3
   partDirection: 2
-  flowOutput: {fileID: 1202272542}
-  fungusVariable: LegRLocation
+  partLocationRef: 3
 --- !u!224 &848777373
 RectTransform:
   m_ObjectHideFlags: 0
@@ -55486,7 +55482,6 @@ MonoBehaviour:
   - {fileID: 1918294475}
   - {fileID: 1912255740}
   - {fileID: 277555384}
-  FlowInput: {fileID: 1202272542}
 --- !u!1 &915073221
 GameObject:
   m_ObjectHideFlags: 0
@@ -56953,8 +56948,7 @@ MonoBehaviour:
   - {fileID: 1941719461}
   startTarget: 1
   partDirection: 0
-  flowOutput: {fileID: 1202272542}
-  fungusVariable: BodyLocation
+  partLocationRef: 1
 --- !u!224 &1023296490
 RectTransform:
   m_ObjectHideFlags: 0
@@ -103356,8 +103350,7 @@ MonoBehaviour:
   - {fileID: 1941719461}
   startTarget: 4
   partDirection: 2
-  flowOutput: {fileID: 1202272542}
-  fungusVariable: LegLLocation
+  partLocationRef: 4
 --- !u!224 &1151879565
 RectTransform:
   m_ObjectHideFlags: 0
@@ -107246,7 +107239,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b13be9d9623cd4ede84b56e773a44aff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxMaskWidth: 250
 --- !u!1 &1260694410
 GameObject:
   m_ObjectHideFlags: 0
@@ -112094,8 +112086,7 @@ MonoBehaviour:
   - {fileID: 1941719461}
   startTarget: 2
   partDirection: 1
-  flowOutput: {fileID: 1202272542}
-  fungusVariable: ArmRLocation
+  partLocationRef: 2
 --- !u!224 &1536135180
 RectTransform:
   m_ObjectHideFlags: 0
@@ -121056,8 +121047,7 @@ MonoBehaviour:
   - {fileID: 1941719461}
   startTarget: 0
   partDirection: 0
-  flowOutput: {fileID: 1202272542}
-  fungusVariable: HeadLocation
+  partLocationRef: 0
 --- !u!114 &1923672457
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class ShelfExpander : MonoBehaviour
 {
-	public float maxMaskWidth;
+	public static float maxMaskWidth = 250f;
 	private float expandSpeed;
 	public static bool expandMask;
     private RectTransform maskSize;

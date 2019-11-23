@@ -7,7 +7,7 @@ public class RoryPartSwap : MonoBehaviour
 {
     //public bool testParenting;
     public Transform[] locationRef;
-    public Flowchart FlowInput;
+    //public Flowchart FlowInput;
 
     private Transform Head;
 	private Transform Body;
@@ -18,6 +18,7 @@ public class RoryPartSwap : MonoBehaviour
     private Transform BodyParent;
     private Transform parentHolder;
     private Vector3[] slotPositions;
+    //private Draggable staticVarAccess;
 
     // Start is called before the first frame update
     private void Awake()
@@ -51,7 +52,19 @@ public class RoryPartSwap : MonoBehaviour
     public void SwapParts()
     {
         ClearParent();
-        Head.position = slotPositions[FlowInput.GetIntegerVariable("HeadLocation")];
+        Head.position = slotPositions[Draggable.partLocations[0]];
+        Body.position = slotPositions[Draggable.partLocations[1]];
+        ArmR.position = slotPositions[Draggable.partLocations[2]];
+        LegR.position = slotPositions[Draggable.partLocations[3]];
+        LegL.position = slotPositions[Draggable.partLocations[4]];
+        ArmL.position = slotPositions[Draggable.partLocations[5]];
+        locationRef[Draggable.partLocations[0]] = Head;
+        locationRef[Draggable.partLocations[1]] = Body;
+        locationRef[Draggable.partLocations[2]] = ArmR;
+        locationRef[Draggable.partLocations[3]] = LegR;
+        locationRef[Draggable.partLocations[4]] = LegL;
+        locationRef[Draggable.partLocations[5]] = ArmL;
+        /*Head.position = slotPositions[FlowInput.GetIntegerVariable("HeadLocation")];
         Body.position = slotPositions[FlowInput.GetIntegerVariable("BodyLocation")];
         ArmR.position = slotPositions[FlowInput.GetIntegerVariable("ArmRLocation")];
         LegR.position = slotPositions[FlowInput.GetIntegerVariable("LegRLocation")];
@@ -62,7 +75,7 @@ public class RoryPartSwap : MonoBehaviour
         locationRef[FlowInput.GetIntegerVariable("ArmRLocation")] = ArmR;
         locationRef[FlowInput.GetIntegerVariable("LegRLocation")] = LegR;
         locationRef[FlowInput.GetIntegerVariable("LegLLocation")] = LegL;
-        locationRef[FlowInput.GetIntegerVariable("ArmLLocation")] = ArmL;
+        locationRef[FlowInput.GetIntegerVariable("ArmLLocation")] = ArmL;*/
         SetRotation();
         //SetParent();
     }
@@ -77,12 +90,18 @@ public class RoryPartSwap : MonoBehaviour
 
     void SetRotation()
     {
-        int headInt = FlowInput.GetIntegerVariable("HeadLocation");
+        int headInt = Draggable.partLocations[0];
+        int bodyInt = Draggable.partLocations[1];
+        int armRInt = Draggable.partLocations[2];
+        int legRInt = Draggable.partLocations[3];
+        int legLInt = Draggable.partLocations[4];
+        int armLInt = Draggable.partLocations[5];
+        /*int headInt = FlowInput.GetIntegerVariable("HeadLocation");
         int bodyInt = FlowInput.GetIntegerVariable("BodyLocation");
         int armRInt = FlowInput.GetIntegerVariable("ArmRLocation");
         int legRInt = FlowInput.GetIntegerVariable("LegRLocation");
         int legLInt = FlowInput.GetIntegerVariable("LegLLocation");
-        int armLInt = FlowInput.GetIntegerVariable("ArmLLocation");
+        int armLInt = FlowInput.GetIntegerVariable("ArmLLocation");*/
         #region Head Conditionals
         if (headInt == 0)
         {
