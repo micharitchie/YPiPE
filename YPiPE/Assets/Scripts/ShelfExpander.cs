@@ -7,7 +7,7 @@ public class ShelfExpander : MonoBehaviour
 {
 	public float maxMaskWidth;
 	private float expandSpeed;
-	private bool expandMask;
+	public static bool expandMask;
     private RectTransform maskSize;
 
     // Start is called before the first frame update
