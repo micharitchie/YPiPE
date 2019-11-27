@@ -16,28 +16,35 @@ public class BodySwapPuzzle : MonoBehaviour
     private int legRLoc;
     private int legLLoc;
     private int armLLoc;
+    private bool checkTrigger;
     private Collider2D blockPassage;
 
     // Start is called before the first frame update
     void Start()
     {
-        headLoc = outFlow.GetIntegerVariable("HeadLocation");
-        bodyLoc = outFlow.GetIntegerVariable("BodyLocation");
-        armRLoc = outFlow.GetIntegerVariable("ArmRLocation");
-        legRLoc = outFlow.GetIntegerVariable("LegRLocation");
-        legLLoc = outFlow.GetIntegerVariable("LegLLocation");
-        armLLoc = outFlow.GetIntegerVariable("ArmLLocation");
+        headLoc = Draggable.partLocations[0];
+        bodyLoc = Draggable.partLocations[1];
+        armRLoc = Draggable.partLocations[2];
+        legRLoc = Draggable.partLocations[3];
+        legLLoc = Draggable.partLocations[4];
+        armLLoc = Draggable.partLocations[5];
         blockPassage = GetComponent<Collider2D>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        headLoc = outFlow.GetIntegerVariable("HeadLocation");
+        headLoc = Draggable.partLocations[0];
+        bodyLoc = Draggable.partLocations[1];
+        armRLoc = Draggable.partLocations[2];
+        legRLoc = Draggable.partLocations[3];
+        legLLoc = Draggable.partLocations[4];
+        armLLoc = Draggable.partLocations[5];
+        /*headLoc = outFlow.GetIntegerVariable("HeadLocation");
         bodyLoc = outFlow.GetIntegerVariable("BodyLocation");
         armRLoc = outFlow.GetIntegerVariable("ArmRLocation");
         legRLoc = outFlow.GetIntegerVariable("LegRLocation");
         legLLoc = outFlow.GetIntegerVariable("LegLLocation");
-        armLLoc = outFlow.GetIntegerVariable("ArmLLocation");
+        armLLoc = outFlow.GetIntegerVariable("ArmLLocation");*/
         currentOrientation = headLoc.ToString() + bodyLoc.ToString() + armRLoc.ToString() + legRLoc.ToString() + legLLoc.ToString() + armLLoc.ToString();
         for (int i = 0; i < possibleCombinations.Length; i++)
         {
@@ -54,26 +61,11 @@ public class BodySwapPuzzle : MonoBehaviour
         }
     }
 
-  /*  private void OnTriggerStay2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
-        headLoc = outFlow.GetIntegerVariable("HeadLocation");
-        bodyLoc = outFlow.GetIntegerVariable("BodyLocation");
-        armRLoc = outFlow.GetIntegerVariable("ArmRLocation");
-        legRLoc = outFlow.GetIntegerVariable("LegRLocation");
-        legLLoc = outFlow.GetIntegerVariable("LegLLocation");
-        armLLoc = outFlow.GetIntegerVariable("ArmLLocation");
-        currentOrientation = headLoc.ToString() + bodyLoc.ToString() + armRLoc.ToString() + legRLoc.ToString() + legLLoc.ToString() + armLLoc.ToString();
-        for (int i = 0; i < possibleCombinations.Length; i++)
-        {
-            if (possibleCombinations[i] == currentOrientation)
-            {
-                blockPassage.enabled = false;
-            } else
-            {
-                blockPassage.enabled = true;
-            }
-        }
-    }*/
+        checkTrigger = true;
+        
+    }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
@@ -84,6 +76,47 @@ public class BodySwapPuzzle : MonoBehaviour
         {
             outFlow.SetBooleanVariable(fungusBool, false);
         }
+        checkTrigger = false;
     }
+
+    public void CheckParts()
+    {
+        if (checkTrigger)
+        {
+            headLoc = Draggable.partLocations[0];
+            bodyLoc = Draggable.partLocations[1];
+            armRLoc = Draggable.partLocations[2];
+            legRLoc = Draggable.partLocations[3];
+            legLLoc = Draggable.partLocations[4];
+            armLLoc = Draggable.partLocations[5];
+            currentOrientation = headLoc.ToString() + bodyLoc.ToString() + armRLoc.ToString() + legRLoc.ToString() + legLLoc.ToString() + armLLoc.ToString();
+            for (int i = 0; i < possibleCombinations.Length; i++)
+            {
+                if (possibleCombinations[i] == currentOrientation)
+                {
+                    if (fungusBool == "none")
+                    {
+                        blockPassage.enabled = false;
+                        break;
+                    }
+                    else
+                    {
+                        outFlow.SetBooleanVariable(fungusBool, true);
+                        break;
+                    }
+                } else
+                {
+                    if (fungusBool == "none")
+                    {
+                        blockPassage.enabled = true;
+                    }
+                    else
+                    {
+                        outFlow.SetBooleanVariable(fungusBool, false);
+                    }
+                }
+            }
+        }
+    } 
 
 }

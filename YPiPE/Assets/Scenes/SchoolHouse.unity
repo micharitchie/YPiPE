@@ -783,13 +783,15 @@ GameObject:
   - component: {fileID: 111930000}
   - component: {fileID: 111930003}
   - component: {fileID: 111930002}
+  - component: {fileID: 111930001}
+  - component: {fileID: 111930005}
+  - component: {fileID: 111930004}
   - component: {fileID: 111930009}
   - component: {fileID: 111930008}
   - component: {fileID: 111930007}
   - component: {fileID: 111930006}
-  - component: {fileID: 111930005}
-  - component: {fileID: 111930004}
-  - component: {fileID: 111930001}
+  - component: {fileID: 111930010}
+  - component: {fileID: 111930011}
   m_Layer: 0
   m_Name: MeetTeacher
   m_TagString: Untagged
@@ -878,19 +880,15 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 111929982}
+  - {fileID: 111929995}
   selectedCommands: []
   variables:
   - {fileID: 111929987}
   - {fileID: 111929986}
   - {fileID: 111929996}
-  - {fileID: 111930000}
-  - {fileID: 111930009}
-  - {fileID: 111930008}
-  - {fileID: 111930007}
-  - {fileID: 111930006}
-  - {fileID: 111930005}
   - {fileID: 111930004}
+  - {fileID: 111930010}
+  - {fileID: 111930000}
   description: 
   stepPause: 0
   colorCommands: 1
@@ -942,6 +940,12 @@ MonoBehaviour:
   commandList:
   - {fileID: 111929992}
   - {fileID: 111929991}
+  - {fileID: 111930009}
+  - {fileID: 111930005}
+  - {fileID: 111930011}
+  - {fileID: 111930008}
+  - {fileID: 111930007}
+  - {fileID: 111930006}
   - {fileID: 111929990}
   - {fileID: 111929989}
   - {fileID: 111929988}
@@ -1531,12 +1535,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 111929979}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afb91b566ceda411bad1e9d3c3243ecc, type: 3}
+  m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   scope: 2
-  key: ArmLLocation
-  value: 5
+  key: VisitMaytrix
+  value: 0
 --- !u!114 &111930005
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1546,12 +1550,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 111929979}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afb91b566ceda411bad1e9d3c3243ecc, type: 3}
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scope: 2
-  key: LegLLocation
-  value: 4
+  itemId: 59
+  indentLevel: 2
+  storyText: I have a program that will get you into Maytrix's place, but you'll need
+    to get the {color=02FA9F}encryption key{/color} from Artpocalypse and Sk8Gr8.
+  description: 
+  character: {fileID: 58927685}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!114 &111930006
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1561,12 +1578,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 111929979}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afb91b566ceda411bad1e9d3c3243ecc, type: 3}
+  m_Script: {fileID: 11500000, guid: 93cb9773f2ca04e2bbf7a68ccfc23267, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scope: 2
-  key: LegRLocation
-  value: 3
+  itemId: 63
+  indentLevel: 1
 --- !u!114 &111930007
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1576,12 +1592,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 111929979}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afb91b566ceda411bad1e9d3c3243ecc, type: 3}
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scope: 2
-  key: ArmRLocation
-  value: 2
+  itemId: 62
+  indentLevel: 2
+  storyText: Go visit Maytrix in the cat house.
+  description: 
+  character: {fileID: 58927685}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!114 &111930008
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1591,12 +1619,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 111929979}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afb91b566ceda411bad1e9d3c3243ecc, type: 3}
+  m_Script: {fileID: 11500000, guid: 3fa968f01a7f9496bb50e13dfe16760d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scope: 2
-  key: BodyLocation
-  value: 1
+  itemId: 61
+  indentLevel: 1
 --- !u!114 &111930009
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1606,12 +1633,140 @@ MonoBehaviour:
   m_GameObject: {fileID: 111929979}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afb91b566ceda411bad1e9d3c3243ecc, type: 3}
+  m_Script: {fileID: 11500000, guid: 70c5622b8a80845c980954170295f292, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 60
+  indentLevel: 1
+  compareOperator: 0
+  variable: {fileID: 111930004}
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
+  animatorData:
+    animatorRef: {fileID: 0}
+    animatorVal: {fileID: 0}
+  audioSourceData:
+    audioSourceRef: {fileID: 0}
+    audioSourceVal: {fileID: 0}
+  colorData:
+    colorRef: {fileID: 0}
+    colorVal: {r: 0, g: 0, b: 0, a: 0}
+  gameObjectData:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 0}
+  materialData:
+    materialRef: {fileID: 0}
+    materialVal: {fileID: 0}
+  objectData:
+    objectRef: {fileID: 0}
+    objectVal: {fileID: 0}
+  rigidbody2DData:
+    rigidbody2DRef: {fileID: 0}
+    rigidbody2DVal: {fileID: 0}
+  spriteData:
+    spriteRef: {fileID: 0}
+    spriteVal: {fileID: 0}
+  textureData:
+    textureRef: {fileID: 0}
+    textureVal: {fileID: 0}
+  transformData:
+    transformRef: {fileID: 0}
+    transformVal: {fileID: 0}
+  vector2Data:
+    vector2Ref: {fileID: 0}
+    vector2Val: {x: 0, y: 0}
+  vector3Data:
+    vector3Ref: {fileID: 0}
+    vector3Val: {x: 0, y: 0, z: 0}
+--- !u!114 &111930010
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 111929979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   scope: 2
-  key: HeadLocation
+  key: EncryptionSearch
   value: 0
+--- !u!114 &111930011
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 111929979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 64
+  indentLevel: 2
+  variable: {fileID: 111930010}
+  setOperator: 0
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
+  animatorData:
+    animatorRef: {fileID: 0}
+    animatorVal: {fileID: 0}
+  audioSourceData:
+    audioSourceRef: {fileID: 0}
+    audioSourceVal: {fileID: 0}
+  colorData:
+    colorRef: {fileID: 0}
+    colorVal: {r: 0, g: 0, b: 0, a: 0}
+  gameObjectData:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 0}
+  materialData:
+    materialRef: {fileID: 0}
+    materialVal: {fileID: 0}
+  objectData:
+    objectRef: {fileID: 0}
+    objectVal: {fileID: 0}
+  rigidbody2DData:
+    rigidbody2DRef: {fileID: 0}
+    rigidbody2DVal: {fileID: 0}
+  spriteData:
+    spriteRef: {fileID: 0}
+    spriteVal: {fileID: 0}
+  textureData:
+    textureRef: {fileID: 0}
+    textureVal: {fileID: 0}
+  transformData:
+    transformRef: {fileID: 0}
+    transformVal: {fileID: 0}
+  vector2Data:
+    vector2Ref: {fileID: 0}
+    vector2Val: {x: 0, y: 0}
+  vector3Data:
+    vector3Ref: {fileID: 0}
+    vector3Val: {x: 0, y: 0, z: 0}
 --- !u!1 &136559165
 GameObject:
   m_ObjectHideFlags: 0
@@ -2973,6 +3128,17 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 948627609}
+        m_MethodName: CheckParts
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1280383368}
         m_MethodName: SetActive

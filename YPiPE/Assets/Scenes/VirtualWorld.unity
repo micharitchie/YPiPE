@@ -103652,7 +103652,6 @@ GameObject:
   - component: {fileID: 1202272568}
   - component: {fileID: 1202272567}
   - component: {fileID: 1202272566}
-  - component: {fileID: 1202272565}
   - component: {fileID: 1202272564}
   - component: {fileID: 1202272563}
   - component: {fileID: 1202272562}
@@ -103677,12 +103676,6 @@ GameObject:
   - component: {fileID: 1202272574}
   - component: {fileID: 1202272592}
   - component: {fileID: 1202272569}
-  - component: {fileID: 1202272603}
-  - component: {fileID: 1202272602}
-  - component: {fileID: 1202272601}
-  - component: {fileID: 1202272600}
-  - component: {fileID: 1202272599}
-  - component: {fileID: 1202272598}
   - component: {fileID: 1202272604}
   - component: {fileID: 1202272605}
   - component: {fileID: 1202272606}
@@ -103700,9 +103693,12 @@ GameObject:
   - component: {fileID: 1202272611}
   - component: {fileID: 1202272610}
   - component: {fileID: 1202272609}
-  - component: {fileID: 1202272607}
-  - component: {fileID: 1202272608}
   - component: {fileID: 1202272538}
+  - component: {fileID: 1202272598}
+  - component: {fileID: 1202272601}
+  - component: {fileID: 1202272600}
+  - component: {fileID: 1202272599}
+  - component: {fileID: 1202272565}
   m_Layer: 0
   m_Name: AfterParty
   m_TagString: Untagged
@@ -103847,11 +103843,13 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1202272541}
+  - {fileID: 1202272566}
   selectedCommands:
-  - {fileID: 1202272538}
+  - {fileID: 1202272565}
   variables:
   - {fileID: 1202272597}
+  - {fileID: 1202272605}
+  - {fileID: 1202272598}
   - {fileID: 1202272549}
   - {fileID: 1202272548}
   - {fileID: 1202272547}
@@ -103860,13 +103858,6 @@ MonoBehaviour:
   - {fileID: 1202272544}
   - {fileID: 1202272552}
   - {fileID: 1202272551}
-  - {fileID: 1202272603}
-  - {fileID: 1202272602}
-  - {fileID: 1202272601}
-  - {fileID: 1202272600}
-  - {fileID: 1202272599}
-  - {fileID: 1202272598}
-  - {fileID: 1202272605}
   description: 
   stepPause: 0
   colorCommands: 1
@@ -104568,31 +104559,23 @@ MonoBehaviour:
     vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &1202272565
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1202272537}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Script: {fileID: 11500000, guid: 00d03ae0919f04264b018681ed534177, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 29
+  itemId: 84
   indentLevel: 0
-  storyText: Cat House
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
+  _sceneName:
+    stringRef: {fileID: 0}
+    stringVal: CatHouse
+  loadingImage: {fileID: 0}
+  sceneNameOLD: 
 --- !u!114 &1202272566
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -104618,9 +104601,7 @@ MonoBehaviour:
   description: Handles interactions with Cat House
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 1202272608}
   - {fileID: 1202272565}
-  - {fileID: 1202272607}
 --- !u!114 &1202272567
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -104634,7 +104615,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 27
-  indentLevel: 0
+  indentLevel: 1
   storyText: Arcade House is locked, ya gotta find the key first
   description: 
   character: {fileID: 0}
@@ -104674,8 +104655,11 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1202272609}
+  - {fileID: 1202272601}
   - {fileID: 1202272567}
   - {fileID: 1202272610}
+  - {fileID: 1202272600}
+  - {fileID: 1202272599}
 --- !u!114 &1202272569
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -105618,12 +105602,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1202272537}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afb91b566ceda411bad1e9d3c3243ecc, type: 3}
+  m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   scope: 2
-  key: ArmLLocation
-  value: 5
+  key: ArcadeKey
+  value: 0
 --- !u!114 &1202272599
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -105633,12 +105617,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1202272537}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afb91b566ceda411bad1e9d3c3243ecc, type: 3}
+  m_Script: {fileID: 11500000, guid: 00d03ae0919f04264b018681ed534177, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scope: 2
-  key: LegLLocation
-  value: 4
+  itemId: 83
+  indentLevel: 1
+  _sceneName:
+    stringRef: {fileID: 0}
+    stringVal: ArcadeHouse
+  loadingImage: {fileID: 0}
+  sceneNameOLD: 
 --- !u!114 &1202272600
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -105648,12 +105636,61 @@ MonoBehaviour:
   m_GameObject: {fileID: 1202272537}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afb91b566ceda411bad1e9d3c3243ecc, type: 3}
+  m_Script: {fileID: 11500000, guid: 18c5e8d46183346b59f64b820e71f97f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scope: 2
-  key: LegRLocation
-  value: 3
+  itemId: 82
+  indentLevel: 0
+  compareOperator: 0
+  variable: {fileID: 1202272598}
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
+  animatorData:
+    animatorRef: {fileID: 0}
+    animatorVal: {fileID: 0}
+  audioSourceData:
+    audioSourceRef: {fileID: 0}
+    audioSourceVal: {fileID: 0}
+  colorData:
+    colorRef: {fileID: 0}
+    colorVal: {r: 0, g: 0, b: 0, a: 0}
+  gameObjectData:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 0}
+  materialData:
+    materialRef: {fileID: 0}
+    materialVal: {fileID: 0}
+  objectData:
+    objectRef: {fileID: 0}
+    objectVal: {fileID: 0}
+  rigidbody2DData:
+    rigidbody2DRef: {fileID: 0}
+    rigidbody2DVal: {fileID: 0}
+  spriteData:
+    spriteRef: {fileID: 0}
+    spriteVal: {fileID: 0}
+  textureData:
+    textureRef: {fileID: 0}
+    textureVal: {fileID: 0}
+  transformData:
+    transformRef: {fileID: 0}
+    transformVal: {fileID: 0}
+  vector2Data:
+    vector2Ref: {fileID: 0}
+    vector2Val: {x: 0, y: 0}
+  vector3Data:
+    vector3Ref: {fileID: 0}
+    vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &1202272601
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -105663,42 +105700,61 @@ MonoBehaviour:
   m_GameObject: {fileID: 1202272537}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afb91b566ceda411bad1e9d3c3243ecc, type: 3}
+  m_Script: {fileID: 11500000, guid: 70c5622b8a80845c980954170295f292, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scope: 2
-  key: ArmRLocation
-  value: 2
---- !u!114 &1202272602
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1202272537}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afb91b566ceda411bad1e9d3c3243ecc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scope: 2
-  key: BodyLocation
-  value: 1
---- !u!114 &1202272603
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1202272537}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afb91b566ceda411bad1e9d3c3243ecc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scope: 2
-  key: HeadLocation
-  value: 0
+  itemId: 81
+  indentLevel: 0
+  compareOperator: 0
+  variable: {fileID: 1202272598}
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
+  animatorData:
+    animatorRef: {fileID: 0}
+    animatorVal: {fileID: 0}
+  audioSourceData:
+    audioSourceRef: {fileID: 0}
+    audioSourceVal: {fileID: 0}
+  colorData:
+    colorRef: {fileID: 0}
+    colorVal: {r: 0, g: 0, b: 0, a: 0}
+  gameObjectData:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 0}
+  materialData:
+    materialRef: {fileID: 0}
+    materialVal: {fileID: 0}
+  objectData:
+    objectRef: {fileID: 0}
+    objectVal: {fileID: 0}
+  rigidbody2DData:
+    rigidbody2DRef: {fileID: 0}
+    rigidbody2DVal: {fileID: 0}
+  spriteData:
+    spriteRef: {fileID: 0}
+    spriteVal: {fileID: 0}
+  textureData:
+    textureRef: {fileID: 0}
+    textureVal: {fileID: 0}
+  transformData:
+    transformRef: {fileID: 0}
+    transformVal: {fileID: 0}
+  vector2Data:
+    vector2Ref: {fileID: 0}
+    vector2Val: {x: 0, y: 0}
+  vector3Data:
+    vector3Ref: {fileID: 0}
+    vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &1202272604
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -105806,62 +105862,6 @@ MonoBehaviour:
   vector3Data:
     vector3Ref: {fileID: 0}
     vector3Val: {x: 0, y: 0, z: 0}
---- !u!114 &1202272607
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1202272537}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 78
-  indentLevel: 0
-  description: 
-  targetObject: {fileID: 143777960}
-  targetComponentAssemblyName: CameraInteractions, Assembly-CSharp, Version=0.0.0.0,
-    Culture=neutral, PublicKeyToken=null
-  targetComponentFullname: UnityEngine.Component[]
-  targetComponentText: CameraInteractions
-  targetMethod: toggleZoom
-  targetMethodText: 'toggleZoom (): Void'
-  methodParameters: []
-  saveReturnValue: 0
-  returnValueVariableKey: 
-  returnValueType: System.Void
-  showInherited: 0
-  callMode: 0
---- !u!114 &1202272608
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1202272537}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 79
-  indentLevel: 0
-  description: 
-  targetObject: {fileID: 143777960}
-  targetComponentAssemblyName: CameraInteractions, Assembly-CSharp, Version=0.0.0.0,
-    Culture=neutral, PublicKeyToken=null
-  targetComponentFullname: UnityEngine.Component[]
-  targetComponentText: CameraInteractions
-  targetMethod: toggleZoom
-  targetMethodText: 'toggleZoom (): Void'
-  methodParameters: []
-  saveReturnValue: 0
-  returnValueVariableKey: 
-  returnValueType: System.Void
-  showInherited: 0
-  callMode: 0
 --- !u!114 &1202272609
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -105903,7 +105903,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 76
-  indentLevel: 0
+  indentLevel: 1
   description: 
   targetObject: {fileID: 143777960}
   targetComponentAssemblyName: CameraInteractions, Assembly-CSharp, Version=0.0.0.0,
