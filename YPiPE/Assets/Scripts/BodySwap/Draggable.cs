@@ -97,7 +97,6 @@ public class Draggable : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDra
         transform.position = startPos;
         dropScripts[startTarget].dropContents = gameObject;
         rotateBodyParts();
-        //this needs to set the position based off the fungus variable
     }
 
     public void rotateBodyParts()
