@@ -5,14 +5,13 @@ using Fungus;
 
 public class MayorInteraction : MonoBehaviour
 {
-    public GameObject Rory;
+    public Transform Rory;
     public GameObject MayorHead;
     public GameObject MayorBody;
     public GameObject MayorArmR;
     public GameObject MayorArmL;
     public GameObject MayorLegR;
     public GameObject MayorLegL;
-    //public GameObject speachBubble;
     public GameObject speachButton;
     public GameObject lookButton;
     public bool mayorDeactivated;
@@ -41,7 +40,6 @@ public class MayorInteraction : MonoBehaviour
         MAL = MayorArmL.GetComponent<SpriteRenderer>();
         MLR = MayorLegR.GetComponent<SpriteRenderer>();
         MLL = MayorLegL.GetComponent<SpriteRenderer>();
-        //speachGraphic = speachBubble.GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
         interactableArea = GetComponent<Collider2D>();
         if (mayorDeactivated)
@@ -70,10 +68,11 @@ public class MayorInteraction : MonoBehaviour
                 speachGraphic.sprite = speakSprite;
             } */
             //speachBubble.SetActive(true);
+
+            speachButton.transform.position = new Vector3(Rory.position.x + 2.3f, Rory.position.y + 4.2f, Rory.position.z);
             speachButton.SetActive(true);
-            speachButton.transform.position = new Vector3(transform.position.x, transform.position.y + 3.5f, transform.position.z);
             partyFlowchart.SetBooleanVariable(fungusBool, true);
-            if (Rory.transform.position.x <= transform.position.x)
+            if (Rory.position.x <= transform.position.x)
             {
                 transform.localScale = new Vector3(1, 1, 1);
             }
@@ -81,7 +80,7 @@ public class MayorInteraction : MonoBehaviour
             {
                 transform.localScale = new Vector3(-1, 1, 1);
             }
-            if(Rory.transform.position.y <= transform.position.y)
+            if(Rory.position.y <= transform.position.y)
             {
                 MH.sortingLayerName = "NPC Behind";
                 MB.sortingLayerName = "NPC Behind";
@@ -105,10 +104,11 @@ public class MayorInteraction : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
+        speachButton.transform.position = new Vector3(Rory.position.x + 2.3f, Rory.position.y + 4.2f, Rory.position.z);
         if (collision.name == "VirtualRory")
         {
 
-            if (Rory.transform.position.x <= transform.position.x)
+            if (Rory.position.x <= transform.position.x)
             {
                 transform.localScale = new Vector3(1, 1, 1);
             }
@@ -116,7 +116,7 @@ public class MayorInteraction : MonoBehaviour
             {
                 transform.localScale = new Vector3(-1, 1, 1);
             }
-            if (Rory.transform.position.y <= transform.position.y)
+            if (Rory.position.y <= transform.position.y)
             {
                 MH.sortingLayerName = "NPC Behind";
                 MB.sortingLayerName = "NPC Behind";

@@ -37,13 +37,20 @@ public class HouseCtrl : MonoBehaviour
             mySpriteRenderer.sprite = openDoor;
             if (targetFlowchart != null) { 
                 targetFlowchart.SetBooleanVariable(fugusBool, true);
-            }   
-            doorUI.transform.position = transform.position;
+            }
+            Vector3 buttonLocation = new Vector3(playerLoc.position.x + 2.3f, playerLoc.position.y + 4.2f, playerLoc.position.z);
+            doorUI.transform.position = buttonLocation;
             doorUI.SetActive(true);
             doorAudio.Stop();
             doorAudio.clip = Resources.Load<AudioClip>("DoorOpen");
             doorAudio.Play();
         }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        Vector3 buttonLocation = new Vector3(playerLoc.position.x + 2.3f, playerLoc.position.y + 4.2f, playerLoc.position.z);
+        doorUI.transform.position = buttonLocation;
     }
 
     private void OnTriggerExit2D(Collider2D collision)

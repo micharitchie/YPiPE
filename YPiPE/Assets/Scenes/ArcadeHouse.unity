@@ -1573,9 +1573,9 @@ RectTransform:
   m_Father: {fileID: 822418943}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -1100, y: -500}
   m_SizeDelta: {x: 208, y: 208}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &154066307
@@ -1643,8 +1643,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: -5478765897227639116, guid: 6478752b4500847c2803e2526457e529,
-    type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7cce38ab2de53478f8ba1009a2405912, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2300,6 +2299,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lookUI: {fileID: 472260892}
+  setLocation: {fileID: 2098288019}
   fungusBool: Artpocalypse
   targetFlowchart: {fileID: 2081190817}
 --- !u!61 &242347750
@@ -3157,6 +3157,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lookUI: {fileID: 1668922754}
+  setLocation: {fileID: 2098288019}
   fungusBool: BSInteract
   targetFlowchart: {fileID: 2081190817}
 --- !u!61 &345940614
@@ -4392,8 +4393,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: -3795348509192776210, guid: 6478752b4500847c2803e2526457e529,
-    type: 3}
+  m_Sprite: {fileID: 21300000, guid: 23a26851b867c41c3ad8f0607ec922a0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4424,9 +4424,9 @@ RectTransform:
   m_Father: {fileID: 822418943}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -1100, y: -500}
   m_SizeDelta: {x: 208, y: 208}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &487395149
@@ -6376,6 +6376,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lookUI: {fileID: 1668922754}
+  setLocation: {fileID: 2098288019}
   fungusBool: KeyInteract
   targetFlowchart: {fileID: 2081190817}
 --- !u!1 &763115408
@@ -9955,6 +9956,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lookUI: {fileID: 154066305}
+  setLocation: {fileID: 2098288019}
   fungusBool: 
   targetFlowchart: {fileID: 0}
 --- !u!61 &1240624462
@@ -13223,9 +13225,9 @@ RectTransform:
   m_Father: {fileID: 822418943}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -1100, y: -500}
   m_SizeDelta: {x: 208, y: 208}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1668922756
@@ -13293,8 +13295,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 7391300601157865086, guid: 6478752b4500847c2803e2526457e529,
-    type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2f01fbbad473d44e5b82bc78d9c1544a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -15967,6 +15968,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lookUI: {fileID: 472260892}
+  setLocation: {fileID: 2098288019}
   fungusBool: eLeet
   targetFlowchart: {fileID: 2081190817}
 --- !u!61 &2037919521
@@ -16116,9 +16118,9 @@ RectTransform:
   m_Father: {fileID: 822418943}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -1100, y: -500}
   m_SizeDelta: {x: 208, y: 208}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2071914922
@@ -16186,8 +16188,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: -2668146941855073126, guid: 6478752b4500847c2803e2526457e529,
-    type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4d412bb860f904207a4fd3d8b63083fe, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -16351,6 +16352,7 @@ GameObject:
   - component: {fileID: 2081190849}
   - component: {fileID: 2081190836}
   - component: {fileID: 2081190850}
+  - component: {fileID: 2081190851}
   m_Layer: 0
   m_Name: ArcadeFlow
   m_TagString: Untagged
@@ -16992,9 +16994,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 2081190807}
+  - {fileID: 2081190828}
   selectedCommands:
-  - {fileID: 2081190850}
+  - {fileID: 2081190851}
   variables:
   - {fileID: 2081190814}
   - {fileID: 2081190846}
@@ -17343,6 +17345,7 @@ MonoBehaviour:
   - {fileID: 2081190842}
   - {fileID: 2081190823}
   - {fileID: 2081190822}
+  - {fileID: 2081190851}
   - {fileID: 2081190847}
   - {fileID: 2081190835}
   - {fileID: 2081190834}
@@ -17994,7 +17997,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &2081190850
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -18056,6 +18059,34 @@ MonoBehaviour:
   vector3Data:
     vector3Ref: {fileID: 0}
     vector3Val: {x: 0, y: 0, z: 0}
+--- !u!114 &2081190851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2081190795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 63
+  indentLevel: 2
+  description: 
+  targetObject: {fileID: 2098288010}
+  targetComponentAssemblyName: CharacterMovement, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: CharacterMovement
+  targetMethod: toggleCharacterMove
+  targetMethodText: 'toggleCharacterMove (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
 --- !u!114 &2081190852
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -18573,6 +18604,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lookUI: {fileID: 472260892}
+  setLocation: {fileID: 2098288019}
   fungusBool: Sk8Gr8
   targetFlowchart: {fileID: 2081190817}
 --- !u!61 &2138843498

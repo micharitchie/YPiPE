@@ -375,7 +375,7 @@ PrefabInstance:
         type: 3}
       propertyPath: Rory
       value: 
-      objectReference: {fileID: 914380649}
+      objectReference: {fileID: 914380650}
     - target: {fileID: -44780018720631063, guid: a97e1294e6c93454fbd84b4e0e23280e,
         type: 3}
       propertyPath: speachButton
@@ -1249,7 +1249,7 @@ Transform:
   m_Children:
   - {fileID: 1825397260}
   m_Father: {fileID: 331134026}
-  m_RootOrder: 14
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &77598177
 SpriteRenderer:
@@ -1339,6 +1339,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lookUI: {fileID: 1781981396}
+  setLocation: {fileID: 914380650}
   fungusBool: Portrait1Trigger
   targetFlowchart: {fileID: 196555991}
 --- !u!1 &82022440
@@ -40277,7 +40278,7 @@ Transform:
   m_Children:
   - {fileID: 989761126}
   m_Father: {fileID: 331134026}
-  m_RootOrder: 20
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &241384929
 MonoBehaviour:
@@ -40292,6 +40293,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lookUI: {fileID: 1781981396}
+  setLocation: {fileID: 914380650}
   fungusBool: HoleTrigger
   targetFlowchart: {fileID: 196555991}
 --- !u!61 &241384930
@@ -41818,8 +41820,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: -5478765897227639116, guid: 6478752b4500847c2803e2526457e529,
-    type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7cce38ab2de53478f8ba1009a2405912, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -42197,18 +42198,18 @@ Transform:
   - {fileID: 2068077479}
   - {fileID: 1877856680}
   - {fileID: 1225578934}
-  - {fileID: 2097473772}
-  - {fileID: 1289668692}
-  - {fileID: 1625405169}
   - {fileID: 77598176}
   - {fileID: 973313900}
   - {fileID: 1051866644}
   - {fileID: 846159582}
+  - {fileID: 2097473772}
+  - {fileID: 1289668692}
+  - {fileID: 1625405169}
   - {fileID: 750869338}
   - {fileID: 761992847}
+  - {fileID: 690742316}
   - {fileID: 241384928}
   - {fileID: 2045801783}
-  - {fileID: 690742316}
   - {fileID: 544840364}
   - {fileID: 2087504370}
   - {fileID: 20951307}
@@ -42332,7 +42333,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 1202272542}
+  selectedFlowchart: {fileID: 361329521}
 --- !u!4 &340960997
 Transform:
   m_ObjectHideFlags: 1
@@ -42638,7 +42639,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scope: 2
   key: VisitParty
-  value: 1
+  value: 0
 --- !u!114 &361329519
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -42706,8 +42707,7 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 361329520}
+  selectedBlocks: []
   selectedCommands: []
   variables:
   - {fileID: 361329518}
@@ -45270,7 +45270,7 @@ PrefabInstance:
         type: 3}
       propertyPath: Rory
       value: 
-      objectReference: {fileID: 914380649}
+      objectReference: {fileID: 914380650}
     - target: {fileID: -44780018720631063, guid: a97e1294e6c93454fbd84b4e0e23280e,
         type: 3}
       propertyPath: speachButton
@@ -45625,7 +45625,7 @@ PrefabInstance:
         type: 3}
       propertyPath: Rory
       value: 
-      objectReference: {fileID: 914380649}
+      objectReference: {fileID: 914380650}
     - target: {fileID: -44780018720631063, guid: a97e1294e6c93454fbd84b4e0e23280e,
         type: 3}
       propertyPath: speachButton
@@ -45720,7 +45720,7 @@ PrefabInstance:
         type: 3}
       propertyPath: Rory
       value: 
-      objectReference: {fileID: 914380649}
+      objectReference: {fileID: 914380650}
     - target: {fileID: -44780018720631063, guid: a97e1294e6c93454fbd84b4e0e23280e,
         type: 3}
       propertyPath: speachButton
@@ -45899,6 +45899,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lookUI: {fileID: 1021942670}
+  setLocation: {fileID: 914380650}
   fungusBool: Artpocalypse
   targetFlowchart: {fileID: 1202272542}
 --- !u!61 &593379529
@@ -47216,7 +47217,7 @@ Transform:
   m_Children:
   - {fileID: 121777088}
   m_Father: {fileID: 331134026}
-  m_RootOrder: 22
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &690742317
 SpriteRenderer:
@@ -47302,6 +47303,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lookUI: {fileID: 1781981396}
+  setLocation: {fileID: 0}
   fungusBool: CouchTrigger
   targetFlowchart: {fileID: 196555991}
 --- !u!61 &690742320
@@ -47431,7 +47433,7 @@ PrefabInstance:
         type: 3}
       propertyPath: Rory
       value: 
-      objectReference: {fileID: 914380649}
+      objectReference: {fileID: 914380650}
     - target: {fileID: -44780018720631063, guid: a97e1294e6c93454fbd84b4e0e23280e,
         type: 3}
       propertyPath: speachButton
@@ -48194,10 +48196,8 @@ GameObject:
   - component: {fileID: 767915294}
   - component: {fileID: 767915269}
   - component: {fileID: 767915300}
-  - component: {fileID: 767915320}
-  - component: {fileID: 767915312}
-  - component: {fileID: 767915307}
   - component: {fileID: 767915321}
+  - component: {fileID: 767915307}
   m_Layer: 0
   m_Name: FirstFlowchart
   m_TagString: Untagged
@@ -48285,6 +48285,7 @@ MonoBehaviour:
   - {fileID: 767915186}
   - {fileID: 767915195}
   - {fileID: 767915194}
+  - {fileID: 767915307}
 --- !u!114 &767915180
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48724,7 +48725,6 @@ MonoBehaviour:
   - {fileID: 767915190}
   - {fileID: 767915197}
   - {fileID: 767915205}
-  - {fileID: 767915320}
   - {fileID: 767915232}
   - {fileID: 767915298}
   - {fileID: 767915198}
@@ -48741,7 +48741,6 @@ MonoBehaviour:
   - {fileID: 767915311}
   - {fileID: 767915310}
   - {fileID: 767915309}
-  - {fileID: 767915312}
   - {fileID: 767915294}
   - {fileID: 767915293}
   - {fileID: 767915306}
@@ -48758,7 +48757,6 @@ MonoBehaviour:
   - {fileID: 767915297}
   - {fileID: 767915296}
   - {fileID: 767915295}
-  - {fileID: 767915307}
   - {fileID: 767915269}
   - {fileID: 767915199}
   - {fileID: 767915292}
@@ -48977,7 +48975,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 767915176}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
   m_Name: 
@@ -49191,7 +49189,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 767915176}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
   m_Name: 
@@ -49279,7 +49277,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 767915176}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
   m_Name: 
@@ -51979,27 +51977,38 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 767915176}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Script: {fileID: 11500000, guid: 445c07472dafe4e0ead0e88c4b757401, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 264
-  indentLevel: 1
-  description: 
-  targetObject: {fileID: 914380649}
-  targetComponentAssemblyName: CharacterMovement, Assembly-CSharp, Version=0.0.0.0,
-    Culture=neutral, PublicKeyToken=null
-  targetComponentFullname: UnityEngine.Component[]
-  targetComponentText: CharacterMovement
-  targetMethod: FlipRory
-  targetMethodText: 'FlipRory (): Void'
-  methodParameters: []
-  saveReturnValue: 0
-  returnValueVariableKey: 
-  returnValueType: System.Void
-  showInherited: 0
-  callMode: 0
+  itemId: 266
+  indentLevel: 0
+  _targetObject:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 1781981396}
+  _tweenName:
+    stringRef: {fileID: 0}
+    stringVal: 
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  easeType: 21
+  loopType: 0
+  stopPreviousTweens: 0
+  waitUntilFinished: 0
+  targetObjectOLD: {fileID: 0}
+  tweenNameOLD: 
+  durationOLD: 0
+  _toTransform:
+    transformRef: {fileID: 0}
+    transformVal: {fileID: 0}
+  _toPosition:
+    vector3Ref: {fileID: 0}
+    vector3Val: {x: 2.3, y: 4.2, z: 0}
+  isLocal: 0
+  toTransformOLD: {fileID: 0}
+  toPositionOLD: {x: 0, y: 0, z: 0}
 --- !u!114 &767915308
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -52090,34 +52099,6 @@ MonoBehaviour:
     booleanRef: {fileID: 0}
     booleanVal: 1
   targetGameObjectOLD: {fileID: 0}
---- !u!114 &767915312
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 767915176}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 263
-  indentLevel: 1
-  description: 
-  targetObject: {fileID: 914380649}
-  targetComponentAssemblyName: CharacterMovement, Assembly-CSharp, Version=0.0.0.0,
-    Culture=neutral, PublicKeyToken=null
-  targetComponentFullname: UnityEngine.Component[]
-  targetComponentText: CharacterMovement
-  targetMethod: FlipRory
-  targetMethodText: 'FlipRory (): Void'
-  methodParameters: []
-  saveReturnValue: 0
-  returnValueVariableKey: 
-  returnValueType: System.Void
-  showInherited: 0
-  callMode: 0
 --- !u!114 &767915313
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -52371,34 +52352,6 @@ MonoBehaviour:
   targetComponentText: CharacterMovement
   targetMethod: toggleCharacterMove
   targetMethodText: 'toggleCharacterMove (): Void'
-  methodParameters: []
-  saveReturnValue: 0
-  returnValueVariableKey: 
-  returnValueType: System.Void
-  showInherited: 0
-  callMode: 0
---- !u!114 &767915320
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 767915176}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 262
-  indentLevel: 1
-  description: 
-  targetObject: {fileID: 914380649}
-  targetComponentAssemblyName: CharacterMovement, Assembly-CSharp, Version=0.0.0.0,
-    Culture=neutral, PublicKeyToken=null
-  targetComponentFullname: UnityEngine.Component[]
-  targetComponentText: CharacterMovement
-  targetMethod: FlipRory
-  targetMethodText: 'FlipRory (): Void'
   methodParameters: []
   saveReturnValue: 0
   returnValueVariableKey: 
@@ -53337,7 +53290,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 331134026}
-  m_RootOrder: 17
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &846159583
 SpriteRenderer:
@@ -53400,6 +53353,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lookUI: {fileID: 1781981396}
+  setLocation: {fileID: 914380650}
   fungusBool: ChairTrigger
   targetFlowchart: {fileID: 196555991}
 --- !u!61 &846159585
@@ -54152,7 +54106,7 @@ PrefabInstance:
         type: 3}
       propertyPath: Rory
       value: 
-      objectReference: {fileID: 914380649}
+      objectReference: {fileID: 914380650}
     - target: {fileID: -44780018720631063, guid: a97e1294e6c93454fbd84b4e0e23280e,
         type: 3}
       propertyPath: speachButton
@@ -55271,7 +55225,7 @@ Transform:
   - {fileID: 143777961}
   - {fileID: 1456588338}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &914380651
 MonoBehaviour:
@@ -56153,7 +56107,7 @@ Transform:
   m_Children:
   - {fileID: 886265836}
   m_Father: {fileID: 331134026}
-  m_RootOrder: 15
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &973313901
 SpriteRenderer:
@@ -56243,6 +56197,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lookUI: {fileID: 1781981396}
+  setLocation: {fileID: 914380650}
   fungusBool: Portrait2Trigger
   targetFlowchart: {fileID: 196555991}
 --- !u!1 &975774764
@@ -56884,8 +56839,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: -3795348509192776210, guid: 6478752b4500847c2803e2526457e529,
-    type: 3}
+  m_Sprite: {fileID: 21300000, guid: 23a26851b867c41c3ad8f0607ec922a0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -102074,7 +102028,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 331134026}
-  m_RootOrder: 16
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1051866645
 SpriteRenderer:
@@ -102137,6 +102091,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lookUI: {fileID: 1781981396}
+  setLocation: {fileID: 914380650}
   fungusBool: ChairTrigger
   targetFlowchart: {fileID: 196555991}
 --- !u!61 &1051866647
@@ -103906,10 +103861,8 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 1202272566}
-  selectedCommands:
-  - {fileID: 1202272634}
+  selectedBlocks: []
+  selectedCommands: []
   variables:
   - {fileID: 1202272597}
   - {fileID: 1202272605}
@@ -105827,7 +105780,7 @@ MonoBehaviour:
     vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &1202272602
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -105841,7 +105794,7 @@ MonoBehaviour:
   indentLevel: 0
 --- !u!114 &1202272603
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -105987,7 +105940,7 @@ MonoBehaviour:
     vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &1202272607
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -106051,7 +106004,7 @@ MonoBehaviour:
     vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &1202272608
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -106475,7 +106428,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &1202272623
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -106539,7 +106492,7 @@ MonoBehaviour:
     vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &1202272624
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -106578,7 +106531,7 @@ MonoBehaviour:
   toPositionOLD: {x: 0, y: 0, z: 0}
 --- !u!114 &1202272625
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -106642,7 +106595,7 @@ MonoBehaviour:
     vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &1202272626
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -106681,7 +106634,7 @@ MonoBehaviour:
   toPositionOLD: {x: 0, y: 0, z: 0}
 --- !u!114 &1202272627
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -106745,7 +106698,7 @@ MonoBehaviour:
     vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &1202272628
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -106980,7 +106933,7 @@ MonoBehaviour:
   value: 0
 --- !u!114 &1202272634
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -107044,7 +106997,7 @@ MonoBehaviour:
     vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &1202272635
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -107108,7 +107061,7 @@ MonoBehaviour:
     vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &1202272636
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -107172,7 +107125,7 @@ MonoBehaviour:
     vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &1202272637
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -107236,7 +107189,7 @@ MonoBehaviour:
     vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &1202272638
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -107738,7 +107691,7 @@ PrefabInstance:
         type: 3}
       propertyPath: Rory
       value: 
-      objectReference: {fileID: 914380649}
+      objectReference: {fileID: 914380650}
     - target: {fileID: -44780018720631063, guid: a97e1294e6c93454fbd84b4e0e23280e,
         type: 3}
       propertyPath: speachButton
@@ -108355,7 +108308,7 @@ Transform:
   - {fileID: 1330312263}
   - {fileID: 1384229834}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1263029562 stripped
 GameObject:
@@ -108626,7 +108579,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 331134026}
-  m_RootOrder: 12
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1289668693
 BoxCollider2D:
@@ -115484,7 +115437,7 @@ PrefabInstance:
         type: 3}
       propertyPath: Rory
       value: 
-      objectReference: {fileID: 914380649}
+      objectReference: {fileID: 914380650}
     - target: {fileID: -44780018720631063, guid: a97e1294e6c93454fbd84b4e0e23280e,
         type: 3}
       propertyPath: speachButton
@@ -115718,6 +115671,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lookUI: {fileID: 1021942670}
+  setLocation: {fileID: 914380650}
   fungusBool: Sk8Gr8
   targetFlowchart: {fileID: 1202272542}
 --- !u!61 &1622907599
@@ -115918,7 +115872,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 331134026}
-  m_RootOrder: 13
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1625405170
 BoxCollider2D:
@@ -120148,8 +120102,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: -2668146941855073126, guid: 6478752b4500847c2803e2526457e529,
-    type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4d412bb860f904207a4fd3d8b63083fe, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -121819,6 +121772,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lookUI: {fileID: 1781981396}
+  setLocation: {fileID: 914380650}
   fungusBool: CouchTrigger
   targetFlowchart: {fileID: 196555991}
 --- !u!61 &1877856683
@@ -122359,7 +122313,7 @@ PrefabInstance:
         type: 3}
       propertyPath: Rory
       value: 
-      objectReference: {fileID: 914380649}
+      objectReference: {fileID: 914380650}
     - target: {fileID: -44780018720631063, guid: a97e1294e6c93454fbd84b4e0e23280e,
         type: 3}
       propertyPath: speachButton
@@ -123593,7 +123547,7 @@ PrefabInstance:
         type: 3}
       propertyPath: Rory
       value: 
-      objectReference: {fileID: 914380649}
+      objectReference: {fileID: 914380650}
     - target: {fileID: -44780018720631063, guid: a97e1294e6c93454fbd84b4e0e23280e,
         type: 3}
       propertyPath: speachButton
@@ -123787,7 +123741,7 @@ Transform:
   m_Children:
   - {fileID: 880695183}
   m_Father: {fileID: 331134026}
-  m_RootOrder: 21
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &2045801784
 BoxCollider2D:
@@ -123828,6 +123782,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lookUI: {fileID: 1781981396}
+  setLocation: {fileID: 914380650}
   fungusBool: DoorTrigger
   targetFlowchart: {fileID: 196555991}
 --- !u!1 &2060065271
@@ -124447,7 +124402,7 @@ PrefabInstance:
         type: 3}
       propertyPath: Rory
       value: 
-      objectReference: {fileID: 914380649}
+      objectReference: {fileID: 914380650}
     - target: {fileID: -44780018720631063, guid: a97e1294e6c93454fbd84b4e0e23280e,
         type: 3}
       propertyPath: speachButton
@@ -124693,7 +124648,7 @@ Transform:
   m_Children:
   - {fileID: 234351461}
   m_Father: {fileID: 331134026}
-  m_RootOrder: 11
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &2097473773
 BoxCollider2D:
@@ -124808,6 +124763,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lookUI: {fileID: 1781981396}
+  setLocation: {fileID: 0}
   fungusBool: TableTrigger
   targetFlowchart: {fileID: 196555991}
 --- !u!1 &2099145810
@@ -125317,7 +125273,7 @@ PrefabInstance:
         type: 3}
       propertyPath: Rory
       value: 
-      objectReference: {fileID: 914380649}
+      objectReference: {fileID: 914380650}
     - target: {fileID: -44780018720631063, guid: a97e1294e6c93454fbd84b4e0e23280e,
         type: 3}
       propertyPath: mayorWalk
@@ -125762,7 +125718,7 @@ PrefabInstance:
         type: 3}
       propertyPath: Rory
       value: 
-      objectReference: {fileID: 914380649}
+      objectReference: {fileID: 914380650}
     - target: {fileID: -44780018720631063, guid: a97e1294e6c93454fbd84b4e0e23280e,
         type: 3}
       propertyPath: MayorArmL

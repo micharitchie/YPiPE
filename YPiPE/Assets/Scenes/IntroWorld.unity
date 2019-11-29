@@ -2139,9 +2139,9 @@ RectTransform:
   m_Father: {fileID: 627344729}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -1100, y: -500}
   m_SizeDelta: {x: 208, y: 208}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &199821945
@@ -2209,8 +2209,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: -5478765897227639116, guid: 6478752b4500847c2803e2526457e529,
-    type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7cce38ab2de53478f8ba1009a2405912, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3040,8 +3039,7 @@ MonoBehaviour:
   - {fileID: 735248595}
   startTarget: 2
   partDirection: 1
-  flowOutput: {fileID: 0}
-  fungusVariable: ArmRLocation
+  partLocationRef: 0
 --- !u!1 &351393246
 GameObject:
   m_ObjectHideFlags: 0
@@ -4122,8 +4120,7 @@ MonoBehaviour:
   - {fileID: 735248595}
   startTarget: 0
   partDirection: 0
-  flowOutput: {fileID: 0}
-  fungusVariable: HeadLocation
+  partLocationRef: 0
 --- !u!1 &499921681
 GameObject:
   m_ObjectHideFlags: 0
@@ -5062,6 +5059,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorUI: {fileID: 199821943}
+  setLocation: {fileID: 993605034}
 --- !u!61 &706125848
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6528,8 +6526,7 @@ MonoBehaviour:
   - {fileID: 735248595}
   startTarget: 1
   partDirection: 0
-  flowOutput: {fileID: 0}
-  fungusVariable: BodyLocation
+  partLocationRef: 0
 --- !u!1 &942954676
 GameObject:
   m_ObjectHideFlags: 0
@@ -7872,7 +7869,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b13be9d9623cd4ede84b56e773a44aff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxMaskWidth: 250
 --- !u!114 &1071792140
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9867,9 +9863,9 @@ RectTransform:
   m_Father: {fileID: 627344729}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -1100, y: -500}
   m_SizeDelta: {x: 208, y: 208}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1283434995
@@ -9937,8 +9933,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: -2668146941855073126, guid: 6478752b4500847c2803e2526457e529,
-    type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4d412bb860f904207a4fd3d8b63083fe, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10069,8 +10064,7 @@ MonoBehaviour:
   - {fileID: 735248595}
   startTarget: 5
   partDirection: 3
-  flowOutput: {fileID: 0}
-  fungusVariable: ArmLLocation
+  partLocationRef: 0
 --- !u!114 &1298683583
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10820,8 +10814,7 @@ MonoBehaviour:
   - {fileID: 735248595}
   startTarget: 3
   partDirection: 2
-  flowOutput: {fileID: 0}
-  fungusVariable: LegRLocation
+  partLocationRef: 0
 --- !u!1 &1450515024
 GameObject:
   m_ObjectHideFlags: 0
@@ -12255,8 +12248,7 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 1649490047}
+  selectedBlocks: []
   selectedCommands: []
   variables:
   - {fileID: 1649490058}
@@ -13777,9 +13769,9 @@ RectTransform:
   m_Father: {fileID: 627344729}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -1100, y: -500}
   m_SizeDelta: {x: 208, y: 208}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1878380255
@@ -13847,8 +13839,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: -3795348509192776210, guid: 6478752b4500847c2803e2526457e529,
-    type: 3}
+  m_Sprite: {fileID: 21300000, guid: 23a26851b867c41c3ad8f0607ec922a0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -14775,8 +14766,7 @@ MonoBehaviour:
   - {fileID: 735248595}
   startTarget: 4
   partDirection: 2
-  flowOutput: {fileID: 0}
-  fungusVariable: LegLLocation
+  partLocationRef: 0
 --- !u!1 &2023761293
 GameObject:
   m_ObjectHideFlags: 0

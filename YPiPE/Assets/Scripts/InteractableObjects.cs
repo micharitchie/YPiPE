@@ -7,6 +7,7 @@ public class InteractableObjects : MonoBehaviour
 {
 
 	public GameObject lookUI;
+    public Transform setLocation;
     public string fungusBool;
     public Flowchart targetFlowchart;
 
@@ -23,12 +24,18 @@ public class InteractableObjects : MonoBehaviour
     }
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
+        Vector3 buttonLocation = new Vector3(setLocation.position.x + 2.3f, setLocation.position.y + 4.2f, setLocation.position.z);
+        lookUI.transform.position = buttonLocation;
         lookUI.SetActive(true);
-        lookUI.transform.position = transform.position;
         if (targetFlowchart != null)
         {
             targetFlowchart.SetBooleanVariable(fungusBool, true);
         }
+    }
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        Vector3 buttonLocation = new Vector3(setLocation.position.x + 2.3f, setLocation.position.y + 4.2f, setLocation.position.z);
+        lookUI.transform.position = buttonLocation;
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
