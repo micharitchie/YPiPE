@@ -802,7 +802,9 @@ GameObject:
   - component: {fileID: 111930023}
   - component: {fileID: 111930021}
   - component: {fileID: 111930001}
+  - component: {fileID: 111930008}
   - component: {fileID: 111930006}
+  - component: {fileID: 111930009}
   m_Layer: 0
   m_Name: MeetTeacher
   m_TagString: Untagged
@@ -852,7 +854,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 67
+    x: 68.36477
     y: 70
     width: 120
     height: 40
@@ -895,8 +897,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 111929985}
-  selectedCommands:
-  - {fileID: 111929990}
+  selectedCommands: []
   variables:
   - {fileID: 111929987}
   - {fileID: 111929986}
@@ -962,12 +963,14 @@ MonoBehaviour:
   - {fileID: 111930017}
   - {fileID: 111930016}
   - {fileID: 111930014}
-  - {fileID: 111930006}
+  - {fileID: 111930015}
+  - {fileID: 111930008}
   - {fileID: 111930005}
   - {fileID: 111930011}
-  - {fileID: 111930015}
+  - {fileID: 111930006}
   - {fileID: 111929991}
   - {fileID: 111930007}
+  - {fileID: 111930009}
   - {fileID: 111929990}
   - {fileID: 111929989}
   - {fileID: 111929988}
@@ -1122,7 +1125,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 3
-  indentLevel: 1
+  indentLevel: 2
   storyText: Hey you can understand me now.
   description: 
   character: {fileID: 58927685}
@@ -1595,7 +1598,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 59
-  indentLevel: 1
+  indentLevel: 2
   storyText: I have a program that will get you into Maytrix's place, but you'll need
     to get the {color=02FA9F}encryption key{/color} from Artpocalypse and Sk8Gr8.
   description: 
@@ -1619,11 +1622,52 @@ MonoBehaviour:
   m_GameObject: {fileID: 111929979}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18c5e8d46183346b59f64b820e71f97f, type: 3}
+  m_Script: {fileID: 11500000, guid: 3fa968f01a7f9496bb50e13dfe16760d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 77
-  indentLevel: 0
+  itemId: 79
+  indentLevel: 1
+--- !u!114 &111930007
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 111929979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 62
+  indentLevel: 2
+  storyText: Go visit Maytrix in the cat house.
+  description: 
+  character: {fileID: 58927685}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &111930008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 111929979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70c5622b8a80845c980954170295f292, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 78
+  indentLevel: 1
   compareOperator: 0
   variable: {fileID: 111930004}
   booleanData:
@@ -1674,33 +1718,20 @@ MonoBehaviour:
   vector3Data:
     vector3Ref: {fileID: 0}
     vector3Val: {x: 0, y: 0, z: 0}
---- !u!114 &111930007
+--- !u!114 &111930009
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 111929979}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Script: {fileID: 11500000, guid: 93cb9773f2ca04e2bbf7a68ccfc23267, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 62
+  itemId: 80
   indentLevel: 1
-  storyText: Go visit Maytrix in the cat house.
-  description: 
-  character: {fileID: 58927685}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
 --- !u!114 &111930010
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1729,7 +1760,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 64
-  indentLevel: 1
+  indentLevel: 2
   variable: {fileID: 111930010}
   setOperator: 0
   booleanData:

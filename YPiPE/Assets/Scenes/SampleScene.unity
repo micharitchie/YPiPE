@@ -130,7 +130,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9065219}
   - component: {fileID: 9065220}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: hardfloor_0 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -210,7 +210,7 @@ GameObject:
   m_Component:
   - component: {fileID: 13204650}
   - component: {fileID: 13204651}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: GlowTiles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -456,6 +456,184 @@ MonoBehaviour:
   startTarget: 2
   partDirection: 1
   partLocationRef: 0
+--- !u!1 &94624221
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 94624222}
+  - component: {fileID: 94624225}
+  - component: {fileID: 94624224}
+  - component: {fileID: 94624223}
+  m_Layer: 5
+  m_Name: ToggleTileSwap
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &94624222
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 94624221}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1475711378}
+  m_Father: {fileID: 542202325}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 100}
+  m_SizeDelta: {x: 300, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &94624223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 94624221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 0.11900002, b: 0.44203347, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 94624224}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2008565935}
+        m_MethodName: toggleSwap
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &94624224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 94624221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+--- !u!222 &94624225
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 94624221}
+  m_CullTransparentMesh: 0
+--- !u!1 &120357585
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 120357586}
+  - component: {fileID: 120357587}
+  m_Layer: 0
+  m_Name: Rory View
+  m_TagString: Untagged
+  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &120357586
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 120357585}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.5, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1023841618}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &120357587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 120357585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95c387d3e32404bcc91c60318d766bb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  viewSize: 5
+  primaryAspectRatio: {x: 4, y: 3}
+  secondaryAspectRatio: {x: 2, y: 1}
 --- !u!1 &142360250
 GameObject:
   m_ObjectHideFlags: 0
@@ -1342,7 +1520,7 @@ GameObject:
   m_Component:
   - component: {fileID: 193203027}
   - component: {fileID: 193203028}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: hardfloor_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1677,7 +1855,7 @@ GameObject:
   m_Component:
   - component: {fileID: 272691740}
   - component: {fileID: 272691741}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: hardfloor_0 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2378,7 +2556,7 @@ GameObject:
   m_Component:
   - component: {fileID: 408631302}
   - component: {fileID: 408631303}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: GlowTiles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2468,6 +2646,15 @@ GameObject:
   - component: {fileID: 409667879}
   - component: {fileID: 409667880}
   - component: {fileID: 409667881}
+  - component: {fileID: 409667884}
+  - component: {fileID: 409667883}
+  - component: {fileID: 409667882}
+  - component: {fileID: 409667890}
+  - component: {fileID: 409667889}
+  - component: {fileID: 409667888}
+  - component: {fileID: 409667887}
+  - component: {fileID: 409667886}
+  - component: {fileID: 409667885}
   m_Layer: 0
   m_Name: TestFlowchart
   m_TagString: Untagged
@@ -2632,9 +2819,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 409667876}
+  - {fileID: 409667884}
   selectedCommands:
-  - {fileID: 409667881}
+  - {fileID: 409667888}
   variables:
   - {fileID: 409667874}
   - {fileID: 409667873}
@@ -2642,6 +2829,7 @@ MonoBehaviour:
   - {fileID: 409667871}
   - {fileID: 409667870}
   - {fileID: 409667869}
+  - {fileID: 409667889}
   description: 
   stepPause: 0
   colorCommands: 1
@@ -2696,7 +2884,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &409667880
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -2724,7 +2912,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &409667881
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -2767,6 +2955,308 @@ MonoBehaviour:
   returnValueType: System.Void
   showInherited: 0
   callMode: 0
+--- !u!114 &409667882
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 409667868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45c952ea1ad444e479b570fa242679c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 5
+  indentLevel: 1
+  duration: 2.5
+  targetView: {fileID: 1156345627}
+  waitUntilFinished: 1
+  targetCamera: {fileID: 1670899225}
+--- !u!114 &409667883
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 409667868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10eaeba5e91be479e95d4fa48679f549, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentBlock: {fileID: 409667884}
+  targetButton: {fileID: 94624223}
+--- !u!114 &409667884
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 409667868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 405
+    y: 76
+    width: 144
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 4
+  blockName: Tile Swap Camera
+  description: 
+  eventHandler: {fileID: 409667883}
+  commandList:
+  - {fileID: 409667890}
+  - {fileID: 409667882}
+  - {fileID: 409667885}
+  - {fileID: 409667887}
+  - {fileID: 409667886}
+  - {fileID: 409667888}
+--- !u!114 &409667885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 409667868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 10
+  indentLevel: 1
+  variable: {fileID: 409667889}
+  setOperator: 0
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
+  animatorData:
+    animatorRef: {fileID: 0}
+    animatorVal: {fileID: 0}
+  audioSourceData:
+    audioSourceRef: {fileID: 0}
+    audioSourceVal: {fileID: 0}
+  colorData:
+    colorRef: {fileID: 0}
+    colorVal: {r: 0, g: 0, b: 0, a: 0}
+  gameObjectData:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 0}
+  materialData:
+    materialRef: {fileID: 0}
+    materialVal: {fileID: 0}
+  objectData:
+    objectRef: {fileID: 0}
+    objectVal: {fileID: 0}
+  rigidbody2DData:
+    rigidbody2DRef: {fileID: 0}
+    rigidbody2DVal: {fileID: 0}
+  spriteData:
+    spriteRef: {fileID: 0}
+    spriteVal: {fileID: 0}
+  textureData:
+    textureRef: {fileID: 0}
+    textureVal: {fileID: 0}
+  transformData:
+    transformRef: {fileID: 0}
+    transformVal: {fileID: 0}
+  vector2Data:
+    vector2Ref: {fileID: 0}
+    vector2Val: {x: 0, y: 0}
+  vector3Data:
+    vector3Ref: {fileID: 0}
+    vector3Val: {x: 0, y: 0, z: 0}
+--- !u!114 &409667886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 409667868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45c952ea1ad444e479b570fa242679c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 9
+  indentLevel: 1
+  duration: 1
+  targetView: {fileID: 120357587}
+  waitUntilFinished: 1
+  targetCamera: {fileID: 1670899225}
+--- !u!114 &409667887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 409667868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fa968f01a7f9496bb50e13dfe16760d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 8
+  indentLevel: 0
+--- !u!114 &409667888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 409667868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 7
+  indentLevel: 1
+  variable: {fileID: 409667889}
+  setOperator: 0
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
+  animatorData:
+    animatorRef: {fileID: 0}
+    animatorVal: {fileID: 0}
+  audioSourceData:
+    audioSourceRef: {fileID: 0}
+    audioSourceVal: {fileID: 0}
+  colorData:
+    colorRef: {fileID: 0}
+    colorVal: {r: 0, g: 0, b: 0, a: 0}
+  gameObjectData:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 0}
+  materialData:
+    materialRef: {fileID: 0}
+    materialVal: {fileID: 0}
+  objectData:
+    objectRef: {fileID: 0}
+    objectVal: {fileID: 0}
+  rigidbody2DData:
+    rigidbody2DRef: {fileID: 0}
+    rigidbody2DVal: {fileID: 0}
+  spriteData:
+    spriteRef: {fileID: 0}
+    spriteVal: {fileID: 0}
+  textureData:
+    textureRef: {fileID: 0}
+    textureVal: {fileID: 0}
+  transformData:
+    transformRef: {fileID: 0}
+    transformVal: {fileID: 0}
+  vector2Data:
+    vector2Ref: {fileID: 0}
+    vector2Val: {x: 0, y: 0}
+  vector3Data:
+    vector3Ref: {fileID: 0}
+    vector3Val: {x: 0, y: 0, z: 0}
+--- !u!114 &409667889
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 409667868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 0
+  key: RoryView
+  value: 1
+--- !u!114 &409667890
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 409667868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70c5622b8a80845c980954170295f292, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 6
+  indentLevel: 0
+  compareOperator: 0
+  variable: {fileID: 409667889}
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
+  animatorData:
+    animatorRef: {fileID: 0}
+    animatorVal: {fileID: 0}
+  audioSourceData:
+    audioSourceRef: {fileID: 0}
+    audioSourceVal: {fileID: 0}
+  colorData:
+    colorRef: {fileID: 0}
+    colorVal: {r: 0, g: 0, b: 0, a: 0}
+  gameObjectData:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 0}
+  materialData:
+    materialRef: {fileID: 0}
+    materialVal: {fileID: 0}
+  objectData:
+    objectRef: {fileID: 0}
+    objectVal: {fileID: 0}
+  rigidbody2DData:
+    rigidbody2DRef: {fileID: 0}
+    rigidbody2DVal: {fileID: 0}
+  spriteData:
+    spriteRef: {fileID: 0}
+    spriteVal: {fileID: 0}
+  textureData:
+    textureRef: {fileID: 0}
+    textureVal: {fileID: 0}
+  transformData:
+    transformRef: {fileID: 0}
+    transformVal: {fileID: 0}
+  vector2Data:
+    vector2Ref: {fileID: 0}
+    vector2Val: {x: 0, y: 0}
+  vector3Data:
+    vector3Ref: {fileID: 0}
+    vector3Val: {x: 0, y: 0, z: 0}
 --- !u!1 &414054097
 GameObject:
   m_ObjectHideFlags: 0
@@ -2945,7 +3435,8 @@ GameObject:
   m_Component:
   - component: {fileID: 429068011}
   - component: {fileID: 429068010}
-  m_Layer: 0
+  - component: {fileID: 429068012}
+  m_Layer: 31
   m_Name: TilesA2
   m_TagString: Swappable Tile
   m_Icon: {fileID: 0}
@@ -2997,6 +3488,22 @@ Transform:
   m_Father: {fileID: 2008565934}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &429068012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 429068009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2bb7f50036364151867028aa45d3a9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  row: 0
+  collumn: 1
+  startPos: {x: 0, y: 0}
+  endPos: {x: 0, y: 0}
 --- !u!1 &434266090
 GameObject:
   m_ObjectHideFlags: 0
@@ -3007,7 +3514,7 @@ GameObject:
   m_Component:
   - component: {fileID: 434266091}
   - component: {fileID: 434266092}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: GlowTiles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3686,7 +4193,7 @@ GameObject:
   m_Component:
   - component: {fileID: 501405226}
   - component: {fileID: 501405227}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: hardfloor_0 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3766,7 +4273,7 @@ GameObject:
   m_Component:
   - component: {fileID: 508355887}
   - component: {fileID: 508355888}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: GlowTiles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3845,7 +4352,7 @@ GameObject:
   m_Component:
   - component: {fileID: 527590991}
   - component: {fileID: 527590992}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: hardfloor_0 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4024,6 +4531,7 @@ RectTransform:
   - {fileID: 179195973}
   - {fileID: 1622622531}
   - {fileID: 698975831}
+  - {fileID: 94624222}
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4116,7 +4624,7 @@ GameObject:
   m_Component:
   - component: {fileID: 580577531}
   - component: {fileID: 580577532}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: hardfloor_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4277,7 +4785,7 @@ GameObject:
   m_Component:
   - component: {fileID: 620763016}
   - component: {fileID: 620763017}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: GlowTiles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4448,7 +4956,7 @@ GameObject:
   m_Component:
   - component: {fileID: 648371223}
   - component: {fileID: 648371224}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: GlowTiles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4917,7 +5425,7 @@ GameObject:
   m_Component:
   - component: {fileID: 671117470}
   - component: {fileID: 671117471}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: GlowTiles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4996,7 +5504,7 @@ GameObject:
   m_Component:
   - component: {fileID: 676418531}
   - component: {fileID: 676418532}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: hardfloor_0 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6253,7 +6761,8 @@ GameObject:
   m_Component:
   - component: {fileID: 815676675}
   - component: {fileID: 815676674}
-  m_Layer: 0
+  - component: {fileID: 815676676}
+  m_Layer: 31
   m_Name: TilesB1
   m_TagString: Swappable Tile
   m_Icon: {fileID: 0}
@@ -6305,6 +6814,22 @@ Transform:
   m_Father: {fileID: 2008565934}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &815676676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 815676673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2bb7f50036364151867028aa45d3a9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  row: 1
+  collumn: 0
+  startPos: {x: 0, y: 0}
+  endPos: {x: 0, y: 0}
 --- !u!1 &825875770
 GameObject:
   m_ObjectHideFlags: 0
@@ -6346,7 +6871,8 @@ GameObject:
   m_Component:
   - component: {fileID: 831867286}
   - component: {fileID: 831867285}
-  m_Layer: 0
+  - component: {fileID: 831867287}
+  m_Layer: 31
   m_Name: TilesA3
   m_TagString: Swappable Tile
   m_Icon: {fileID: 0}
@@ -6398,6 +6924,22 @@ Transform:
   m_Father: {fileID: 2008565934}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &831867287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 831867284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2bb7f50036364151867028aa45d3a9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  row: 0
+  collumn: 2
+  startPos: {x: 0, y: 0}
+  endPos: {x: 0, y: 0}
 --- !u!1 &845389033
 GameObject:
   m_ObjectHideFlags: 0
@@ -6408,7 +6950,7 @@ GameObject:
   m_Component:
   - component: {fileID: 845389034}
   - component: {fileID: 845389035}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: hardfloor_0 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6856,7 +7398,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1019012702}
   - component: {fileID: 1019012701}
-  m_Layer: 0
+  - component: {fileID: 1019012703}
+  m_Layer: 31
   m_Name: TilesA1
   m_TagString: Swappable Tile
   m_Icon: {fileID: 0}
@@ -6908,6 +7451,22 @@ Transform:
   m_Father: {fileID: 2008565934}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1019012703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1019012700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2bb7f50036364151867028aa45d3a9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  row: 0
+  collumn: 0
+  startPos: {x: 0, y: 0}
+  endPos: {x: 0, y: 0}
 --- !u!1 &1023841609
 GameObject:
   m_ObjectHideFlags: 0
@@ -7168,6 +7727,7 @@ Transform:
   - {fileID: 1953695326}
   - {fileID: 1670899221}
   - {fileID: 1799610429}
+  - {fileID: 120357586}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7472,7 +8032,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1093256576}
   - component: {fileID: 1093256577}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: hardfloor_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7792,6 +8352,52 @@ RectTransform:
   m_AnchoredPosition: {x: -612.5, y: 0}
   m_SizeDelta: {x: 225, y: 53}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1156345626
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1156345628}
+  - component: {fileID: 1156345627}
+  m_Layer: 0
+  m_Name: New View
+  m_TagString: Untagged
+  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1156345627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1156345626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95c387d3e32404bcc91c60318d766bb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  viewSize: 12
+  primaryAspectRatio: {x: 4, y: 3}
+  secondaryAspectRatio: {x: 2, y: 1}
+--- !u!4 &1156345628
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1156345626}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1156981604
 GameObject:
   m_ObjectHideFlags: 0
@@ -7802,7 +8408,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1156981606}
   - component: {fileID: 1156981605}
-  m_Layer: 0
+  - component: {fileID: 1156981607}
+  m_Layer: 31
   m_Name: TilesA4
   m_TagString: Swappable Tile
   m_Icon: {fileID: 0}
@@ -7854,6 +8461,22 @@ Transform:
   m_Father: {fileID: 2008565934}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1156981607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1156981604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2bb7f50036364151867028aa45d3a9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  row: 0
+  collumn: 3
+  startPos: {x: 0, y: 0}
+  endPos: {x: 0, y: 0}
 --- !u!1 &1156985377
 GameObject:
   m_ObjectHideFlags: 0
@@ -8304,7 +8927,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1217808225}
   - component: {fileID: 1217808226}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: GlowTiles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8530,7 +9153,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1231303387}
   - component: {fileID: 1231303386}
-  m_Layer: 0
+  - component: {fileID: 1231303388}
+  m_Layer: 31
   m_Name: TilesB4
   m_TagString: Swappable Tile
   m_Icon: {fileID: 0}
@@ -8582,6 +9206,22 @@ Transform:
   m_Father: {fileID: 2008565934}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1231303388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1231303385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2bb7f50036364151867028aa45d3a9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  row: 1
+  collumn: 3
+  startPos: {x: 0, y: 0}
+  endPos: {x: 0, y: 0}
 --- !u!1 &1248071307
 GameObject:
   m_ObjectHideFlags: 0
@@ -8911,7 +9551,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1330891387}
   - component: {fileID: 1330891388}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: hardfloor_0 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9208,7 +9848,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1390700899}
   - component: {fileID: 1390700898}
-  m_Layer: 0
+  - component: {fileID: 1390700900}
+  m_Layer: 31
   m_Name: TilesB2
   m_TagString: Swappable Tile
   m_Icon: {fileID: 0}
@@ -9260,6 +9901,22 @@ Transform:
   m_Father: {fileID: 2008565934}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1390700900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1390700897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2bb7f50036364151867028aa45d3a9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  row: 1
+  collumn: 1
+  startPos: {x: 0, y: 0}
+  endPos: {x: 0, y: 0}
 --- !u!1 &1390991557
 GameObject:
   m_ObjectHideFlags: 0
@@ -9426,7 +10083,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1437216530}
   - component: {fileID: 1437216531}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: hardfloor_0 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9682,6 +10339,85 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1475711377
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1475711378}
+  - component: {fileID: 1475711380}
+  - component: {fileID: 1475711379}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1475711378
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1475711377}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 94624222}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1475711379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1475711377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 743847be539b243b3bb9b13e5cda6f71, type: 3}
+    m_FontSize: 50
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 50
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Tile Swap
+--- !u!222 &1475711380
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1475711377}
+  m_CullTransparentMesh: 0
 --- !u!1 &1488050342
 GameObject:
   m_ObjectHideFlags: 0
@@ -10391,7 +11127,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1630207362}
   - component: {fileID: 1630207363}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: hardfloor_0 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10560,7 +11296,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1643082463}
   - component: {fileID: 1643082464}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: hardfloor_0 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10915,7 +11651,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1700859082}
   - component: {fileID: 1700859083}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: hardfloor_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11548,7 +12284,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1783164238}
   - component: {fileID: 1783164239}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: hardfloor_0 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11755,7 +12491,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1846440627}
   - component: {fileID: 1846440628}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: hardfloor_0 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11835,7 +12571,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1865200555}
   - component: {fileID: 1865200556}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: hardfloor_0 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12012,7 +12748,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1885450575}
   - component: {fileID: 1885450576}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: hardfloor_0 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12092,7 +12828,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1885922808}
   - component: {fileID: 1885922809}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: hardfloor_0 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12368,7 +13104,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1902168557}
   - component: {fileID: 1902168558}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: hardfloor_0 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12448,7 +13184,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1917240402}
   - component: {fileID: 1917240401}
-  m_Layer: 0
+  - component: {fileID: 1917240403}
+  m_Layer: 31
   m_Name: TilesB3
   m_TagString: Swappable Tile
   m_Icon: {fileID: 0}
@@ -12500,6 +13237,22 @@ Transform:
   m_Father: {fileID: 2008565934}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1917240403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1917240400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2bb7f50036364151867028aa45d3a9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  row: 1
+  collumn: 2
+  startPos: {x: 0, y: 0}
+  endPos: {x: 0, y: 0}
 --- !u!1 &1953695325
 GameObject:
   m_ObjectHideFlags: 0
@@ -12544,7 +13297,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1983154942}
   - component: {fileID: 1983154943}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: hardfloor_0 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12624,7 +13377,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2000869925}
   - component: {fileID: 2000869926}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: hardfloor_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12704,7 +13457,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2004827712}
   - component: {fileID: 2004827713}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: hardfloor_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12784,6 +13537,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2008565934}
   - component: {fileID: 2008565933}
+  - component: {fileID: 2008565935}
   m_Layer: 0
   m_Name: TileSwap
   m_TagString: Untagged
@@ -12798,7 +13552,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2008565932}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8d0bf74d3547544d2a16b4e7f12638d1, type: 3}
   m_Name: 
@@ -12828,6 +13582,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2008565935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2008565932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 866bacf4d53f34e0cab84873c643db76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arrayRow1:
+  - {fileID: 1019012700}
+  - {fileID: 429068009}
+  - {fileID: 831867284}
+  - {fileID: 1156981604}
+  arrayRow2:
+  - {fileID: 815676673}
+  - {fileID: 1390700897}
+  - {fileID: 1917240400}
+  - {fileID: 1231303385}
 --- !u!1 &2010297351
 GameObject:
   m_ObjectHideFlags: 0
@@ -12999,7 +13775,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2035059763}
   - component: {fileID: 2035059764}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: hardfloor_0 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
