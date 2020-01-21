@@ -1,14 +1,21 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Fungus;
 
 public class TileSlide : MonoBehaviour
 {
 
     public GameObject[] arrayRow1;
     public GameObject[] arrayRow2;
+    public GameObject[] arrayRow3;
+    public string puzzleSolution;
+    public Flowchart outFlow;
+    public string fungusBool;
 
     private GameObject[,] multiArray;
+    private GameObject[,] startingObjects;
+    private Vector2[,] startingPositions;
     private GameObject selectedObject;
     private GameObject swipeObject;
     private bool enableSwap;
@@ -17,27 +24,42 @@ public class TileSlide : MonoBehaviour
     private Vector2 endTouch;
     private Vector2 clickTilePos;
     private Vector2 swipeTilePos;
+    private float distance;
     private CharacterMovement CMScript;
     private CameraInteractions CIScript;
+    private RoryPartSwap RPSScript;
     private float swipeAngle;
     private SlideableTile selectedScript;
     private SlideableTile swipeScript;
 
     // Start is called before the first frame update
+    
+
     void Start()
     {
         enableSwap = false;
+        RPSScript = GameObject.Find("VirtualRory").GetComponent<RoryPartSwap>();
         CMScript = GameObject.Find("VirtualRory").GetComponent<CharacterMovement>();
         CIScript = Camera.main.GetComponent<CameraInteractions>();
-        multiArray = new GameObject[2, arrayRow1.Length];
+        //creating a 2D array from 3 separate arrays
+        multiArray = new GameObject[3, arrayRow1.Length];
         for (int i = 0; i < arrayRow1.Length; i++)
         {
             multiArray[0, i] = arrayRow1[i];
             multiArray[1, i] = arrayRow2[i];
-            //Debug.Log(multiArray[0, i]);
+            multiArray[2, i] = arrayRow3[i];
         }
-        //Debug.Log(multiArray[0, 0]);
-        //StartSwap();
+        //storing tile info for reset button
+        startingPositions = new Vector2[multiArray.GetLength(0),multiArray.GetLength(1)];
+        startingObjects = new GameObject[multiArray.GetLength(0), multiArray.GetLength(1)];
+        for (var i = 0; i < multiArray.GetLength(0); i++)
+        {
+            for (var j = 0; j < multiArray.GetLength(1); j++)
+            {
+                startingPositions[i, j] = multiArray[i, j].transform.position;
+                startingObjects[i, j] = multiArray[i, j];
+            }
+        }
     }
 
     // Update is called once per frame
@@ -47,9 +69,7 @@ public class TileSlide : MonoBehaviour
         {
             if (Input.touches.Length > 0)
             {
-                //Vector3 cameraStart = Camera.main.transform.position;
-                //Vector3 cameraEnd = new Vector3;
-                //Camera.main.transform.position = Vector3.Lerp()
+                
                 Touch touch = Input.GetTouch(0);
                 RaycastHit2D rayHit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(touch.position), Camera.main.transform.forward);
                 //if (rayHit.collider.name == this.name)
@@ -66,7 +86,6 @@ public class TileSlide : MonoBehaviour
                                 clickTilePos = rayHit.collider.gameObject.transform.position;
                                 selectedObject = rayHit.collider.gameObject;
                                 selectedScript = selectedObject.GetComponent<SlideableTile>();
-                                //Debug.Log(selectedObject + " is positioned at " + clickTilePos);
                             }
 
                         }
@@ -75,16 +94,16 @@ public class TileSlide : MonoBehaviour
                     case TouchPhase.Moved:
                         direction = Camera.main.ScreenToWorldPoint(touch.position);
                         swipeAngle = Mathf.Atan2(direction.y - startTouch.y, direction.x - startTouch.x) * 180 / Mathf.PI;
-                        //Debug.Log(swipeAngle);
-
-                        //MovePieces();
-
                         break;
 
                     case TouchPhase.Ended:
                         endTouch = Camera.main.ScreenToWorldPoint(touch.position);
-                        MovePieces();
-                        //clickTile = false;
+                        distance = Vector2.Distance(startTouch, endTouch);
+                        //Debug.Log(distance);
+                        if (distance >= 2)
+                        {
+                            MovePieces();
+                        }
                         break;
                 }
 
@@ -94,7 +113,7 @@ public class TileSlide : MonoBehaviour
 
     void MovePieces()
     {
-        if(swipeAngle > -45 && swipeAngle <= 45 && selectedScript.collumn < arrayRow1.Length-1)
+        if (swipeAngle > -45 && swipeAngle <= 45 && selectedScript.collumn < arrayRow1.Length - 1)
         {
             //right swipe
             swipeObject = multiArray[selectedScript.row, selectedScript.collumn + 1];
@@ -134,7 +153,7 @@ public class TileSlide : MonoBehaviour
             selectedScript.collumn--;
             swipeScript.collumn++;
             //Debug.Log(multiArray[selectedScript.row, selectedScript.collumn-1]);
-        } else if (swipeAngle < -45 && swipeAngle >= -135 && selectedScript.row < 1)
+        } else if (swipeAngle < -45 && swipeAngle >= -135 && selectedScript.row < 2)
         {
             //down swipe
             swipeObject = multiArray[selectedScript.row + 1, selectedScript.collumn];
@@ -152,8 +171,51 @@ public class TileSlide : MonoBehaviour
 
     public void toggleSwap()
     {
-        CMScript.toggleCharacterMove();
+        //CMScript.toggleCharacterMove();
         CIScript.toggleZoom();
+        RPSScript.ChangeVisibility(enableSwap);
         enableSwap = !enableSwap;
+    }
+
+    public void CheckPuzzle()
+    {
+        string s = "";
+        for (var i = 0; i < multiArray.GetLength(0); i++)
+        {
+            for (var j = 0; j < multiArray.GetLength(1); j++)
+            {
+                s = s + multiArray[i, j].name;
+            }
+        }
+            //Debug.Log(s + " / " + puzzleSolution);
+        if (s == puzzleSolution)
+        {
+            outFlow.SetBooleanVariable(fungusBool, true);
+            //Debug.Log("success");
+        }
+        for (var i = 0; i < multiArray.GetLength(0); i++)
+        {
+            for (var j = 0; j < multiArray.GetLength(1); j++)
+            {
+                startingObjects[i, j] = multiArray[i, j];
+                startingPositions[i, j] = multiArray[i, j].transform.position;
+            }
+        }
+    }
+
+    public void ResetPuzzle()
+    {
+        SlideableTile tempScript;
+        for (var i = 0; i < startingObjects.GetLength(0); i++)
+        {
+            for (var j = 0; j < startingObjects.GetLength(1); j++)
+            {
+                multiArray[i, j] = startingObjects[i, j];
+                tempScript = multiArray[i, j].GetComponent<SlideableTile>();
+                tempScript.endPos = startingPositions[i,j];
+                tempScript.row = i;
+                tempScript.collumn = j;
+            }
+        }
     }
 }

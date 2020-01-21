@@ -78,7 +78,7 @@ public class Footsteps : MonoBehaviour
                 //Instantiate(footstepParticles, dustLocation.transform.position, particleRotation);
             } else
             {
-                Debug.Log("I don't know what the fuck you're standing on");
+                //Debug.Log("I don't know what the fuck you're standing on");
             }
             footstepPlayer.Play();
             Instantiate(footstepParticles, dustLocation.transform.position, particleRotation);

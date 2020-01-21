@@ -17,6 +17,7 @@ public class RoryPartSwap : MonoBehaviour
     private Transform LegR;
     private Transform BodyParent;
     private Transform parentHolder;
+    private GameObject roryHider;
     private Vector3[] slotPositions;
     //private Draggable staticVarAccess;
 
@@ -29,7 +30,8 @@ public class RoryPartSwap : MonoBehaviour
         ArmR = transform.Find("VRMover/VRBody/VirtualRoryBody/VRArmR");
         LegL = transform.Find("VRMover/VRLegL");
         LegR = transform.Find("VRMover/VRLegR");
-        BodyParent = transform.Find("VRMover/VRBody/VirtualRoryBody"); 
+        BodyParent = transform.Find("VRMover/VRBody/VirtualRoryBody");
+        roryHider = GameObject.Find("VRMover");
         //noParent = transform.Find("VRMover");
         //slotPositions = new Vector3[] { Head.position, Body.position, ArmR.position, LegR.position, LegL.position, ArmL.position };
         slotPositions = new Vector3[] { locationRef[0].position, locationRef[1].position, locationRef[2].position, locationRef[3].position, locationRef[4].position, locationRef[5].position };
@@ -246,6 +248,11 @@ public class RoryPartSwap : MonoBehaviour
             }
         }
         #endregion
+    }
+
+    public void ChangeVisibility(bool RoryVisible)
+    {
+        roryHider.SetActive(RoryVisible);
     }
 
 }
