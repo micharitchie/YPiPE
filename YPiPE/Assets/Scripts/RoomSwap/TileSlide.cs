@@ -6,18 +6,20 @@ using Fungus;
 public class TileSlide : MonoBehaviour
 {
 
-    public GameObject[] arrayRow1;
-    public GameObject[] arrayRow2;
-    public GameObject[] arrayRow3;
     public string puzzleSolution;
     public Flowchart outFlow;
     public string fungusBool;
+    public string storageObjectName;
+    public GameObject[] arrayRow1;
+    public GameObject[] arrayRow2;
+    public GameObject[] arrayRow3;
+    public GameObject[,] multiArray;
 
-    private GameObject[,] multiArray;
-    private GameObject[,] startingObjects;
-    private Vector2[,] startingPositions;
     private GameObject selectedObject;
     private GameObject swipeObject;
+    private GameObject storageObject;
+    private GameObject[,] startingObjects;
+    private Vector2[,] startingPositions;
     private bool enableSwap;
     private Vector2 startTouch;
     private Vector2 direction;
@@ -31,16 +33,13 @@ public class TileSlide : MonoBehaviour
     private float swipeAngle;
     private SlideableTile selectedScript;
     private SlideableTile swipeScript;
+    private StoreOrientation storeScript;
 
     // Start is called before the first frame update
-    
 
-    void Start()
+
+    private void Awake()
     {
-        enableSwap = false;
-        RPSScript = GameObject.Find("VirtualRory").GetComponent<RoryPartSwap>();
-        CMScript = GameObject.Find("VirtualRory").GetComponent<CharacterMovement>();
-        CIScript = Camera.main.GetComponent<CameraInteractions>();
         //creating a 2D array from 3 separate arrays
         multiArray = new GameObject[3, arrayRow1.Length];
         for (int i = 0; i < arrayRow1.Length; i++)
@@ -49,6 +48,20 @@ public class TileSlide : MonoBehaviour
             multiArray[1, i] = arrayRow2[i];
             multiArray[2, i] = arrayRow3[i];
         }
+        
+    }
+    void Start()
+    {
+        enableSwap = false;
+        RPSScript = GameObject.Find("VirtualRory").GetComponent<RoryPartSwap>();
+        CMScript = GameObject.Find("VirtualRory").GetComponent<CharacterMovement>();
+        CIScript = Camera.main.GetComponent<CameraInteractions>();
+        if (!string.IsNullOrEmpty(storageObjectName))
+        {
+            storageObject = GameObject.Find(storageObjectName);
+            storeScript = storageObject.GetComponent<StoreOrientation>();
+        }
+        
         //storing tile info for reset button
         startingPositions = new Vector2[multiArray.GetLength(0),multiArray.GetLength(1)];
         startingObjects = new GameObject[multiArray.GetLength(0), multiArray.GetLength(1)];
@@ -199,6 +212,11 @@ public class TileSlide : MonoBehaviour
             {
                 startingObjects[i, j] = multiArray[i, j];
                 startingPositions[i, j] = multiArray[i, j].transform.position;
+                if (!string.IsNullOrEmpty(storageObjectName))
+                {
+                    storeScript.objectName[i, j] = multiArray[i,j].name;
+                    storeScript.objectPosition[i, j] = multiArray[i, j].transform.position;
+                }
             }
         }
     }
@@ -217,5 +235,10 @@ public class TileSlide : MonoBehaviour
                 tempScript.collumn = j;
             }
         }
+    }
+
+    public void RememberOrientation()
+    {
+        storeScript.RememberOrientation();  
     }
 }
