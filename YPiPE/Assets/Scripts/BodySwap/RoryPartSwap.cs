@@ -253,11 +253,7 @@ public class RoryPartSwap : MonoBehaviour
             myDrag[i].startTarget = i;
             myDrag[i].SetParts();
         }
-        /*startTarget = partLocations[partLocationRef];
-        startPos = dropTargets[startTarget].transform.position;
-        transform.position = startPos;
-        dropScripts[startTarget].dropContents = gameObject;
-        rotateBodyParts();*/
+        
     }
 
 }

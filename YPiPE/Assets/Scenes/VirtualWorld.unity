@@ -43310,7 +43310,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 361329521}
+  selectedFlowchart: {fileID: 1367515413}
 --- !u!4 &340960997
 Transform:
   m_ObjectHideFlags: 1
@@ -43587,7 +43587,7 @@ GameObject:
   m_IsActive: 1
 --- !u!114 &361329514
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -43735,7 +43735,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scope: 2
   key: CloneDestroy
-  value: 1
+  value: 0
 --- !u!114 &361329520
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -43794,8 +43794,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 361329520}
-  selectedCommands:
-  - {fileID: 361329514}
+  selectedCommands: []
   variables:
   - {fileID: 361329518}
   - {fileID: 361329519}
@@ -43825,7 +43824,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &361329523
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -43910,7 +43909,7 @@ MonoBehaviour:
     vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &361329525
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -59370,7 +59369,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1027464167
 RectTransform:
   m_ObjectHideFlags: 0
@@ -106651,7 +106650,10 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1202272541}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 1202272606}
+  - {fileID: 1202272632}
+  - {fileID: 1202272604}
   variables:
   - {fileID: 1202272597}
   - {fileID: 1202272605}
@@ -111678,7 +111680,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1260368978
 RectTransform:
   m_ObjectHideFlags: 0
@@ -115028,6 +115030,10 @@ GameObject:
   - component: {fileID: 1367515536}
   - component: {fileID: 1367515537}
   - component: {fileID: 1367515538}
+  - component: {fileID: 1367515542}
+  - component: {fileID: 1367515541}
+  - component: {fileID: 1367515540}
+  - component: {fileID: 1367515539}
   m_Layer: 0
   m_Name: Ending
   m_TagString: Untagged
@@ -115082,6 +115088,9 @@ MonoBehaviour:
   - {fileID: 1367515418}
   - {fileID: 1367515416}
   - {fileID: 1367515417}
+  - {fileID: 1367515541}
+  - {fileID: 1367515540}
+  - {fileID: 1367515539}
   - {fileID: 1367515478}
   - {fileID: 1367515477}
   - {fileID: 1367515476}
@@ -115123,10 +115132,11 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1367515412}
   selectedCommands:
-  - {fileID: 1367515415}
+  - {fileID: 1367515417}
   variables:
   - {fileID: 1367515490}
   - {fileID: 1367515529}
+  - {fileID: 1367515542}
   - {fileID: 1367515422}
   - {fileID: 1367515421}
   - {fileID: 1367515420}
@@ -118909,7 +118919,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scope: 2
   key: MayorSculpture
-  value: 1
+  value: 0
 --- !u!114 &1367515530
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -119194,6 +119204,127 @@ MonoBehaviour:
   returnValueType: System.Void
   showInherited: 0
   callMode: 0
+--- !u!114 &1367515539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1367515410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93cb9773f2ca04e2bbf7a68ccfc23267, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 339
+  indentLevel: 0
+--- !u!114 &1367515540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1367515410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 338
+  indentLevel: 1
+  description: 
+  targetObject: {fileID: 914380649}
+  targetComponentAssemblyName: RoryPartSwap, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: RoryPartSwap
+  targetMethod: SwapParts
+  targetMethodText: 'SwapParts (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &1367515541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1367515410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70c5622b8a80845c980954170295f292, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 337
+  indentLevel: 0
+  compareOperator: 0
+  variable: {fileID: 1202272605}
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
+  animatorData:
+    animatorRef: {fileID: 0}
+    animatorVal: {fileID: 0}
+  audioSourceData:
+    audioSourceRef: {fileID: 0}
+    audioSourceVal: {fileID: 0}
+  colorData:
+    colorRef: {fileID: 0}
+    colorVal: {r: 0, g: 0, b: 0, a: 0}
+  gameObjectData:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 0}
+  materialData:
+    materialRef: {fileID: 0}
+    materialVal: {fileID: 0}
+  objectData:
+    objectRef: {fileID: 0}
+    objectVal: {fileID: 0}
+  rigidbody2DData:
+    rigidbody2DRef: {fileID: 0}
+    rigidbody2DVal: {fileID: 0}
+  spriteData:
+    spriteRef: {fileID: 0}
+    spriteVal: {fileID: 0}
+  textureData:
+    textureRef: {fileID: 0}
+    textureVal: {fileID: 0}
+  transformData:
+    transformRef: {fileID: 0}
+    transformVal: {fileID: 0}
+  vector2Data:
+    vector2Ref: {fileID: 0}
+    vector2Val: {x: 0, y: 0}
+  vector3Data:
+    vector3Ref: {fileID: 0}
+    vector3Val: {x: 0, y: 0, z: 0}
+--- !u!114 &1367515542
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1367515410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 2
+  key: BodySwap
+  value: 0
 --- !u!1 &1371112692
 GameObject:
   m_ObjectHideFlags: 0

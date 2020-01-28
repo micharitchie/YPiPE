@@ -39,12 +39,7 @@ public class BodySwapPuzzle : MonoBehaviour
         legRLoc = Draggable.partLocations[3];
         legLLoc = Draggable.partLocations[4];
         armLLoc = Draggable.partLocations[5];
-        /*headLoc = outFlow.GetIntegerVariable("HeadLocation");
-        bodyLoc = outFlow.GetIntegerVariable("BodyLocation");
-        armRLoc = outFlow.GetIntegerVariable("ArmRLocation");
-        legRLoc = outFlow.GetIntegerVariable("LegRLocation");
-        legLLoc = outFlow.GetIntegerVariable("LegLLocation");
-        armLLoc = outFlow.GetIntegerVariable("ArmLLocation");*/
+        
         currentOrientation = headLoc.ToString() + bodyLoc.ToString() + armRLoc.ToString() + legRLoc.ToString() + legLLoc.ToString() + armLLoc.ToString();
         for (int i = 0; i < possibleCombinations.Length; i++)
         {
