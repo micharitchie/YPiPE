@@ -46,4 +46,14 @@ public class InteractableObjects : MonoBehaviour
             targetFlowchart.SetBooleanVariable(fungusBool, false);
         }
     }
+
+    public void ChangeUI(GameObject newUI)
+    {
+        lookUI = newUI;
+    }
+
+    public void ChangeFlow(Flowchart newFlow )
+    {
+        targetFlowchart = newFlow;
+    }
 }

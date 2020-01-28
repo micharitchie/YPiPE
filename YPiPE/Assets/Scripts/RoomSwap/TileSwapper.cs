@@ -11,14 +11,12 @@ public class TileSwapper : MonoBehaviour
     //private Transform secondSelected;
     private Vector3 tempPosition;
     private CharacterMovement CMScript;
-    private CameraInteractions CIScript;
     private bool enableSwap;
 
     // Start is called before the first frame update
     void Start()
     {
         CMScript = GameObject.Find("VirtualRory").GetComponent<CharacterMovement>();
-        CIScript = Camera.main.GetComponent<CameraInteractions>();
     }
 
     // Update is called once per frame
@@ -79,7 +77,6 @@ public void FinishSwap()
             firstSelected = null;
         }
         CMScript.toggleCharacterMove();
-        CIScript.toggleZoom();
         enableSwap = false;
         startButton.SetActive(true);
     }
@@ -88,7 +85,6 @@ public void FinishSwap()
     {
         enableSwap = true;
         CMScript.toggleCharacterMove();
-        CIScript.toggleZoom();
         finishButton.SetActive(true);
     }
 }

@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
-//using UnityEngine.UI;
-using Fungus;
 
 public class Draggable : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler
 {
@@ -12,8 +10,6 @@ public class Draggable : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDra
     public GameObject[] dropTargets;//stores the droppable locations
     public int startTarget;//stores which drop target body part starts on
     public int partDirection;//0=up, 1=right, 2=down, 3=left
-    //public Flowchart flowOutput;//stores a reference to the Fungus flowchart
-    //public string fungusVariable;//targets flowchart variable to store body part location
     public int partLocationRef;
 
     private GameObject itemBeingDragged;//temporarily stores object being dragged
@@ -21,10 +17,8 @@ public class Draggable : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDra
     private GameObject swapRef;//temporarily stores object being replaced at a drop target
     private Droppable[] dropScripts;//provides access to drop target variables 
     private Draggable[] otherParts;//provides access to variables on other body parts
-    //private RoryPartSwap RPSScript;//was storing a reference to player, but no longer accessing those methods from this script
 
 
-    // Start is called before the first frame update
     void Awake()
     {
         dropScripts = new Droppable[dropTargets.Length];
@@ -35,7 +29,6 @@ public class Draggable : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDra
             otherParts[i] = dropScripts[i].dropContents.GetComponent<Draggable>();
         }
         startPos = transform.position;
-        //RPSScript = GameObject.Find("VirtualRory").GetComponent<RoryPartSwap>();
     }
 
     public void OnBeginDrag(PointerEventData eventData)
@@ -92,7 +85,15 @@ public class Draggable : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDra
     public void pullPartLoc()
     {
         startTarget = partLocations[partLocationRef];
-        //startTarget = flowOutput.GetIntegerVariable(fungusVariable);
+        /*startPos = dropTargets[startTarget].transform.position;
+        transform.position = startPos;
+        dropScripts[startTarget].dropContents = gameObject;
+        rotateBodyParts();*/
+        SetParts();
+    }
+
+    public void SetParts()
+    {
         startPos = dropTargets[startTarget].transform.position;
         transform.position = startPos;
         dropScripts[startTarget].dropContents = gameObject;
@@ -181,10 +182,6 @@ public class Draggable : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDra
     {
         //write part location to static int variable
         partLocations[partLocationRef] = startTarget;
-        //write to global variable in Fungus
-        /*if (flowOutput != null)
-        {
-            flowOutput.SetIntegerVariable(fungusVariable, startTarget);
-        }*/
+        
     }
 }

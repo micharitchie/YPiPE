@@ -27,8 +27,7 @@ public class TileSlide : MonoBehaviour
     private Vector2 clickTilePos;
     private Vector2 swipeTilePos;
     private float distance;
-    private CharacterMovement CMScript;
-    private CameraInteractions CIScript;
+    //private CharacterMovement CMScript;
     private RoryPartSwap RPSScript;
     private float swipeAngle;
     private SlideableTile selectedScript;
@@ -54,8 +53,7 @@ public class TileSlide : MonoBehaviour
     {
         enableSwap = false;
         RPSScript = GameObject.Find("VirtualRory").GetComponent<RoryPartSwap>();
-        CMScript = GameObject.Find("VirtualRory").GetComponent<CharacterMovement>();
-        CIScript = Camera.main.GetComponent<CameraInteractions>();
+        //CMScript = GameObject.Find("VirtualRory").GetComponent<CharacterMovement>();
         if (!string.IsNullOrEmpty(storageObjectName))
         {
             storageObject = GameObject.Find(storageObjectName);
@@ -185,7 +183,6 @@ public class TileSlide : MonoBehaviour
     public void toggleSwap()
     {
         //CMScript.toggleCharacterMove();
-        CIScript.toggleZoom();
         RPSScript.ChangeVisibility(enableSwap);
         enableSwap = !enableSwap;
     }

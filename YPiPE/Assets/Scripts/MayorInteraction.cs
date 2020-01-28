@@ -166,4 +166,9 @@ public class MayorInteraction : MonoBehaviour
         }
     }
 
+    public void changeFlow(Flowchart newFlow)
+    {
+        partyFlowchart = newFlow;
+    }
+
 }

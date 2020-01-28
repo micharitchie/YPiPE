@@ -33,4 +33,9 @@ public class DoorFader : MonoBehaviour
 		doorAnimator.SetFloat("Direction", 0);
 
 	}
+
+    public void SetAnimState(string newState)
+    {
+        animState = newState;
+    }
 }

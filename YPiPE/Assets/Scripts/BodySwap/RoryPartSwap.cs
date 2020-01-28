@@ -1,13 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Fungus;
 
 public class RoryPartSwap : MonoBehaviour
 {
     //public bool testParenting;
     public Transform[] locationRef;
-    //public Flowchart FlowInput;
 
     private Transform Head;
 	private Transform Body;
@@ -66,18 +64,7 @@ public class RoryPartSwap : MonoBehaviour
         locationRef[Draggable.partLocations[3]] = LegR;
         locationRef[Draggable.partLocations[4]] = LegL;
         locationRef[Draggable.partLocations[5]] = ArmL;
-        /*Head.position = slotPositions[FlowInput.GetIntegerVariable("HeadLocation")];
-        Body.position = slotPositions[FlowInput.GetIntegerVariable("BodyLocation")];
-        ArmR.position = slotPositions[FlowInput.GetIntegerVariable("ArmRLocation")];
-        LegR.position = slotPositions[FlowInput.GetIntegerVariable("LegRLocation")];
-        LegL.position = slotPositions[FlowInput.GetIntegerVariable("LegLLocation")];
-        ArmL.position = slotPositions[FlowInput.GetIntegerVariable("ArmLLocation")];
-        locationRef[FlowInput.GetIntegerVariable("HeadLocation")] = Head;
-        locationRef[FlowInput.GetIntegerVariable("BodyLocation")] = Body;
-        locationRef[FlowInput.GetIntegerVariable("ArmRLocation")] = ArmR;
-        locationRef[FlowInput.GetIntegerVariable("LegRLocation")] = LegR;
-        locationRef[FlowInput.GetIntegerVariable("LegLLocation")] = LegL;
-        locationRef[FlowInput.GetIntegerVariable("ArmLLocation")] = ArmL;*/
+        
         SetRotation();
         //SetParent();
     }
@@ -98,12 +85,7 @@ public class RoryPartSwap : MonoBehaviour
         int legRInt = Draggable.partLocations[3];
         int legLInt = Draggable.partLocations[4];
         int armLInt = Draggable.partLocations[5];
-        /*int headInt = FlowInput.GetIntegerVariable("HeadLocation");
-        int bodyInt = FlowInput.GetIntegerVariable("BodyLocation");
-        int armRInt = FlowInput.GetIntegerVariable("ArmRLocation");
-        int legRInt = FlowInput.GetIntegerVariable("LegRLocation");
-        int legLInt = FlowInput.GetIntegerVariable("LegLLocation");
-        int armLInt = FlowInput.GetIntegerVariable("ArmLLocation");*/
+        
         #region Head Conditionals
         if (headInt == 0)
         {
@@ -253,6 +235,29 @@ public class RoryPartSwap : MonoBehaviour
     public void ChangeVisibility(bool RoryVisible)
     {
         roryHider.SetActive(RoryVisible);
+    }
+
+    public void ResetRory()
+    {
+        GameObject UIHead = GameObject.Find("CanvasShelf/BodySwapper/HeadDrag");
+        GameObject UIBody = GameObject.Find("CanvasShelf/BodySwapper/BodyDrag");
+        GameObject UIArmR = GameObject.Find("CanvasShelf/BodySwapper/ArmRDrag");
+        GameObject UILegR = GameObject.Find("CanvasShelf/BodySwapper/LegRDrag");
+        GameObject UILegL = GameObject.Find("CanvasShelf/BodySwapper/LegLDrag");
+        GameObject UIArmL = GameObject.Find("CanvasShelf/BodySwapper/ArmLDrag");
+        Draggable[] myDrag = { UIHead.GetComponent<Draggable>(), UIBody.GetComponent<Draggable>(),
+        UIArmR.GetComponent<Draggable>(), UILegR.GetComponent<Draggable>(),
+        UILegL.GetComponent<Draggable>(), UIArmL.GetComponent<Draggable>()};
+        for (int i = 0; i < myDrag.Length; i++)
+        {
+            myDrag[i].startTarget = i;
+            myDrag[i].SetParts();
+        }
+        /*startTarget = partLocations[partLocationRef];
+        startPos = dropTargets[startTarget].transform.position;
+        transform.position = startPos;
+        dropScripts[startTarget].dropContents = gameObject;
+        rotateBodyParts();*/
     }
 
 }
