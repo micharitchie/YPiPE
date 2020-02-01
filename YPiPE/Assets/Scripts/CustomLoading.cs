@@ -7,11 +7,13 @@ public class CustomLoading : MonoBehaviour
 {
 
 	private SaveMenu mySaveMenu;
+    private Flowchart myGV;
 
     // Start is called before the first frame update
     void Start()
     {
-        mySaveMenu = FindObjectOfType<SaveMenu>();  
+        mySaveMenu = FindObjectOfType<SaveMenu>();
+        myGV = GameObject.Find("GlobalVariables").GetComponent<Flowchart>();
     }
 
     public void LoadSave()
@@ -26,6 +28,7 @@ public class CustomLoading : MonoBehaviour
     {
         if (mySaveMenu != null)
         {
+            myGV.Reset(true, true);
             mySaveMenu.Restart();
         }
     }
