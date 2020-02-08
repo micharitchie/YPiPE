@@ -6,16 +6,15 @@ public class PodInteraction : MonoBehaviour
 {
     public GameObject doorUI;
     public Transform setLocation;
-    //public GameObject doorIndicator;
 
     private Animator doorAnimator;
-    //private Animation doorAnimation;
+    private AudioSource doorSound;
 
     // Start is called before the first frame update
     void Start()
     {
         doorAnimator = GetComponent<Animator>();
-        //doorAnimation = GetComponent<Animation>();
+        doorSound = GetComponent<AudioSource>();
     }
 
 
@@ -26,8 +25,8 @@ public class PodInteraction : MonoBehaviour
         Vector3 buttonLocation = new Vector3(setLocation.position.x + 2.3f, setLocation.position.y + 4.2f, setLocation.position.z);
         doorUI.transform.position = buttonLocation;
         doorUI.SetActive(true);
-        //doorIndicator.SetActive(true);
-        
+        doorSound.Stop();
+        doorSound.Play();
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -41,8 +40,8 @@ public class PodInteraction : MonoBehaviour
         doorAnimator.SetFloat("Direction", -1);
         doorAnimator.Play("DoorOpen");
         doorUI.SetActive(false);
-        //doorIndicator.SetActive(true);
-        //Debug.Log(doorAnimator.GetCurrentAnimatorStateInfo(0).speed);
+        doorSound.Stop();
+        doorSound.Play();
     }
      
    public void StopAnimationSpeed()

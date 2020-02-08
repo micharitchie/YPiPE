@@ -6491,6 +6491,7 @@ GameObject:
   - component: {fileID: 706125848}
   - component: {fileID: 706125846}
   - component: {fileID: 706125847}
+  - component: {fileID: 706125849}
   m_Layer: 0
   m_Name: PodExt
   m_TagString: Untagged
@@ -6654,6 +6655,102 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.39, y: 6.626258}
   m_EdgeRadius: 0
+--- !u!82 &706125849
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 706125842}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 647810b6c88c74882a68934d5f954acc, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &730465463
 GameObject:
   m_ObjectHideFlags: 0
@@ -15331,6 +15428,9 @@ GameObject:
   - component: {fileID: 1649490090}
   - component: {fileID: 1649490089}
   - component: {fileID: 1649490093}
+  - component: {fileID: 1649490094}
+  - component: {fileID: 1649490096}
+  - component: {fileID: 1649490095}
   m_Layer: 0
   m_Name: GameStart
   m_TagString: Untagged
@@ -15392,19 +15492,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 286.8194, y: 234.5045}
+  scrollPos: {x: 91.28695, y: 134.30928}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.5000011
+  zoom: 0.7180029
   scrollViewRect:
     serializedVersion: 2
     x: -343
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 1649490062}
+  selectedCommands:
+  - {fileID: 1649490095}
   variables:
   - {fileID: 1649490058}
   - {fileID: 1649490079}
@@ -15511,7 +15613,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 404.76825
     y: -48.35809
-    width: 176.99973
+    width: 176.04407
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -15549,6 +15651,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1649490052}
+  - {fileID: 1649490094}
   - {fileID: 1649490057}
   - {fileID: 1649490060}
 --- !u!114 &1649490055
@@ -15586,7 +15689,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 11
   indentLevel: 0
-  storyText: Looks like I'm out of the virtual world. Better go back in.
+  storyText: Hey, how did I end up back in the real world.
   description: 
   character: {fileID: 88565296}
   portrait: {fileID: 0}
@@ -15797,6 +15900,8 @@ MonoBehaviour:
   - {fileID: 1649490067}
   - {fileID: 1649490066}
   - {fileID: 1649490056}
+  - {fileID: 1649490096}
+  - {fileID: 1649490095}
   - {fileID: 1649490064}
   - {fileID: 1649490093}
   - {fileID: 1649490065}
@@ -16098,7 +16203,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 641.17865
     y: -38.50493
-    width: 120
+    width: 121.03035
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -16280,7 +16385,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 891.1779
     y: 63.494938
-    width: 130.99982
+    width: 130.77962
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -16677,6 +16782,79 @@ MonoBehaviour:
     floatRef: {fileID: 0}
     floatVal: 0
   targetGameObjectOLD: {fileID: 0}
+--- !u!114 &1649490094
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1649490045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1902400ccc99b45d69ad01cb86b57d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 45
+  indentLevel: 0
+  musicClip: {fileID: 8300000, guid: 3355a066d7a2d4ff28eb46b0a04ad19f, type: 3}
+  atTime: 0
+  loop: 1
+  fadeDuration: 1
+--- !u!114 &1649490095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1649490045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 47
+  indentLevel: 0
+  storyText: I better get back in there and try to meet some other Virtuatoids.
+  description: 
+  character: {fileID: 88565296}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1649490096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1649490045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 46
+  indentLevel: 0
+  storyText: I guess when I said I wanted to leave they thought I meant the entire
+    world.
+  description: 
+  character: {fileID: 88565296}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!1 &1652544634
 GameObject:
   m_ObjectHideFlags: 0
