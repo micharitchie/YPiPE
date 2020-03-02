@@ -14369,7 +14369,6 @@ GameObject:
   - component: {fileID: 1024867624}
   - component: {fileID: 1024867629}
   - component: {fileID: 1024867628}
-  - component: {fileID: 1024867627}
   - component: {fileID: 1024867625}
   m_Layer: 0
   m_Name: Main Camera
@@ -14494,102 +14493,6 @@ MonoBehaviour:
   - assemblyQualifiedName: RLProWarp, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
   m_AfterStackBundles: []
---- !u!82 &1024867627
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1024867623}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: d8843ae06334e41a796829ad7a9c5773, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 0.5
-  m_Pitch: 1
-  Loop: 1
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 19
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!81 &1024867628
 AudioListener:
   m_ObjectHideFlags: 0
@@ -15627,8 +15530,6 @@ GameObject:
   - component: {fileID: 1086820414}
   - component: {fileID: 1086820413}
   - component: {fileID: 1086820412}
-  - component: {fileID: 1086820411}
-  - component: {fileID: 1086820394}
   - component: {fileID: 1086820474}
   - component: {fileID: 1086820473}
   - component: {fileID: 1086820472}
@@ -15685,6 +15586,23 @@ GameObject:
   - component: {fileID: 1086820512}
   - component: {fileID: 1086820521}
   - component: {fileID: 1086820520}
+  - component: {fileID: 1086820522}
+  - component: {fileID: 1086820536}
+  - component: {fileID: 1086820535}
+  - component: {fileID: 1086820534}
+  - component: {fileID: 1086820533}
+  - component: {fileID: 1086820532}
+  - component: {fileID: 1086820531}
+  - component: {fileID: 1086820394}
+  - component: {fileID: 1086820530}
+  - component: {fileID: 1086820529}
+  - component: {fileID: 1086820528}
+  - component: {fileID: 1086820527}
+  - component: {fileID: 1086820526}
+  - component: {fileID: 1086820525}
+  - component: {fileID: 1086820524}
+  - component: {fileID: 1086820523}
+  - component: {fileID: 1086820411}
   m_Layer: 0
   m_Name: RoomSwapTutorial
   m_TagString: Untagged
@@ -15764,18 +15682,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1086820390}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbd8c931f22994b9d90e2037fffaa770, type: 3}
+  m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 92
-  indentLevel: 0
-  _targetGameObject:
-    gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 744349623}
-  activeState:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  targetGameObjectOLD: {fileID: 0}
+  scope: 0
+  key: RevisitTrainR2
+  value: 0
 --- !u!114 &1086820395
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -15808,7 +15720,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 84
   indentLevel: 0
-  storyText: Then what are you waiting for soldier, move on to the next room.
+  storyText: Then move it!
   description: 
   character: {fileID: 950678395}
   portrait: {fileID: 0}
@@ -16215,25 +16127,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 1086820390}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 91
-  indentLevel: 0
+  itemId: 164
+  indentLevel: 1
+  text: Um... I'm not sure I...
   description: 
-  targetObject: {fileID: 1073779840}
-  targetComponentAssemblyName: CharacterMovement, Assembly-CSharp, Version=0.0.0.0,
-    Culture=neutral, PublicKeyToken=null
-  targetComponentFullname: UnityEngine.Component[]
-  targetComponentText: CharacterMovement
-  targetMethod: toggleCharacterMove
-  targetMethodText: 'toggleCharacterMove (): Void'
-  methodParameters: []
-  saveReturnValue: 0
-  returnValueVariableKey: 
-  returnValueType: System.Void
-  showInherited: 0
-  callMode: 0
+  targetBlock: {fileID: 1086820413}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 1456464081}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
 --- !u!114 &1086820412
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -16248,8 +16157,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 90
   indentLevel: 0
-  storyText: I don't want to send any unpreppared soldiers out, come back to me when
-    you find your courage.
+  storyText: I'm not sure I'm hearing you soldier, I said Are You Ready!!!?
   description: 
   character: {fileID: 950678395}
   portrait: {fileID: 0}
@@ -16277,7 +16185,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 937.7677
-    y: 87.40564
+    y: 82.82551
     width: 144.65619
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -16288,8 +16196,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1086820412}
-  - {fileID: 1086820411}
-  - {fileID: 1086820394}
+  - {fileID: 1086820531}
 --- !u!114 &1086820414
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -16316,6 +16223,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1086820474}
+  - {fileID: 1086820530}
   - {fileID: 1086820473}
   - {fileID: 1086820472}
   - {fileID: 1086820428}
@@ -16336,15 +16244,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 87
-  indentLevel: 0
-  text: Um, I'm not sure I am ready.
+  indentLevel: 1
+  text: No, I'm good.
   description: 
-  targetBlock: {fileID: 1086820413}
+  targetBlock: {fileID: 1086820432}
   hideIfVisited: 0
   interactable:
     booleanRef: {fileID: 0}
     booleanVal: 1
-  setMenuDialog: {fileID: 0}
+  setMenuDialog: {fileID: 1456464081}
   hideThisOption:
     booleanRef: {fileID: 0}
     booleanVal: 0
@@ -16361,7 +16269,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 86
-  indentLevel: 0
+  indentLevel: 1
   text: Sir yes sir!
   description: 
   targetBlock: {fileID: 1086820414}
@@ -16369,7 +16277,7 @@ MonoBehaviour:
   interactable:
     booleanRef: {fileID: 0}
     booleanVal: 1
-  setMenuDialog: {fileID: 0}
+  setMenuDialog: {fileID: 1456464081}
   hideThisOption:
     booleanRef: {fileID: 0}
     booleanVal: 0
@@ -16386,8 +16294,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 85
-  indentLevel: 0
-  storyText: Are you prepared to mix this place up soldier?
+  indentLevel: 1
+  storyText: After politely asking a Virtuatoid to room swap, try to put their puzzle
+    together and earn their respect.
   description: 
   character: {fileID: 950678395}
   portrait: {fileID: 0}
@@ -16475,7 +16384,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 40
   indentLevel: 1
-  storyText: Keep moving soldier, you'll never get anywhere talking to me.
+  storyText: What are you doing soldier, I gave you an order to clear a path and meet
+    me on the other side.
   description: 
   character: {fileID: 950678395}
   portrait: {fileID: 0}
@@ -16607,7 +16517,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 35
-  indentLevel: 0
+  indentLevel: 1
   storyText: There's a hidden word in this puzzle, and I need a soldier like you to
     swap the room around to find it for me.
   description: 
@@ -16635,8 +16545,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 34
-  indentLevel: 0
-  storyText: Now comes the challenges that separates Virtuatoids from Virtua-Voids.
+  indentLevel: 1
+  storyText: Virtuatoids love to make puzzles out of their flooring, to help them
+    achieve feng shui in their home.
   description: 
   character: {fileID: 950678395}
   portrait: {fileID: 0}
@@ -16662,8 +16573,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 33
-  indentLevel: 0
-  storyText: Good work solider! You made it through the easy puzzle.
+  indentLevel: 1
+  storyText: Are you throwing in the towel already solider?
   description: 
   character: {fileID: 950678395}
   portrait: {fileID: 0}
@@ -16717,8 +16628,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 31
   indentLevel: 0
-  storyText: Just swipe a section of the room in the direction of the section you
-    want to swap it with.
+  storyText: Slide the sections of the room up, down, left, right to swap with a section
+    in that direction.
   description: 
   character: {fileID: 950678395}
   portrait: {fileID: 0}
@@ -16745,7 +16656,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 30
   indentLevel: 0
-  storyText: I'll see you on the other side cadet.
+  storyText: After you've cleared a path move forward and I'll see you on the other
+    side.
   description: 
   character: {fileID: 950678395}
   portrait: {fileID: 0}
@@ -16794,7 +16706,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 816.1343
-    y: -92.47452
+    y: -94.00123
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -16821,14 +16733,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 80
   indentLevel: 1
-  text: Sir no sir!
+  text: Nope.
   description: 
   targetBlock: {fileID: 1086820432}
   hideIfVisited: 0
   interactable:
     booleanRef: {fileID: 0}
     booleanVal: 1
-  setMenuDialog: {fileID: 0}
+  setMenuDialog: {fileID: 1456464081}
   hideThisOption:
     booleanRef: {fileID: 0}
     booleanVal: 0
@@ -16853,7 +16765,7 @@ MonoBehaviour:
   interactable:
     booleanRef: {fileID: 0}
     booleanVal: 1
-  setMenuDialog: {fileID: 0}
+  setMenuDialog: {fileID: 1456464081}
   hideThisOption:
     booleanRef: {fileID: 0}
     booleanVal: 0
@@ -16871,7 +16783,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 22
   indentLevel: 0
-  storyText: You'll need to swap these blocks around to create a path forward.
+  storyText: We're blocked in soldier, and you'll need to room swap to get us out.
   description: 
   character: {fileID: 950678395}
   portrait: {fileID: 0}
@@ -16898,7 +16810,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 21
   indentLevel: 0
-  storyText: That's what I like to hear. We're blocked in soldier.
+  storyText: 'That''s what I like to hear. '
   description: 
   character: {fileID: 950678395}
   portrait: {fileID: 0}
@@ -16932,7 +16844,7 @@ MonoBehaviour:
   interactable:
     booleanRef: {fileID: 0}
     booleanVal: 1
-  setMenuDialog: {fileID: 0}
+  setMenuDialog: {fileID: 1456464081}
   hideThisOption:
     booleanRef: {fileID: 0}
     booleanVal: 0
@@ -16950,7 +16862,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 19
   indentLevel: 0
-  storyText: I can't hear you! Are you ready to get mixed up solider?
+  storyText: What! I can't hear you! I said are you ready Private Rory?!?
   description: 
   character: {fileID: 950678395}
   portrait: {fileID: 0}
@@ -17004,7 +16916,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 508.93542
+    x: 507.40872
     y: -113.12676
     width: 120
     height: 40
@@ -17020,6 +16932,7 @@ MonoBehaviour:
   - {fileID: 1086820435}
   - {fileID: 1086820429}
   - {fileID: 1086820430}
+  - {fileID: 1086820534}
   - {fileID: 1086820470}
   - {fileID: 1086820478}
   - {fileID: 1086820497}
@@ -17038,14 +16951,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 16
   indentLevel: 1
-  text: Um, I'm not sure I am ready.
+  text: Um... no not really.
   description: 
   targetBlock: {fileID: 1086820439}
   hideIfVisited: 0
   interactable:
     booleanRef: {fileID: 0}
     booleanVal: 1
-  setMenuDialog: {fileID: 0}
+  setMenuDialog: {fileID: 1456464081}
   hideThisOption:
     booleanRef: {fileID: 0}
     booleanVal: 0
@@ -17070,7 +16983,7 @@ MonoBehaviour:
   interactable:
     booleanRef: {fileID: 0}
     booleanVal: 1
-  setMenuDialog: {fileID: 0}
+  setMenuDialog: {fileID: 1456464081}
   hideThisOption:
     booleanRef: {fileID: 0}
     booleanVal: 0
@@ -17088,7 +17001,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 14
   indentLevel: 1
-  storyText: Are you prepared to mix this place up soldier?
+  storyText: Don't expect me to take it easy on you private, gotta stay stay tough.
   description: 
   character: {fileID: 950678395}
   portrait: {fileID: 0}
@@ -17115,8 +17028,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 13
   indentLevel: 1
-  storyText: Ten-hut. I am Train-R and I will be instructing you on how to room swap
-    cadet.
+  storyText: Well if it isn't Private Rory, back at basic training again with their
+    favorite drill sergeant.
   description: 
   character: {fileID: 950678395}
   portrait: {fileID: 0}
@@ -17260,10 +17173,20 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 1086820427}
+  - {fileID: 1086820529}
+  - {fileID: 1086820527}
   - {fileID: 1086820426}
   - {fileID: 1086820425}
   - {fileID: 1086820417}
+  - {fileID: 1086820532}
+  - {fileID: 1086820533}
+  - {fileID: 1086820523}
+  - {fileID: 1086820411}
+  - {fileID: 1086820528}
+  - {fileID: 1086820427}
+  - {fileID: 1086820524}
+  - {fileID: 1086820525}
+  - {fileID: 1086820526}
   - {fileID: 1086820416}
   - {fileID: 1086820415}
 --- !u!114 &1086820449
@@ -17301,6 +17224,8 @@ MonoBehaviour:
   - {fileID: 1086820521}
   - {fileID: 1086820444}
   - {fileID: 1086820443}
+  - {fileID: 1086820535}
+  - {fileID: 1086820536}
   - {fileID: 1086820442}
   - {fileID: 1086820441}
   - {fileID: 1086820398}
@@ -17634,8 +17559,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 65.611115
-    y: 67
+    x: 412.17493
+    y: 135.7021
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -17646,6 +17571,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1086820461}
+  - {fileID: 1086820522}
   - {fileID: 1086820401}
   - {fileID: 1086820402}
   - {fileID: 1086820400}
@@ -17665,7 +17591,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -185.99394, y: 178.824}
+  scrollPos: {x: 91.86774, y: 172.71713}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -17677,9 +17603,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1086820449}
+  - {fileID: 1086820413}
   selectedCommands:
-  - {fileID: 1086820423}
+  - {fileID: 1086820531}
   variables:
   - {fileID: 1086820520}
   - {fileID: 1086820458}
@@ -17691,6 +17617,7 @@ MonoBehaviour:
   - {fileID: 1086820467}
   - {fileID: 1086820502}
   - {fileID: 1086820501}
+  - {fileID: 1086820394}
   description: 
   stepPause: 0
   colorCommands: 1
@@ -17715,7 +17642,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 77
   indentLevel: 1
-  storyText: Did you need to use the room swap ability again?
+  storyText: Do you need to swap the room around again?
   description: 
   character: {fileID: 950678395}
   portrait: {fileID: 0}
@@ -17963,7 +17890,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 94
   indentLevel: 0
-  storyText: That's what I like to hear.
+  storyText: Disssssmisssssssed!
   description: 
   character: {fileID: 950678395}
   portrait: {fileID: 0}
@@ -19462,6 +19389,460 @@ MonoBehaviour:
   vector3Data:
     vector3Ref: {fileID: 0}
     vector3Val: {x: 0, y: 0, z: 0}
+--- !u!114 &1086820522
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086820390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1902400ccc99b45d69ad01cb86b57d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 149
+  indentLevel: 0
+  musicClip: {fileID: 8300000, guid: d8843ae06334e41a796829ad7a9c5773, type: 3}
+  atTime: 0
+  loop: 1
+  fadeDuration: 1
+--- !u!114 &1086820523
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086820390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 163
+  indentLevel: 1
+  text: Sir yes sir!
+  description: 
+  targetBlock: {fileID: 1086820414}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 1456464081}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+--- !u!114 &1086820524
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086820390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 162
+  indentLevel: 1
+  storyText: That's not what I expect from my platoon.
+  description: 
+  character: {fileID: 950678395}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1086820525
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086820390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 161
+  indentLevel: 1
+  storyText: Get back out there, solve that puzzle, and move out the door.
+  description: 
+  character: {fileID: 950678395}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1086820526
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086820390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 160
+  indentLevel: 1
+  storyText: Do you need to swap the room around again?
+  description: 
+  character: {fileID: 950678395}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1086820527
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086820390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 159
+  indentLevel: 1
+  storyText: Good job soldier, you handle yourself well in the field.
+  description: 
+  character: {fileID: 950678395}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1086820528
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086820390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fa968f01a7f9496bb50e13dfe16760d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 158
+  indentLevel: 0
+--- !u!114 &1086820529
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086820390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70c5622b8a80845c980954170295f292, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 157
+  indentLevel: 0
+  compareOperator: 0
+  variable: {fileID: 1086820394}
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
+  animatorData:
+    animatorRef: {fileID: 0}
+    animatorVal: {fileID: 0}
+  audioSourceData:
+    audioSourceRef: {fileID: 0}
+    audioSourceVal: {fileID: 0}
+  colorData:
+    colorRef: {fileID: 0}
+    colorVal: {r: 0, g: 0, b: 0, a: 0}
+  gameObjectData:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 0}
+  materialData:
+    materialRef: {fileID: 0}
+    materialVal: {fileID: 0}
+  objectData:
+    objectRef: {fileID: 0}
+    objectVal: {fileID: 0}
+  rigidbody2DData:
+    rigidbody2DRef: {fileID: 0}
+    rigidbody2DVal: {fileID: 0}
+  spriteData:
+    spriteRef: {fileID: 0}
+    spriteVal: {fileID: 0}
+  textureData:
+    textureRef: {fileID: 0}
+    textureVal: {fileID: 0}
+  transformData:
+    transformRef: {fileID: 0}
+    transformVal: {fileID: 0}
+  vector2Data:
+    vector2Ref: {fileID: 0}
+    vector2Val: {x: 0, y: 0}
+  vector3Data:
+    vector3Ref: {fileID: 0}
+    vector3Val: {x: 0, y: 0, z: 0}
+--- !u!114 &1086820530
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086820390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 156
+  indentLevel: 0
+  variable: {fileID: 1086820394}
+  setOperator: 0
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 2
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
+  animatorData:
+    animatorRef: {fileID: 0}
+    animatorVal: {fileID: 0}
+  audioSourceData:
+    audioSourceRef: {fileID: 0}
+    audioSourceVal: {fileID: 0}
+  colorData:
+    colorRef: {fileID: 0}
+    colorVal: {r: 0, g: 0, b: 0, a: 0}
+  gameObjectData:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 0}
+  materialData:
+    materialRef: {fileID: 0}
+    materialVal: {fileID: 0}
+  objectData:
+    objectRef: {fileID: 0}
+    objectVal: {fileID: 0}
+  rigidbody2DData:
+    rigidbody2DRef: {fileID: 0}
+    rigidbody2DVal: {fileID: 0}
+  spriteData:
+    spriteRef: {fileID: 0}
+    spriteVal: {fileID: 0}
+  textureData:
+    textureRef: {fileID: 0}
+    textureVal: {fileID: 0}
+  transformData:
+    transformRef: {fileID: 0}
+    transformVal: {fileID: 0}
+  vector2Data:
+    vector2Ref: {fileID: 0}
+    vector2Val: {x: 0, y: 0}
+  vector3Data:
+    vector3Ref: {fileID: 0}
+    vector3Val: {x: 0, y: 0, z: 0}
+--- !u!114 &1086820531
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086820390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 155
+  indentLevel: 0
+  text: Sir yes sir!
+  description: 
+  targetBlock: {fileID: 1086820414}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 1456464081}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+--- !u!114 &1086820532
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086820390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 154
+  indentLevel: 1
+  storyText: Once you figure out my puzzle I'll open the way back to Virtuatoid for
+    you.
+  description: 
+  character: {fileID: 950678395}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1086820533
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086820390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 153
+  indentLevel: 1
+  storyText: Are you ready to mix this puzzle up soldier?
+  description: 
+  character: {fileID: 950678395}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1086820534
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086820390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 152
+  indentLevel: 0
+  storyText: Disssssmissssed!
+  description: 
+  character: {fileID: 950678395}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1086820535
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086820390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 151
+  indentLevel: 1
+  storyText: This time you'll be learning to use the room swap ability.
+  description: 
+  character: {fileID: 950678395}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1086820536
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086820390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 150
+  indentLevel: 1
+  storyText: Are you prepared to mix this place up soldier?
+  description: 
+  character: {fileID: 950678395}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!1 &1096823997
 GameObject:
   m_ObjectHideFlags: 0

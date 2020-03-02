@@ -7076,6 +7076,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mayor2
       objectReference: {fileID: 0}
+    - target: {fileID: 4697291215515127652, guid: a97e1294e6c93454fbd84b4e0e23280e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -44780018720631063, guid: a97e1294e6c93454fbd84b4e0e23280e,
         type: 3}
       propertyPath: Rory
@@ -7166,6 +7171,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5726609765485198537, guid: a97e1294e6c93454fbd84b4e0e23280e,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -585332103
+      objectReference: {fileID: 0}
+    - target: {fileID: 5726609765485198537, guid: a97e1294e6c93454fbd84b4e0e23280e,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 3607709546685165588, guid: a97e1294e6c93454fbd84b4e0e23280e,
         type: 3}
       propertyPath: m_Offset.x
@@ -7180,21 +7195,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Size.y
       value: 3.702139
-      objectReference: {fileID: 0}
-    - target: {fileID: 4697291215515127652, guid: a97e1294e6c93454fbd84b4e0e23280e,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5726609765485198537, guid: a97e1294e6c93454fbd84b4e0e23280e,
-        type: 3}
-      propertyPath: m_SortingLayerID
-      value: -585332103
-      objectReference: {fileID: 0}
-    - target: {fileID: 5726609765485198537, guid: a97e1294e6c93454fbd84b4e0e23280e,
-        type: 3}
-      propertyPath: m_SortingLayer
-      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a97e1294e6c93454fbd84b4e0e23280e, type: 3}
@@ -7684,6 +7684,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mayor
       objectReference: {fileID: 0}
+    - target: {fileID: 4697291215515127652, guid: a97e1294e6c93454fbd84b4e0e23280e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4697291215758635367, guid: a97e1294e6c93454fbd84b4e0e23280e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4697291215758635367, guid: a97e1294e6c93454fbd84b4e0e23280e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -44780018720631063, guid: a97e1294e6c93454fbd84b4e0e23280e,
         type: 3}
       propertyPath: MayorHead
@@ -7810,11 +7825,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4697291215515127652, guid: a97e1294e6c93454fbd84b4e0e23280e,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5726609765485198537, guid: a97e1294e6c93454fbd84b4e0e23280e,
         type: 3}
       propertyPath: m_Sprite
@@ -7830,16 +7840,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SortingLayer
       value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4697291215758635367, guid: a97e1294e6c93454fbd84b4e0e23280e,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4697291215758635367, guid: a97e1294e6c93454fbd84b4e0e23280e,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4697291215758635387, guid: a97e1294e6c93454fbd84b4e0e23280e,
         type: 3}
@@ -12000,7 +12000,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: a3c24f1aba3bd4807bd93f3956ac3a9f, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 0.5
   m_Pitch: 1
@@ -13327,6 +13327,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: -1
       objectReference: {fileID: 0}
+    - target: {fileID: 4697291215703036084, guid: a97e1294e6c93454fbd84b4e0e23280e,
+        type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3607709546685165588, guid: a97e1294e6c93454fbd84b4e0e23280e,
         type: 3}
       propertyPath: m_Offset.x
@@ -13341,11 +13346,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Size.y
       value: 3.773161
-      objectReference: {fileID: 0}
-    - target: {fileID: 4697291215703036084, guid: a97e1294e6c93454fbd84b4e0e23280e,
-        type: 3}
-      propertyPath: m_FlipX
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a97e1294e6c93454fbd84b4e0e23280e, type: 3}
@@ -24816,6 +24816,8 @@ GameObject:
   - component: {fileID: 1914189907}
   - component: {fileID: 1914189908}
   - component: {fileID: 1914189922}
+  - component: {fileID: 1914189923}
+  - component: {fileID: 1914189924}
   m_Layer: 0
   m_Name: PartyFlowchart
   m_TagString: Untagged
@@ -27077,7 +27079,7 @@ MonoBehaviour:
     vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &1914189922
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -27102,6 +27104,39 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
+--- !u!114 &1914189923
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1914189847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1902400ccc99b45d69ad01cb86b57d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 1974
+  indentLevel: 0
+  musicClip: {fileID: 8300000, guid: a3c24f1aba3bd4807bd93f3956ac3a9f, type: 3}
+  atTime: 0
+  loop: 1
+  fadeDuration: 1
+--- !u!114 &1914189924
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1914189847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afb91b566ceda411bad1e9d3c3243ecc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 2
+  key: MenuNumber
+  value: 0
 --- !u!114 &1914189930
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -50229,13 +50264,13 @@ MonoBehaviour:
   itemId: 1713
   indentLevel: 1
   compareOperator: 0
-  variable: {fileID: 1914190593}
+  variable: {fileID: 1914189924}
   booleanData:
     booleanRef: {fileID: 0}
     booleanVal: 1
   integerData:
     integerRef: {fileID: 0}
-    integerVal: 0
+    integerVal: 13
   floatData:
     floatRef: {fileID: 0}
     floatVal: 0
@@ -50539,7 +50574,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1127.9578
     y: 257.85272
-    width: 175.33682
+    width: 176.24109
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -50772,7 +50807,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -226.76111
     y: 103.60686
-    width: 163.88132
+    width: 164.89359
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -52937,7 +52972,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 274.61136
     y: -26.193506
-    width: 139.62257
+    width: 140.07089
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -52981,7 +53016,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 311.3306
     y: -209.22243
-    width: 127.4932
+    width: 128.01416
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -54758,7 +54793,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1286.9373
     y: 66.094154
-    width: 122.77622
+    width: 123.04962
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -55529,6 +55564,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1914189849}
+  - {fileID: 1914189923}
   - {fileID: 1914191012}
   - {fileID: 1914191010}
   - {fileID: 1914191009}
@@ -55738,7 +55774,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 206.91827
     y: 205.33386
-    width: 120.08081
+    width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -56699,11 +56735,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -707.9734, y: 68.83998}
+  scrollPos: {x: 685.54913, y: 137.4718}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.7420006
+  zoom: 0.7050002
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -56711,10 +56747,11 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1914190908}
+  - {fileID: 1914190943}
   selectedCommands:
-  - {fileID: 1914190904}
+  - {fileID: 1914191001}
   variables:
+  - {fileID: 1914189924}
   - {fileID: 1914191005}
   - {fileID: 1914190748}
   - {fileID: 1914189897}
@@ -57689,14 +57726,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 1762
   indentLevel: 2
-  variable: {fileID: 1914191000}
+  variable: {fileID: 1914189924}
   setOperator: 0
   booleanData:
     booleanRef: {fileID: 0}
     booleanVal: 1
   integerData:
     integerRef: {fileID: 0}
-    integerVal: 0
+    integerVal: 14
   floatData:
     floatRef: {fileID: 0}
     floatVal: 0
@@ -57769,7 +57806,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1682.9902
     y: 147.79468
-    width: 182.07536
+    width: 184.04251
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -58513,7 +58550,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 610.2892
     y: -10.886169
-    width: 145.0134
+    width: 147.16309
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -58700,7 +58737,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 610.28925
     y: -102.7228
-    width: 160.51205
+    width: 162.0567
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
