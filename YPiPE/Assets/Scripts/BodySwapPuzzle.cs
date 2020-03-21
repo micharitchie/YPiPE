@@ -85,6 +85,7 @@ public class BodySwapPuzzle : MonoBehaviour
             legLLoc = Draggable.partLocations[4];
             armLLoc = Draggable.partLocations[5];
             currentOrientation = headLoc.ToString() + bodyLoc.ToString() + armRLoc.ToString() + legRLoc.ToString() + legLLoc.ToString() + armLLoc.ToString();
+            Debug.Log(currentOrientation);
             for (int i = 0; i < possibleCombinations.Length; i++)
             {
                 if (possibleCombinations[i] == currentOrientation)

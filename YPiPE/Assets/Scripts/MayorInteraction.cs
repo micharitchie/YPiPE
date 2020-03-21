@@ -26,9 +26,9 @@ public class MayorInteraction : MonoBehaviour
     private SpriteRenderer MAL;
     private SpriteRenderer MLR;
     private SpriteRenderer MLL;
-    //private SpriteRenderer speachGraphic;
     private Animator anim;
     private Collider2D interactableArea;
+    private bool Disabled;
 
     // Start is called before the first frame update
     void Start()
@@ -63,12 +63,6 @@ public class MayorInteraction : MonoBehaviour
     {
         if (collision.name == "VirtualRory")
         {
-            /*if (speachGraphic.sprite != speakSprite)
-            {
-                speachGraphic.sprite = speakSprite;
-            } */
-            //speachBubble.SetActive(true);
-
             speachButton.transform.position = new Vector3(Rory.position.x + 2.3f, Rory.position.y + 4.2f, Rory.position.z);
             speachButton.SetActive(true);
             partyFlowchart.SetBooleanVariable(fungusBool, true);
@@ -107,33 +101,36 @@ public class MayorInteraction : MonoBehaviour
         speachButton.transform.position = new Vector3(Rory.position.x + 2.3f, Rory.position.y + 4.2f, Rory.position.z);
         if (collision.name == "VirtualRory")
         {
+            if (!Disabled)
+            {
 
-            if (Rory.position.x <= transform.position.x)
-            {
-                transform.localScale = new Vector3(1, 1, 1);
-            }
-            else
-            {
-                transform.localScale = new Vector3(-1, 1, 1);
-            }
-            if (Rory.position.y <= transform.position.y)
-            {
-                MH.sortingLayerName = "NPC Behind";
-                MB.sortingLayerName = "NPC Behind";
-                MAL.sortingLayerName = "NPC Behind";
-                MAR.sortingLayerName = "NPC Behind";
-                MLL.sortingLayerName = "NPC Behind";
-                MLR.sortingLayerName = "NPC Behind";
+                if (Rory.position.x <= transform.position.x)
+                {
+                    transform.localScale = new Vector3(1, 1, 1);
+                }
+                else
+                {
+                    transform.localScale = new Vector3(-1, 1, 1);
+                }
+                if (Rory.position.y <= transform.position.y)
+                {
+                    MH.sortingLayerName = "NPC Behind";
+                    MB.sortingLayerName = "NPC Behind";
+                    MAL.sortingLayerName = "NPC Behind";
+                    MAR.sortingLayerName = "NPC Behind";
+                    MLL.sortingLayerName = "NPC Behind";
+                    MLR.sortingLayerName = "NPC Behind";
 
-            }
-            else
-            {
-                MH.sortingLayerName = "NPC Front";
-                MB.sortingLayerName = "NPC Front";
-                MAL.sortingLayerName = "NPC Front";
-                MAR.sortingLayerName = "NPC Front";
-                MLL.sortingLayerName = "NPC Front";
-                MLR.sortingLayerName = "NPC Front";
+                }
+                else
+                {
+                    MH.sortingLayerName = "NPC Front";
+                    MB.sortingLayerName = "NPC Front";
+                    MAL.sortingLayerName = "NPC Front";
+                    MAR.sortingLayerName = "NPC Front";
+                    MLL.sortingLayerName = "NPC Front";
+                    MLR.sortingLayerName = "NPC Front";
+                }
             }
         }
     }
@@ -169,6 +166,20 @@ public class MayorInteraction : MonoBehaviour
     public void changeFlow(Flowchart newFlow)
     {
         partyFlowchart = newFlow;
+    }
+
+    public void Reenable()
+    {
+        Disabled = false;
+    }
+
+    public void flipNPC()
+    {
+        if (transform.localScale != Vector3.one)
+        {
+            Disabled = true;
+            transform.localScale = Vector3.one;
+        }
     }
 
 }
