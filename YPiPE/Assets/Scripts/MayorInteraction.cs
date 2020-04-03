@@ -65,7 +65,10 @@ public class MayorInteraction : MonoBehaviour
         {
             speachButton.transform.position = new Vector3(Rory.position.x + 2.3f, Rory.position.y + 4.2f, Rory.position.z);
             speachButton.SetActive(true);
-            partyFlowchart.SetBooleanVariable(fungusBool, true);
+            if (partyFlowchart)
+            {
+                partyFlowchart.SetBooleanVariable(fungusBool, true);
+            }
             if (Rory.position.x <= transform.position.x)
             {
                 transform.localScale = new Vector3(1, 1, 1);
@@ -140,7 +143,10 @@ public class MayorInteraction : MonoBehaviour
         {
             //speachBubble.SetActive(false);
             speachButton.SetActive(false);
-            partyFlowchart.SetBooleanVariable(fungusBool, false);
+            if (partyFlowchart)
+            {
+                partyFlowchart.SetBooleanVariable(fungusBool, false);
+            }
         }
     }
     public void toggleWalk()

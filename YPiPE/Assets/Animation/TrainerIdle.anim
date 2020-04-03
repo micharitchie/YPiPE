@@ -433,7 +433,27 @@ AnimationClip:
     path: TBody/trainer_body
   m_ScaleCurves: []
   m_FloatCurves: []
-  m_PPtrCurves: []
+  m_PPtrCurves:
+  - curve:
+    - time: 0
+      value: {fileID: -2822968062654147850, guid: 87a731350011a476e8de1fa1000262f4,
+        type: 3}
+    - time: 0.7
+      value: {fileID: 6629039486075894880, guid: bb42f54fafca94adebbe809da92838f0,
+        type: 3}
+    - time: 0.8
+      value: {fileID: 1334113208980544095, guid: bb42f54fafca94adebbe809da92838f0,
+        type: 3}
+    - time: 0.9
+      value: {fileID: 6629039486075894880, guid: bb42f54fafca94adebbe809da92838f0,
+        type: 3}
+    - time: 1
+      value: {fileID: -2822968062654147850, guid: 87a731350011a476e8de1fa1000262f4,
+        type: 3}
+    attribute: m_Sprite
+    path: THead/trainer_head
+    classID: 212
+    script: {fileID: 0}
   m_SampleRate: 10
   m_WrapMode: 0
   m_Bounds:
@@ -497,7 +517,19 @@ AnimationClip:
       typeID: 4
       customType: 4
       isPPtrCurve: 0
-    pptrCurveMapping: []
+    - serializedVersion: 2
+      path: 3548335010
+      attribute: 0
+      script: {fileID: 0}
+      typeID: 212
+      customType: 23
+      isPPtrCurve: 1
+    pptrCurveMapping:
+    - {fileID: -2822968062654147850, guid: 87a731350011a476e8de1fa1000262f4, type: 3}
+    - {fileID: 6629039486075894880, guid: bb42f54fafca94adebbe809da92838f0, type: 3}
+    - {fileID: 1334113208980544095, guid: bb42f54fafca94adebbe809da92838f0, type: 3}
+    - {fileID: 6629039486075894880, guid: bb42f54fafca94adebbe809da92838f0, type: 3}
+    - {fileID: -2822968062654147850, guid: 87a731350011a476e8de1fa1000262f4, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}

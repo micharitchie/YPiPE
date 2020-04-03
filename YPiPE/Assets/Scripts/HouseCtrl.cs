@@ -8,8 +8,7 @@ public class HouseCtrl : MonoBehaviour
     public Sprite openDoor;
     public Sprite closedDoor;
     public GameObject doorUI;
-    //public GameObject doorIndicator;
-    public Transform transportLoc;
+    //public Transform transportLoc;
     public Transform playerLoc;
     public Flowchart targetFlowchart;
     public string fugusBool;
@@ -69,10 +68,10 @@ public class HouseCtrl : MonoBehaviour
         }
     }
 
-    public void goInside()
+    /*public void goInside()
     {
         playerLoc.position = transportLoc.position;
-    }
+    }*/
 
     public void changeFlowchart(Flowchart newFlow)
     {
