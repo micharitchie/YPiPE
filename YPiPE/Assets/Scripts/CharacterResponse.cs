@@ -92,6 +92,10 @@ public class CharacterResponse : MonoBehaviour
     {
         if (collision.transform == roryRef)
         {
+            for (int i = 0; i < objectParts.Length; i++)
+            {
+                objectParts[i].sortingLayerName = "NPC Behind";
+            }
             if (interactionUI)
             {
                 interactionUI.SetActive(false);

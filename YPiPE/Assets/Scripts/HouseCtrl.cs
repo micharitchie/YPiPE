@@ -8,10 +8,10 @@ public class HouseCtrl : MonoBehaviour
     public Sprite openDoor;
     public Sprite closedDoor;
     public GameObject doorUI;
-    //public Transform transportLoc;
     public Transform playerLoc;
     public Flowchart targetFlowchart;
     public string fugusBool;
+    public AudioClip LockedSound;
 
     private SpriteRenderer mySpriteRenderer;
     private AudioSource doorAudio;
@@ -33,7 +33,6 @@ public class HouseCtrl : MonoBehaviour
     {
         if(collision.name == "VirtualRory")
         {
-            mySpriteRenderer.sprite = openDoor;
             if (targetFlowchart != null) { 
                 targetFlowchart.SetBooleanVariable(fugusBool, true);
             }
@@ -41,7 +40,15 @@ public class HouseCtrl : MonoBehaviour
             doorUI.transform.position = buttonLocation;
             doorUI.SetActive(true);
             doorAudio.Stop();
-            doorAudio.clip = Resources.Load<AudioClip>("DoorOpen");
+            if (LockedSound)
+            {
+                doorAudio.clip = LockedSound;
+            }
+            else
+            {
+                doorAudio.clip = Resources.Load<AudioClip>("DoorOpen");
+                mySpriteRenderer.sprite = openDoor;
+            }
             doorAudio.Play();
         }
     }
@@ -63,15 +70,20 @@ public class HouseCtrl : MonoBehaviour
             }
             doorUI.SetActive(false);
             doorAudio.Stop();
-            doorAudio.clip = Resources.Load<AudioClip>("DoorClose");
-            doorAudio.Play();
+            if (!LockedSound)
+            {
+                doorAudio.clip = Resources.Load<AudioClip>("DoorClose");
+                doorAudio.Play();
+            }
+            
         }
     }
 
-    /*public void goInside()
+    public void Unlock()
     {
-        playerLoc.position = transportLoc.position;
-    }*/
+        LockedSound = null;
+    }
+    
 
     public void changeFlowchart(Flowchart newFlow)
     {
