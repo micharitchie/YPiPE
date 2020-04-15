@@ -11894,6 +11894,9 @@ GameObject:
   - component: {fileID: 1649490117}
   - component: {fileID: 1649490116}
   - component: {fileID: 1649490115}
+  - component: {fileID: 1649490127}
+  - component: {fileID: 1649490126}
+  - component: {fileID: 1649490128}
   m_Layer: 0
   m_Name: GameStart
   m_TagString: Untagged
@@ -11974,8 +11977,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1649490125}
-  selectedCommands: []
+  - {fileID: 1649490062}
+  selectedCommands:
+  - {fileID: 1649490066}
   variables:
   - {fileID: 1649490058}
   - {fileID: 1649490082}
@@ -12255,7 +12259,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scope: 2
   key: VisitParty
-  value: 0
+  value: 1
 --- !u!114 &1649490059
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -12370,10 +12374,13 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1649490059}
-  - {fileID: 1649490061}
-  - {fileID: 1649490071}
   - {fileID: 1649490067}
   - {fileID: 1649490100}
+  - {fileID: 1649490061}
+  - {fileID: 1649490071}
+  - {fileID: 1649490127}
+  - {fileID: 1649490126}
+  - {fileID: 1649490128}
   - {fileID: 1649490066}
   - {fileID: 1649490056}
   - {fileID: 1649490096}
@@ -14151,6 +14158,67 @@ MonoBehaviour:
   commandList:
   - {fileID: 1649490124}
   suppressAllAutoSelections: 0
+--- !u!114 &1649490126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1649490045}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 616cd37e21c7645c58a89edf5abee56f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 421
+  indentLevel: 0
+  duration: 0.5
+  amount: {x: 1, y: 1}
+  waitUntilFinished: 1
+--- !u!114 &1649490127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1649490045}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5316d953c7abe498799575550c973535, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 420
+  indentLevel: 0
+  animator:
+    animatorRef: {fileID: 0}
+    animatorVal: {fileID: 993605033}
+  stateName:
+    stringRef: {fileID: 0}
+    stringVal: VRoryFall
+  layer:
+    integerRef: {fileID: 0}
+    integerVal: -1
+  time:
+    floatRef: {fileID: 0}
+    floatVal: 0
+--- !u!114 &1649490128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1649490045}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 422
+  indentLevel: 0
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 1
+  durationOLD: 0
 --- !u!1 &1659354227
 GameObject:
   m_ObjectHideFlags: 0

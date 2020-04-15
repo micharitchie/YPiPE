@@ -5,7 +5,7 @@ using Fungus;
 
 public class Tripwire : MonoBehaviour
 {
-    public Flowchart myFlowchart;
+    public Flowchart myFlowchart;   
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

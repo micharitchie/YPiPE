@@ -8,6 +8,7 @@ public class BodySwapPuzzle : MonoBehaviour
     public string[] possibleCombinations;
     public Flowchart outFlow;
     public string fungusBool;
+    public int[] specificLocations;
 
     private string currentOrientation;
     private int headLoc;
@@ -113,6 +114,95 @@ public class BodySwapPuzzle : MonoBehaviour
                 }
             }
         }
-    } 
+    }
+
+    public void CheckSpecificParts(bool checkHead, bool checkBody, bool checkArmR, bool checkLegR, bool checkLegL, bool checkArmL)
+    {
+        headLoc = Draggable.partLocations[0];
+        bodyLoc = Draggable.partLocations[1];
+        armRLoc = Draggable.partLocations[2];
+        legRLoc = Draggable.partLocations[3];
+        legLLoc = Draggable.partLocations[4];
+        armLLoc = Draggable.partLocations[5];
+        bool partsMatch = false;
+
+        if (checkHead)
+        {
+            if (headLoc == specificLocations[0])
+            {
+                partsMatch = true;
+            } else
+            {
+                partsMatch = false;
+            }
+        }
+
+        if (checkBody)
+        {
+            if (bodyLoc == specificLocations[1])
+            {
+                partsMatch = true;
+            }
+            else
+            {
+                partsMatch = false;
+            }
+        }
+
+        if (checkArmR)
+        {
+            if(armRLoc == specificLocations[2]||armRLoc == specificLocations[5])
+            {
+                partsMatch = true;
+                Debug.Log("ArmR match");
+            }
+            else
+            {
+                partsMatch = false;
+                Debug.Log(armRLoc);
+            }
+        }
+
+        if (checkLegR)
+        {
+            if(legRLoc == specificLocations[3] || legRLoc == specificLocations[4])
+            {
+                partsMatch = true;
+            }
+            else
+            {
+                partsMatch = false;
+            }
+        }
+
+        if (checkLegL)
+        {
+            if (legLLoc == specificLocations[3] || legLLoc == specificLocations[4])
+            {
+                partsMatch = true;
+            }
+            else
+            {
+                partsMatch = false;
+            }
+        }
+
+        if (checkArmL)
+        {
+            if (armLLoc == specificLocations[2] || armLLoc == specificLocations[5])
+            {
+                partsMatch = true;
+                Debug.Log("ArmL Match");
+            }
+            else
+            {
+                partsMatch = false;
+                Debug.Log(armLLoc);
+            }
+        }
+
+
+        outFlow.SetBooleanVariable(fungusBool, partsMatch);
+    }
 
 }
