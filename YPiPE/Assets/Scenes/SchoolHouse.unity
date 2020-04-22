@@ -322,7 +322,7 @@ MonoBehaviour:
   interactionUI: {fileID: 1533179812}
   fungusBool: Bookshelf2
   flowRef: {fileID: 111929983}
-  disableFlip: 0
+  disableFlip: 1
 --- !u!61 &51435716
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1581,18 +1581,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -4.2677245, y: 213.27554}
+  scrollPos: {x: 132.38986, y: 228.59596}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.63499933
+  zoom: 0.5149983
   scrollViewRect:
     serializedVersion: 2
     x: -343
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
+  selectedBlocks:
+  - {fileID: 111929982}
   selectedCommands: []
   variables:
   - {fileID: 111930081}
@@ -1870,7 +1871,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1412.2656
     y: -27.930618
-    width: 126.37804
+    width: 123.78665
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1937,7 +1938,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 576.6678
     y: 104.31365
-    width: 121.65362
+    width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2485,7 +2486,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 580.602
     y: -77.606026
-    width: 137.40167
+    width: 134.4663
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2768,7 +2769,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 775.7931
     y: 218.98364
-    width: 184.64581
+    width: 179.12663
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2822,7 +2823,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 792.4972
     y: 310.96722
-    width: 153.93712
+    width: 149.02945
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3777,7 +3778,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 559.27106
     y: 167.10002
-    width: 152.3623
+    width: 148.05856
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4107,7 +4108,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 552.92444
     y: 227.56593
-    width: 173.62218
+    width: 168.44699
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5016,7 +5017,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 809.489
     y: 152.2292
-    width: 142.12608
+    width: 138.3498
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5614,7 +5615,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1206.5531
     y: -120.46348
-    width: 124.01582
+    width: 120.874016
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -11550,7 +11551,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1209.1794
     y: 382.46906
-    width: 141.33868
+    width: 138.3498
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -12177,7 +12178,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 559.12476
     y: 299.75983
-    width: 130.31505
+    width: 127.67016
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -12676,7 +12677,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 154.11545
     y: 173.79039
-    width: 138.97647
+    width: 135.43716
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -12735,7 +12736,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 153.42001
     y: 247.64117
-    width: 125.59063
+    width: 122.81577
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -13289,7 +13290,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 331.52585
     y: -98.47273
-    width: 125.59063
+    width: 122.81577
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -13630,7 +13631,7 @@ MonoBehaviour:
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
-  itemId: 2108
+  itemId: 2154
   blockName: Bookshelf2
   description: 
   eventHandler: {fileID: 0}
@@ -14138,7 +14139,7 @@ MonoBehaviour:
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
-  itemId: 2108
+  itemId: 2155
   blockName: Bookshelf3
   description: 
   eventHandler: {fileID: 0}
@@ -14290,9 +14291,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2073999059
-  m_SortingLayer: 1
-  m_SortingOrder: 0
+  m_SortingLayerID: 473206079
+  m_SortingLayer: 2
+  m_SortingOrder: -800
   m_Sprite: {fileID: 1090471845268127305, guid: 87a731350011a476e8de1fa1000262f4,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -14567,9 +14568,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2073999059
-  m_SortingLayer: 1
-  m_SortingOrder: 1
+  m_SortingLayerID: 473206079
+  m_SortingLayer: 2
+  m_SortingOrder: -318
   m_Sprite: {fileID: 7548693934573202769, guid: 87a731350011a476e8de1fa1000262f4,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -14756,8 +14757,6 @@ GameObject:
   - component: {fileID: 191011141}
   - component: {fileID: 191011140}
   - component: {fileID: 191011139}
-  - component: {fileID: 191011138}
-  - component: {fileID: 191011137}
   m_Layer: 0
   m_Name: SchoolDesk (3)
   m_TagString: Untagged
@@ -14765,51 +14764,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &191011137
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 191011136}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2dc406049d0ac4dacace225fa81cd245, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  roryRef: {fileID: 1546954265}
-  objectParts:
-  - {fileID: 191011140}
-  interactionUI: {fileID: 0}
-  fungusBool: 
-  flowRef: {fileID: 0}
-  disableFlip: 1
---- !u!61 &191011138
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 191011136}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.49, y: 5.05}
-    newSize: {x: 3.49, y: 5.05}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 3.49, y: 5.05}
-  m_EdgeRadius: 0
 --- !u!61 &191011139
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14872,9 +14826,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2073999059
-  m_SortingLayer: 1
-  m_SortingOrder: 1
+  m_SortingLayerID: 473206079
+  m_SortingLayer: 2
+  m_SortingOrder: -84
   m_Sprite: {fileID: 7126827957476050058, guid: 038a3550019604500a78bbdf57f55acc,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -15207,9 +15161,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2073999059
-  m_SortingLayer: 1
-  m_SortingOrder: 4
+  m_SortingLayerID: 473206079
+  m_SortingLayer: 2
+  m_SortingOrder: -315
   m_Sprite: {fileID: 3178872813578158905, guid: 87a731350011a476e8de1fa1000262f4,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -16380,9 +16334,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2073999059
-  m_SortingLayer: 1
-  m_SortingOrder: 0
+  m_SortingLayerID: 473206079
+  m_SortingLayer: 2
+  m_SortingOrder: -800
   m_Sprite: {fileID: 1090471845268127305, guid: 87a731350011a476e8de1fa1000262f4,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -18592,9 +18546,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2073999059
-  m_SortingLayer: 1
-  m_SortingOrder: 2
+  m_SortingLayerID: 473206079
+  m_SortingLayer: 2
+  m_SortingOrder: -798
   m_Sprite: {fileID: -39432921249265170, guid: 87a731350011a476e8de1fa1000262f4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -20408,8 +20362,6 @@ GameObject:
   - component: {fileID: 864850731}
   - component: {fileID: 864850730}
   - component: {fileID: 864850729}
-  - component: {fileID: 864850728}
-  - component: {fileID: 864850732}
   m_Layer: 0
   m_Name: SchoolChair (1)
   m_TagString: Untagged
@@ -20417,32 +20369,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!61 &864850728
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 864850727}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.78, y: 4.76}
-    newSize: {x: 1.78, y: 4.76}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.78, y: 4.76}
-  m_EdgeRadius: 0
 --- !u!61 &864850729
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20505,9 +20431,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2073999059
-  m_SortingLayer: 1
-  m_SortingOrder: 0
+  m_SortingLayerID: 473206079
+  m_SortingLayer: 2
+  m_SortingOrder: 551
   m_Sprite: {fileID: 1176252065327423578, guid: 038a3550019604500a78bbdf57f55acc,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -20534,25 +20460,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &864850732
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 864850727}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2dc406049d0ac4dacace225fa81cd245, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  roryRef: {fileID: 1546954265}
-  objectParts:
-  - {fileID: 864850730}
-  interactionUI: {fileID: 0}
-  fungusBool: 
-  flowRef: {fileID: 0}
-  disableFlip: 1
 --- !u!1 &872126789
 GameObject:
   m_ObjectHideFlags: 0
@@ -20986,7 +20893,7 @@ GameObject:
   - component: {fileID: 948627604}
   - component: {fileID: 948627609}
   - component: {fileID: 948627612}
-  - component: {fileID: 948627611}
+  - component: {fileID: 948627613}
   m_Layer: 0
   m_Name: Teacher
   m_TagString: Untagged
@@ -21120,7 +21027,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 948627603}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.52, y: 3.16, z: 0}
+  m_LocalPosition: {x: 6.15, y: 3.16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 482922405}
@@ -21169,32 +21076,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &948627611
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 948627603}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f3d1e9605a6b43d394a2e9d408c61a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Rory: {fileID: 1546954265}
-  MayorHead: {fileID: 1212314562}
-  MayorBody: {fileID: 1977459330}
-  MayorArmR: {fileID: 222443413}
-  MayorArmL: {fileID: 1390877457}
-  MayorLegR: {fileID: 1419150412}
-  MayorLegL: {fileID: 149011209}
-  speachButton: {fileID: 335019117}
-  lookButton: {fileID: 1533179812}
-  mayorDeactivated: 0
-  mayorWalk: 0
-  speakSprite: {fileID: 0}
-  fungusBool: SchoolU
-  partyFlowchart: {fileID: 111929983}
 --- !u!114 &948627612
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21214,6 +21095,24 @@ MonoBehaviour:
   LegR: {fileID: 1419150413}
   ArmR: {fileID: 222443414}
   newSlotNumbers: 010000000000000003000000050000000200000004000000
+--- !u!114 &948627613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 948627603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dc406049d0ac4dacace225fa81cd245, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roryRef: {fileID: 1546954265}
+  objectParts: []
+  interactionUI: {fileID: 335019117}
+  fungusBool: SchoolU
+  flowRef: {fileID: 111929983}
+  disableFlip: 0
 --- !u!1 &953780721
 GameObject:
   m_ObjectHideFlags: 0
@@ -21251,7 +21150,7 @@ MonoBehaviour:
   interactionUI: {fileID: 1533179812}
   fungusBool: Bookshelf1
   flowRef: {fileID: 111929983}
-  disableFlip: 0
+  disableFlip: 1
 --- !u!61 &953780723
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21571,7 +21470,7 @@ MonoBehaviour:
   interactionUI: {fileID: 1533179812}
   fungusBool: Bookshelf3
   flowRef: {fileID: 111929983}
-  disableFlip: 0
+  disableFlip: 1
 --- !u!61 &967975306
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23659,9 +23558,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2073999059
-  m_SortingLayer: 1
-  m_SortingOrder: 5
+  m_SortingLayerID: 473206079
+  m_SortingLayer: 2
+  m_SortingOrder: -315
   m_Sprite: {fileID: -3647385515424316841, guid: 87a731350011a476e8de1fa1000262f4,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -23685,8 +23584,6 @@ GameObject:
   - component: {fileID: 1235897012}
   - component: {fileID: 1235897011}
   - component: {fileID: 1235897010}
-  - component: {fileID: 1235897009}
-  - component: {fileID: 1235897008}
   m_Layer: 0
   m_Name: SchoolDesk (2)
   m_TagString: Untagged
@@ -23694,51 +23591,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1235897008
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1235897007}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2dc406049d0ac4dacace225fa81cd245, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  roryRef: {fileID: 1546954265}
-  objectParts:
-  - {fileID: 1235897011}
-  interactionUI: {fileID: 0}
-  fungusBool: 
-  flowRef: {fileID: 0}
-  disableFlip: 1
---- !u!61 &1235897009
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1235897007}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.49, y: 5.05}
-    newSize: {x: 3.49, y: 5.05}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 3.49, y: 5.05}
-  m_EdgeRadius: 0
 --- !u!61 &1235897010
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23801,9 +23653,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2073999059
-  m_SortingLayer: 1
-  m_SortingOrder: 1
+  m_SortingLayerID: 473206079
+  m_SortingLayer: 2
+  m_SortingOrder: 611
   m_Sprite: {fileID: 7126827957476050058, guid: 038a3550019604500a78bbdf57f55acc,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -25590,9 +25442,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2073999059
-  m_SortingLayer: 1
-  m_SortingOrder: 0
+  m_SortingLayerID: 473206079
+  m_SortingLayer: 2
+  m_SortingOrder: -319
   m_Sprite: {fileID: 3178872813578158905, guid: 87a731350011a476e8de1fa1000262f4,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -25814,8 +25666,6 @@ GameObject:
   - component: {fileID: 1417290492}
   - component: {fileID: 1417290491}
   - component: {fileID: 1417290490}
-  - component: {fileID: 1417290489}
-  - component: {fileID: 1417290488}
   m_Layer: 0
   m_Name: SchoolDesk (4)
   m_TagString: Untagged
@@ -25823,51 +25673,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1417290488
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1417290487}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2dc406049d0ac4dacace225fa81cd245, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  roryRef: {fileID: 1546954265}
-  objectParts:
-  - {fileID: 1417290491}
-  interactionUI: {fileID: 0}
-  fungusBool: 
-  flowRef: {fileID: 0}
-  disableFlip: 1
---- !u!61 &1417290489
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1417290487}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.49, y: 5.05}
-    newSize: {x: 3.49, y: 5.05}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 3.49, y: 5.05}
-  m_EdgeRadius: 0
 --- !u!61 &1417290490
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25930,9 +25735,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2073999059
-  m_SortingLayer: 1
-  m_SortingOrder: 1
+  m_SortingLayerID: 473206079
+  m_SortingLayer: 2
+  m_SortingOrder: -84
   m_Sprite: {fileID: 7126827957476050058, guid: 038a3550019604500a78bbdf57f55acc,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -26026,9 +25831,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2073999059
-  m_SortingLayer: 1
-  m_SortingOrder: 2
+  m_SortingLayerID: 473206079
+  m_SortingLayer: 2
+  m_SortingOrder: -317
   m_Sprite: {fileID: 7548693934573202769, guid: 87a731350011a476e8de1fa1000262f4,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -26573,9 +26378,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2073999059
-  m_SortingLayer: 1
-  m_SortingOrder: 0
+  m_SortingLayerID: 473206079
+  m_SortingLayer: 2
+  m_SortingOrder: -800
   m_Sprite: {fileID: 1090471845268127305, guid: 87a731350011a476e8de1fa1000262f4,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -26915,8 +26720,6 @@ GameObject:
   - component: {fileID: 1522560945}
   - component: {fileID: 1522560944}
   - component: {fileID: 1522560943}
-  - component: {fileID: 1522560942}
-  - component: {fileID: 1522560941}
   m_Layer: 0
   m_Name: SchoolDesk (1)
   m_TagString: Untagged
@@ -26924,51 +26727,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1522560941
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1522560940}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2dc406049d0ac4dacace225fa81cd245, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  roryRef: {fileID: 1546954265}
-  objectParts:
-  - {fileID: 1522560944}
-  interactionUI: {fileID: 0}
-  fungusBool: 
-  flowRef: {fileID: 0}
-  disableFlip: 1
---- !u!61 &1522560942
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1522560940}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.49, y: 5.05}
-    newSize: {x: 3.49, y: 5.05}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 3.49, y: 5.05}
-  m_EdgeRadius: 0
 --- !u!61 &1522560943
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -27031,9 +26789,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2073999059
-  m_SortingLayer: 1
-  m_SortingOrder: 1
+  m_SortingLayerID: 473206079
+  m_SortingLayer: 2
+  m_SortingOrder: 611
   m_Sprite: {fileID: 7126827957476050058, guid: 038a3550019604500a78bbdf57f55acc,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -27936,6 +27694,17 @@ MonoBehaviour:
   mc: {fileID: 1546954256}
   speed: 8
   FSREf: {fileID: 1546954259}
+  spriteObjects:
+  - {fileID: 1048903793}
+  - {fileID: 763231242}
+  - {fileID: 1538523955}
+  - {fileID: 107654430}
+  - {fileID: 683417183}
+  - {fileID: 1542210850}
+  - {fileID: 758603770}
+  - {fileID: 687431957}
+  - {fileID: 1829707756}
+  - {fileID: 2098998383}
 --- !u!95 &1546954261
 Animator:
   serializedVersion: 3
@@ -28225,8 +27994,6 @@ GameObject:
   - component: {fileID: 1555474327}
   - component: {fileID: 1555474326}
   - component: {fileID: 1555474325}
-  - component: {fileID: 1555474324}
-  - component: {fileID: 1555474323}
   m_Layer: 0
   m_Name: SchoolChair (3)
   m_TagString: Untagged
@@ -28234,51 +28001,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1555474323
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1555474322}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2dc406049d0ac4dacace225fa81cd245, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  roryRef: {fileID: 1546954265}
-  objectParts:
-  - {fileID: 1555474326}
-  interactionUI: {fileID: 0}
-  fungusBool: 
-  flowRef: {fileID: 0}
-  disableFlip: 1
---- !u!61 &1555474324
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1555474322}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.78, y: 4.76}
-    newSize: {x: 1.78, y: 4.76}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.78, y: 4.76}
-  m_EdgeRadius: 0
 --- !u!61 &1555474325
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28341,9 +28063,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2073999059
-  m_SortingLayer: 1
-  m_SortingOrder: 0
+  m_SortingLayerID: 473206079
+  m_SortingLayer: 2
+  m_SortingOrder: -144
   m_Sprite: {fileID: 1176252065327423578, guid: 038a3550019604500a78bbdf57f55acc,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -28850,8 +28572,6 @@ GameObject:
   - component: {fileID: 1599418950}
   - component: {fileID: 1599418949}
   - component: {fileID: 1599418948}
-  - component: {fileID: 1599418947}
-  - component: {fileID: 1599418946}
   m_Layer: 0
   m_Name: SchoolChair (2)
   m_TagString: Untagged
@@ -28859,51 +28579,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1599418946
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1599418945}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2dc406049d0ac4dacace225fa81cd245, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  roryRef: {fileID: 1546954265}
-  objectParts:
-  - {fileID: 1599418949}
-  interactionUI: {fileID: 0}
-  fungusBool: 
-  flowRef: {fileID: 0}
-  disableFlip: 1
---- !u!61 &1599418947
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1599418945}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.78, y: 4.76}
-    newSize: {x: 1.78, y: 4.76}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.78, y: 4.76}
-  m_EdgeRadius: 0
 --- !u!61 &1599418948
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28966,9 +28641,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2073999059
-  m_SortingLayer: 1
-  m_SortingOrder: 0
+  m_SortingLayerID: 473206079
+  m_SortingLayer: 2
+  m_SortingOrder: 551
   m_Sprite: {fileID: 1176252065327423578, guid: 038a3550019604500a78bbdf57f55acc,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -29604,8 +29279,6 @@ GameObject:
   - component: {fileID: 1658958911}
   - component: {fileID: 1658958910}
   - component: {fileID: 1658958909}
-  - component: {fileID: 1658958908}
-  - component: {fileID: 1658958907}
   m_Layer: 0
   m_Name: SchoolChair (4)
   m_TagString: Untagged
@@ -29613,51 +29286,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1658958907
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1658958906}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2dc406049d0ac4dacace225fa81cd245, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  roryRef: {fileID: 1546954265}
-  objectParts:
-  - {fileID: 1658958910}
-  interactionUI: {fileID: 0}
-  fungusBool: 
-  flowRef: {fileID: 0}
-  disableFlip: 1
---- !u!61 &1658958908
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1658958906}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.78, y: 4.76}
-    newSize: {x: 1.78, y: 4.76}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.78, y: 4.76}
-  m_EdgeRadius: 0
 --- !u!61 &1658958909
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29720,9 +29348,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2073999059
-  m_SortingLayer: 1
-  m_SortingOrder: 0
+  m_SortingLayerID: 473206079
+  m_SortingLayer: 2
+  m_SortingOrder: -144
   m_Sprite: {fileID: 1176252065327423578, guid: 038a3550019604500a78bbdf57f55acc,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -30110,9 +29738,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2073999059
-  m_SortingLayer: 1
-  m_SortingOrder: 1
+  m_SortingLayerID: 473206079
+  m_SortingLayer: 2
+  m_SortingOrder: -799
   m_Sprite: {fileID: -1878615908768380176, guid: 87a731350011a476e8de1fa1000262f4,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -30679,9 +30307,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2073999059
-  m_SortingLayer: 1
-  m_SortingOrder: 3
+  m_SortingLayerID: 473206079
+  m_SortingLayer: 2
+  m_SortingOrder: -316
   m_Sprite: {fileID: 4360762715256377388, guid: 87a731350011a476e8de1fa1000262f4,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -31188,9 +30816,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2073999059
-  m_SortingLayer: 1
-  m_SortingOrder: 0
+  m_SortingLayerID: 473206079
+  m_SortingLayer: 2
+  m_SortingOrder: -800
   m_Sprite: {fileID: 1090471845268127305, guid: 87a731350011a476e8de1fa1000262f4,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

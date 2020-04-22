@@ -5,11 +5,14 @@ using UnityEngine;
 public class CharacterMovement : MonoBehaviour
 {
     
-    public Transform player;//reference to player character     public Transform touchParticles;//reference to particles     public GameObject directionHint;     public GameObject mc;//reference to player as game object     public float speed = 5f;//speed of character movement     public Footsteps FSREf;      private bool touchStart;//checks to see if player is dragging     private bool conversing;//I added this to keep the player from moving while talking, it's not being used rn     private bool roryFlipped;//this keeps the character from flipping constantly     private bool timerStart;     private bool hintShow;     private Vector2 pointA;//start of screen press     private Vector2 pointB;//where player drags to     private Vector2 playerStart;//stores where the player's 2D position at the start of screen press     private Vector2 playerEnd;//stores player's 2D position during the drag     private Vector2 playerOffset;//player end - player start     private Camera cam;//reference to main camera     private Animator anim;//allows me to update state machine     private float countdownTimer;//Counts down to remind the player to drag     private GameObject myHint;     private AudioSource tapSounds; 
+    public Transform player;//reference to player character     public Transform touchParticles;//reference to particles     public GameObject directionHint;     public GameObject mc;//reference to player as game object     public float speed = 5f;//speed of character movement     public Footsteps FSREf;     public SpriteRenderer[] spriteObjects;      private bool touchStart;//checks to see if player is dragging     private bool conversing;//I added this to keep the player from moving while talking, it's not being used rn     private bool roryFlipped;//this keeps the character from flipping constantly     private bool timerStart;     private bool hintShow;     private Vector2 pointA;//start of screen press     private Vector2 pointB;//where player drags to     private Vector2 playerStart;//stores where the player's 2D position at the start of screen press     private Vector2 playerEnd;//stores player's 2D position during the drag     private Vector2 playerOffset;//player end - player start     private Camera cam;//reference to main camera     private Animator anim;//allows me to update state machine     private float countdownTimer;//Counts down to remind the player to drag     private GameObject myHint;     private AudioSource tapSounds;     private int[] layerOffset; 
     // Start is called before the first frame update
     void Start()
     {
-        cam = Camera.main;         anim = mc.GetComponent<Animator>();         tapSounds = GetComponent<AudioSource>();         conversing = false;         countdownTimer = .2f; 
+        layerOffset = new int[spriteObjects.Length];         cam = Camera.main;         anim = mc.GetComponent<Animator>();         tapSounds = GetComponent<AudioSource>();         conversing = false;         countdownTimer = .2f;         for (int i = 0; i < layerOffset.Length; i++)
+        {
+            layerOffset[i] = spriteObjects[i].sortingOrder;
+        } 
     }
 
     // Update is called once per frame
@@ -84,7 +87,10 @@ public class CharacterMovement : MonoBehaviour
                 }                 else                 {                     anim.SetBool("IsRunning", false);//changes to idle animation                     //footsteps.Stop();                 }              }         }     }      private void moveCharacter(Vector2 direction)
     {
         //the final movement calculation
-        player.Translate(direction * speed * Time.deltaTime);     }      public void toggleCharacterMove()//enables and disables Rory's ability to move     {         conversing = !conversing;     }      public void RunSelect()
+        player.Translate(direction * speed * Time.deltaTime);         for (int i = 0; i < spriteObjects.Length; i++)
+        {
+            spriteObjects[i].sortingOrder = (int)(transform.position.y * -100) + layerOffset[i];
+        }     }      public void toggleCharacterMove()//enables and disables Rory's ability to move     {         conversing = !conversing;     }      public void RunSelect()
     {
         int runNumber = Random.Range(1, 6);
         anim.SetInteger("RunSelector",runNumber);

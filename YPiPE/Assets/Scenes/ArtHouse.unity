@@ -19680,9 +19680,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2073999059
-  m_SortingLayer: 1
-  m_SortingOrder: 3
+  m_SortingLayerID: 473206079
+  m_SortingLayer: 2
+  m_SortingOrder: 104
   m_Sprite: {fileID: -7115222170758052485, guid: bb42f54fafca94adebbe809da92838f0,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -19947,9 +19947,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2073999059
-  m_SortingLayer: 1
-  m_SortingOrder: 0
+  m_SortingLayerID: 473206079
+  m_SortingLayer: 2
+  m_SortingOrder: -311
   m_Sprite: {fileID: 3932035454631532461, guid: 87a731350011a476e8de1fa1000262f4,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -20566,6 +20566,20 @@ MonoBehaviour:
   mc: {fileID: 534893620}
   speed: 8
   FSREf: {fileID: 534893623}
+  spriteObjects:
+  - {fileID: 1511166188}
+  - {fileID: 1210582869}
+  - {fileID: 2103553971}
+  - {fileID: 1282169069}
+  - {fileID: 1606369042}
+  - {fileID: 1306293312}
+  - {fileID: 955800298}
+  - {fileID: 87362035}
+  - {fileID: 1745128847}
+  - {fileID: 1891958830}
+  - {fileID: 860914463}
+  - {fileID: 1436311380}
+  - {fileID: 602718605}
 --- !u!95 &534893625
 Animator:
   serializedVersion: 3
@@ -21018,9 +21032,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2073999059
-  m_SortingLayer: 1
-  m_SortingOrder: 1
+  m_SortingLayerID: 473206079
+  m_SortingLayer: 2
+  m_SortingOrder: 102
   m_Sprite: {fileID: -7115222170758052485, guid: bb42f54fafca94adebbe809da92838f0,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -21595,8 +21609,6 @@ GameObject:
   - component: {fileID: 688087620}
   - component: {fileID: 688087619}
   - component: {fileID: 688087618}
-  - component: {fileID: 688087617}
-  - component: {fileID: 688087616}
   m_Layer: 0
   m_Name: ArtBarrier (5)
   m_TagString: Untagged
@@ -21604,51 +21616,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &688087616
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 688087615}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2dc406049d0ac4dacace225fa81cd245, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  roryRef: {fileID: 534893629}
-  objectParts:
-  - {fileID: 688087619}
-  interactionUI: {fileID: 0}
-  fungusBool: 
-  flowRef: {fileID: 0}
-  disableFlip: 1
---- !u!61 &688087617
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 688087615}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 1.694}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.06}
-    oldSize: {x: 0.76, y: 3.85}
-    newSize: {x: 0.76, y: 3.85}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.76, y: 3.85}
-  m_EdgeRadius: 0
 --- !u!58 &688087618
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -21701,9 +21668,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2073999059
-  m_SortingLayer: 1
-  m_SortingOrder: 0
+  m_SortingLayerID: 473206079
+  m_SortingLayer: 2
+  m_SortingOrder: -400
   m_Sprite: {fileID: 4125822756241808560, guid: c71334e11184f4a29a8ddf92030a5bd8,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -21910,9 +21877,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2073999059
-  m_SortingLayer: 1
-  m_SortingOrder: 0
+  m_SortingLayerID: 473206079
+  m_SortingLayer: 2
+  m_SortingOrder: 101
   m_Sprite: {fileID: -8965525146545309645, guid: bb42f54fafca94adebbe809da92838f0,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -21950,8 +21917,6 @@ GameObject:
   - component: {fileID: 733207094}
   - component: {fileID: 733207093}
   - component: {fileID: 733207092}
-  - component: {fileID: 733207091}
-  - component: {fileID: 733207090}
   m_Layer: 0
   m_Name: ArtBarrier (3)
   m_TagString: Untagged
@@ -21959,51 +21924,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &733207090
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 733207089}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2dc406049d0ac4dacace225fa81cd245, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  roryRef: {fileID: 534893629}
-  objectParts:
-  - {fileID: 733207093}
-  interactionUI: {fileID: 0}
-  fungusBool: 
-  flowRef: {fileID: 0}
-  disableFlip: 1
---- !u!61 &733207091
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 733207089}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 1.694}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.06}
-    oldSize: {x: 0.76, y: 3.85}
-    newSize: {x: 0.76, y: 3.85}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.76, y: 3.85}
-  m_EdgeRadius: 0
 --- !u!58 &733207092
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -22056,9 +21976,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2073999059
-  m_SortingLayer: 1
-  m_SortingOrder: 0
+  m_SortingLayerID: 473206079
+  m_SortingLayer: 2
+  m_SortingOrder: 150
   m_Sprite: {fileID: 4125822756241808560, guid: c71334e11184f4a29a8ddf92030a5bd8,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -22360,8 +22280,6 @@ GameObject:
   - component: {fileID: 779284247}
   - component: {fileID: 779284246}
   - component: {fileID: 779284245}
-  - component: {fileID: 779284244}
-  - component: {fileID: 779284243}
   m_Layer: 0
   m_Name: ArtBarrier (4)
   m_TagString: Untagged
@@ -22369,51 +22287,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &779284243
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 779284242}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2dc406049d0ac4dacace225fa81cd245, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  roryRef: {fileID: 534893629}
-  objectParts:
-  - {fileID: 779284246}
-  interactionUI: {fileID: 0}
-  fungusBool: 
-  flowRef: {fileID: 0}
-  disableFlip: 1
---- !u!61 &779284244
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 779284242}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 1.694}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.06}
-    oldSize: {x: 0.76, y: 3.85}
-    newSize: {x: 0.76, y: 3.85}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.76, y: 3.85}
-  m_EdgeRadius: 0
 --- !u!58 &779284245
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -22466,9 +22339,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2073999059
-  m_SortingLayer: 1
-  m_SortingOrder: 0
+  m_SortingLayerID: 473206079
+  m_SortingLayer: 2
+  m_SortingOrder: -150
   m_Sprite: {fileID: 4125822756241808560, guid: c71334e11184f4a29a8ddf92030a5bd8,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -22625,9 +22498,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2073999059
-  m_SortingLayer: 1
-  m_SortingOrder: 1
+  m_SortingLayerID: 473206079
+  m_SortingLayer: 2
+  m_SortingOrder: -310
   m_Sprite: {fileID: 5626453788105205653, guid: 87a731350011a476e8de1fa1000262f4,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -22826,8 +22699,8 @@ GameObject:
   - component: {fileID: 821971012}
   - component: {fileID: 821971011}
   - component: {fileID: 821971010}
-  - component: {fileID: 821971008}
   - component: {fileID: 821971007}
+  - component: {fileID: 821971008}
   m_Layer: 0
   m_Name: Artpocalypse
   m_TagString: Untagged
@@ -22863,23 +22736,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 821971006}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f3d1e9605a6b43d394a2e9d408c61a5, type: 3}
+  m_Script: {fileID: 11500000, guid: 2dc406049d0ac4dacace225fa81cd245, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Rory: {fileID: 534893629}
-  MayorHead: {fileID: 2092103129}
-  MayorBody: {fileID: 1923722351}
-  MayorArmR: {fileID: 1721053263}
-  MayorArmL: {fileID: 398827349}
-  MayorLegR: {fileID: 803301669}
-  MayorLegL: {fileID: 1615540464}
-  speachButton: {fileID: 272586753}
-  lookButton: {fileID: 1731258182}
-  mayorDeactivated: 0
-  mayorWalk: 0
-  speakSprite: {fileID: 0}
+  roryRef: {fileID: 534893629}
+  objectParts: []
+  interactionUI: {fileID: 272586753}
   fungusBool: Artpocalypse
-  partyFlowchart: {fileID: 247157446}
+  flowRef: {fileID: 247157446}
+  disableFlip: 0
 --- !u!61 &821971010
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22904,7 +22769,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.3, y: 1}
+  m_Size: {x: 2.02, y: 0.5}
   m_EdgeRadius: 0
 --- !u!61 &821971011
 BoxCollider2D:
@@ -23253,7 +23118,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 6.01, y: 4.4032574}
+  m_Size: {x: 2.08, y: 4.4032574}
   m_EdgeRadius: 0
 --- !u!114 &860914468
 MonoBehaviour:
@@ -25742,8 +25607,6 @@ GameObject:
   - component: {fileID: 1083885781}
   - component: {fileID: 1083885780}
   - component: {fileID: 1083885779}
-  - component: {fileID: 1083885778}
-  - component: {fileID: 1083885777}
   m_Layer: 0
   m_Name: ArtBarrier
   m_TagString: Untagged
@@ -25751,51 +25614,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1083885777
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1083885776}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2dc406049d0ac4dacace225fa81cd245, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  roryRef: {fileID: 534893629}
-  objectParts:
-  - {fileID: 1083885780}
-  interactionUI: {fileID: 0}
-  fungusBool: 
-  flowRef: {fileID: 0}
-  disableFlip: 1
---- !u!61 &1083885778
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1083885776}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 1.694}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.06}
-    oldSize: {x: 0.76, y: 3.85}
-    newSize: {x: 0.76, y: 3.85}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.76, y: 3.85}
-  m_EdgeRadius: 0
 --- !u!58 &1083885779
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -25848,9 +25666,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2073999059
-  m_SortingLayer: 1
-  m_SortingOrder: 0
+  m_SortingLayerID: 473206079
+  m_SortingLayer: 2
+  m_SortingOrder: 150
   m_Sprite: {fileID: 4125822756241808560, guid: c71334e11184f4a29a8ddf92030a5bd8,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -25944,9 +25762,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2073999059
-  m_SortingLayer: 1
-  m_SortingOrder: 5
+  m_SortingLayerID: 473206079
+  m_SortingLayer: 2
+  m_SortingOrder: 104
   m_Sprite: {fileID: 8418214261613369900, guid: bb42f54fafca94adebbe809da92838f0,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -26884,7 +26702,7 @@ GameObject:
   - component: {fileID: 1193730667}
   - component: {fileID: 1193730666}
   - component: {fileID: 1193730665}
-  - component: {fileID: 1193730664}
+  - component: {fileID: 1193730670}
   m_Layer: 0
   m_Name: Sk8Gr8
   m_TagString: Untagged
@@ -26892,32 +26710,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1193730664
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1193730663}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f3d1e9605a6b43d394a2e9d408c61a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Rory: {fileID: 534893629}
-  MayorHead: {fileID: 1084300865}
-  MayorBody: {fileID: 1721034753}
-  MayorArmR: {fileID: 1486345655}
-  MayorArmL: {fileID: 726193989}
-  MayorLegR: {fileID: 358817088}
-  MayorLegL: {fileID: 549003824}
-  speachButton: {fileID: 272586753}
-  lookButton: {fileID: 1731258182}
-  mayorDeactivated: 0
-  mayorWalk: 0
-  speakSprite: {fileID: 0}
-  fungusBool: Sk8Gr8
-  partyFlowchart: {fileID: 247157446}
 --- !u!95 &1193730665
 Animator:
   serializedVersion: 3
@@ -26961,7 +26753,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.3, y: 1}
+  m_Size: {x: 1.3, y: 0.55}
   m_EdgeRadius: 0
 --- !u!61 &1193730667
 BoxCollider2D:
@@ -27056,6 +26848,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1193730670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1193730663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dc406049d0ac4dacace225fa81cd245, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roryRef: {fileID: 534893629}
+  objectParts: []
+  interactionUI: {fileID: 272586753}
+  fungusBool: Sk8Gr8
+  flowRef: {fileID: 247157446}
+  disableFlip: 0
 --- !u!1 &1196227420
 GameObject:
   m_ObjectHideFlags: 0
@@ -28445,8 +28255,6 @@ GameObject:
   - component: {fileID: 1418189813}
   - component: {fileID: 1418189812}
   - component: {fileID: 1418189811}
-  - component: {fileID: 1418189810}
-  - component: {fileID: 1418189809}
   m_Layer: 0
   m_Name: ArtBarrier (2)
   m_TagString: Untagged
@@ -28454,51 +28262,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1418189809
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1418189808}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2dc406049d0ac4dacace225fa81cd245, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  roryRef: {fileID: 534893629}
-  objectParts:
-  - {fileID: 1418189812}
-  interactionUI: {fileID: 0}
-  fungusBool: 
-  flowRef: {fileID: 0}
-  disableFlip: 1
---- !u!61 &1418189810
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1418189808}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 1.694}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.06}
-    oldSize: {x: 0.76, y: 3.85}
-    newSize: {x: 0.76, y: 3.85}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.76, y: 3.85}
-  m_EdgeRadius: 0
 --- !u!58 &1418189811
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -28551,9 +28314,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2073999059
-  m_SortingLayer: 1
-  m_SortingOrder: 0
+  m_SortingLayerID: 473206079
+  m_SortingLayer: 2
+  m_SortingOrder: -400
   m_Sprite: {fileID: 4125822756241808560, guid: c71334e11184f4a29a8ddf92030a5bd8,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -30285,9 +30048,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2073999059
-  m_SortingLayer: 1
-  m_SortingOrder: 4
+  m_SortingLayerID: 473206079
+  m_SortingLayer: 2
+  m_SortingOrder: 105
   m_Sprite: {fileID: -8965525146545309645, guid: bb42f54fafca94adebbe809da92838f0,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -31699,9 +31462,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2073999059
-  m_SortingLayer: 1
-  m_SortingOrder: 2
+  m_SortingLayerID: 473206079
+  m_SortingLayer: 2
+  m_SortingOrder: -308
   m_Sprite: {fileID: 8892300663518592191, guid: 87a731350011a476e8de1fa1000262f4,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -31816,8 +31579,6 @@ GameObject:
   - component: {fileID: 1649214652}
   - component: {fileID: 1649214651}
   - component: {fileID: 1649214650}
-  - component: {fileID: 1649214649}
-  - component: {fileID: 1649214648}
   m_Layer: 0
   m_Name: ArtBarrier (1)
   m_TagString: Untagged
@@ -31825,51 +31586,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1649214648
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1649214647}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2dc406049d0ac4dacace225fa81cd245, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  roryRef: {fileID: 534893629}
-  objectParts:
-  - {fileID: 1649214651}
-  interactionUI: {fileID: 0}
-  fungusBool: 
-  flowRef: {fileID: 0}
-  disableFlip: 1
---- !u!61 &1649214649
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1649214647}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 1.694}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.06}
-    oldSize: {x: 0.76, y: 3.85}
-    newSize: {x: 0.76, y: 3.85}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.76, y: 3.85}
-  m_EdgeRadius: 0
 --- !u!58 &1649214650
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -31922,9 +31638,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2073999059
-  m_SortingLayer: 1
-  m_SortingOrder: 0
+  m_SortingLayerID: 473206079
+  m_SortingLayer: 2
+  m_SortingOrder: -150
   m_Sprite: {fileID: 4125822756241808560, guid: c71334e11184f4a29a8ddf92030a5bd8,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -32875,9 +32591,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2073999059
-  m_SortingLayer: 1
-  m_SortingOrder: 2
+  m_SortingLayerID: 473206079
+  m_SortingLayer: 2
+  m_SortingOrder: 103
   m_Sprite: {fileID: -2152823437195294426, guid: bb42f54fafca94adebbe809da92838f0,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -32957,9 +32673,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2073999059
-  m_SortingLayer: 1
-  m_SortingOrder: 4
+  m_SortingLayerID: 473206079
+  m_SortingLayer: 2
+  m_SortingOrder: -307
   m_Sprite: {fileID: 3932035454631532461, guid: 87a731350011a476e8de1fa1000262f4,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -34098,9 +33814,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2073999059
-  m_SortingLayer: 1
-  m_SortingOrder: 0
+  m_SortingLayerID: 473206079
+  m_SortingLayer: 2
+  m_SortingOrder: -611
   m_Sprite: {fileID: 7375353396716685071, guid: c71334e11184f4a29a8ddf92030a5bd8,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -34140,8 +33856,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roryRef: {fileID: 534893629}
-  objectParts:
-  - {fileID: 1806491071}
+  objectParts: []
   interactionUI: {fileID: 1731258182}
   fungusBool: Chair
   flowRef: {fileID: 247157446}
@@ -34968,9 +34683,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2073999059
-  m_SortingLayer: 1
-  m_SortingOrder: 3
+  m_SortingLayerID: 473206079
+  m_SortingLayer: 2
+  m_SortingOrder: -309
   m_Sprite: {fileID: 678771972598430485, guid: 87a731350011a476e8de1fa1000262f4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
@@ -35746,9 +35461,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2073999059
-  m_SortingLayer: 1
-  m_SortingOrder: 5
+  m_SortingLayerID: 473206079
+  m_SortingLayer: 2
+  m_SortingOrder: -308
   m_Sprite: {fileID: 4134529233554601130, guid: 87a731350011a476e8de1fa1000262f4,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
