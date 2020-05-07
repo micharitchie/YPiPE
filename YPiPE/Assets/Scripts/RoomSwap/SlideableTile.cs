@@ -8,6 +8,8 @@ public class SlideableTile : MonoBehaviour
 	public int collumn;
     public Vector2 startPos;
     public Vector2 endPos;
+    public static bool slideIncomplete;
+
 
     // Start is called before the first frame update
     void Start()
@@ -20,8 +22,18 @@ public class SlideableTile : MonoBehaviour
     {
         if(startPos != endPos)
         {
-            transform.position = Vector2.Lerp(startPos, endPos, .2f);
+            
+            transform.position = Vector2.Lerp(startPos, endPos, .3f);
             startPos = transform.position;
+            if (startPos == endPos)
+            {
+                slideIncomplete = false;
+                transform.localScale = Vector3.one;
+                
+            } else
+            {
+                slideIncomplete = true;
+            }
         }
     }
 }

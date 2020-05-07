@@ -6,14 +6,31 @@ public class Layering : MonoBehaviour
 {
 
     public SpriteRenderer[] spriteObjects;
+    public Transform UILocation;
+    public Transform UIObject;
+
+    private int[] startingSort;
+
+    private void Start()
+    {
+        startingSort = new int[spriteObjects.Length];
+        for (int i = 0; i < startingSort.Length; i++)
+        {
+            startingSort[i] = spriteObjects[i].sortingOrder;
+        }
+        setLayering();
+    }
 
 
-    // Update is called once per frame
-    void Update()
+    public void setLayering()
     {
         for (int i = 0; i < spriteObjects.Length; i++)
         {
-            spriteObjects[i].sortingOrder += (int)(transform.position.y * -100);
+            spriteObjects[i].sortingOrder = (int)(transform.position.y * -100) + startingSort[i];
+        }
+        if (UILocation)
+        {
+            UIObject.position = UILocation.position;
         }
     }
 }

@@ -76,7 +76,14 @@ public class Footsteps : MonoBehaviour
                 //footstepPlayer.Play();
                 footstepParticles = Resources.Load<GameObject>("HardfloorParticles");
                 //Instantiate(footstepParticles, dustLocation.transform.position, particleRotation);
-            } else
+            } else if (hit.collider.tag == "Swappable Tile")
+            {
+                int hardfloorTrack = Random.Range(1, 5);
+                footstepPlayer.clip = Resources.Load<AudioClip>("hardfloorStep0" + hardfloorTrack);
+                footstepParticles = Resources.Load<GameObject>("HardfloorParticles");
+            }
+
+            else
             {
                 //Debug.Log("I don't know what the fuck you're standing on");
             }

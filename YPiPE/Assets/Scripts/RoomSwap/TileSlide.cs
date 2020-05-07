@@ -97,8 +97,16 @@ public class TileSlide : MonoBehaviour
                                 clickTilePos = rayHit.collider.gameObject.transform.position;
                                 selectedObject = rayHit.collider.gameObject;
                                 selectedScript = selectedObject.GetComponent<SlideableTile>();
+                            } else
+                            {
+                                selectedObject = null;
+                                selectedScript = null;
                             }
 
+                        } else
+                        {
+                            selectedObject = null;
+                            selectedScript = null;
                         }
                         break;
 
@@ -113,7 +121,19 @@ public class TileSlide : MonoBehaviour
                         //Debug.Log(distance);
                         if (distance >= 2)
                         {
-                            MovePieces();
+                            if (!SlideableTile.slideIncomplete)
+                            {
+                                MovePieces();
+                            } else
+                            {
+                                SpriteRenderer[] tileSprites = selectedObject.transform.GetComponentsInChildren<SpriteRenderer>();
+                                for (int i = 0; i < tileSprites.Length; i++)
+                                {
+                                    tileSprites[i].sortingOrder -= 1000;
+                                }
+                                selectedObject.transform.localScale = Vector2.one;
+                            }
+                            
                         }
                         break;
                 }
@@ -124,65 +144,68 @@ public class TileSlide : MonoBehaviour
 
     void MovePieces()
     {
-        if (swipeAngle > -45 && swipeAngle <= 45 && selectedScript.collumn < arrayRow1.Length - 1)
+        if (selectedObject)
         {
-            //right swipe
-            swipeObject = multiArray[selectedScript.row, selectedScript.collumn + 1];
-            //swipeTilePos = swipeObject.transform.position;
-            swipeScript = swipeObject.GetComponent<SlideableTile>();
-            selectedScript.endPos = swipeObject.transform.position;
-            swipeScript.endPos = clickTilePos;
-            multiArray[selectedScript.row, selectedScript.collumn] = swipeObject;
-            multiArray[swipeScript.row, swipeScript.collumn] = selectedObject;
-            selectedScript.collumn++;
-            swipeScript.collumn--;
-            //Debug.Log(multiArray[selectedScript.row,selectedScript.collumn+1]);
-            //transform.position = Vector2.Lerp(transform.position, tempPos, 1);
-        } else if (swipeAngle > 45 && swipeAngle <= 135 && selectedScript.row > 0)
-        {
-            //up swipe
-            swipeObject = multiArray[selectedScript.row - 1, selectedScript.collumn];
-            //swipeTilePos = swipeObject.transform.position;
-            swipeScript = swipeObject.GetComponent<SlideableTile>();
-            selectedScript.endPos = swipeObject.transform.position;
-            swipeScript.endPos = clickTilePos;
-            multiArray[selectedScript.row, selectedScript.collumn] = swipeObject;
-            multiArray[swipeScript.row, swipeScript.collumn] = selectedObject;
-            selectedScript.row--;
-            swipeScript.row++;
-            //Debug.Log(multiArray[selectedScript.row-1,selectedScript.collumn]);
-        } else if ((swipeAngle > 135 || swipeAngle <= -135) && selectedScript.collumn > 0)
-        {
-            //left swipe
-            swipeObject = multiArray[selectedScript.row, selectedScript.collumn - 1];
-            //swipeTilePos = swipeObject.transform.position;
-            swipeScript = swipeObject.GetComponent<SlideableTile>();
-            selectedScript.endPos = swipeObject.transform.position;
-            swipeScript.endPos = clickTilePos;
-            multiArray[selectedScript.row, selectedScript.collumn] = swipeObject;
-            multiArray[swipeScript.row, swipeScript.collumn] = selectedObject;
-            selectedScript.collumn--;
-            swipeScript.collumn++;
-            //Debug.Log(multiArray[selectedScript.row, selectedScript.collumn-1]);
-        } else if (swipeAngle < -45 && swipeAngle >= -135 && selectedScript.row < 2)
-        {
-            //down swipe
-            swipeObject = multiArray[selectedScript.row + 1, selectedScript.collumn];
-            //swipeTilePos = swipeObject.transform.position;
-            swipeScript = swipeObject.GetComponent<SlideableTile>();
-            selectedScript.endPos = swipeObject.transform.position;
-            swipeScript.endPos = clickTilePos;
-            multiArray[selectedScript.row, selectedScript.collumn] = swipeObject;
-            multiArray[swipeScript.row, swipeScript.collumn] = selectedObject;
-            selectedScript.row++;
-            swipeScript.row--;
-            //Debug.Log(multiArray[selectedScript.row+1,selectedScript.collumn]);
+            SpriteRenderer[] tileSprites = selectedObject.transform.GetComponentsInChildren<SpriteRenderer>();
+            Vector2 tileScale = new Vector2(1.5f, 1.5f);
+            for (int i = 0; i < tileSprites.Length; i++)
+            {
+                tileSprites[i].sortingOrder += 1000;
+            }
+            selectedObject.transform.localScale = Vector2.Lerp(Vector2.one, tileScale, .3f);
+            if (swipeAngle > -45 && swipeAngle <= 45 && selectedScript.collumn < arrayRow1.Length - 1)
+            {
+                //right swipe
+                swipeObject = multiArray[selectedScript.row, selectedScript.collumn + 1];
+                swipeScript = swipeObject.GetComponent<SlideableTile>();
+                selectedScript.endPos = swipeObject.transform.position;
+                swipeScript.endPos = clickTilePos;
+                multiArray[selectedScript.row, selectedScript.collumn] = swipeObject;
+                multiArray[swipeScript.row, swipeScript.collumn] = selectedObject;
+                selectedScript.collumn++;
+                swipeScript.collumn--;
+            }
+            else if (swipeAngle > 45 && swipeAngle <= 135 && selectedScript.row > 0)
+            {
+                //up swipe
+                swipeObject = multiArray[selectedScript.row - 1, selectedScript.collumn];
+                swipeScript = swipeObject.GetComponent<SlideableTile>();
+                selectedScript.endPos = swipeObject.transform.position;
+                swipeScript.endPos = clickTilePos;
+                multiArray[selectedScript.row, selectedScript.collumn] = swipeObject;
+                multiArray[swipeScript.row, swipeScript.collumn] = selectedObject;
+                selectedScript.row--;
+                swipeScript.row++;
+            }
+            else if ((swipeAngle > 135 || swipeAngle <= -135) && selectedScript.collumn > 0)
+            {
+                //left swipe
+                swipeObject = multiArray[selectedScript.row, selectedScript.collumn - 1];
+                swipeScript = swipeObject.GetComponent<SlideableTile>();
+                selectedScript.endPos = swipeObject.transform.position;
+                swipeScript.endPos = clickTilePos;
+                multiArray[selectedScript.row, selectedScript.collumn] = swipeObject;
+                multiArray[swipeScript.row, swipeScript.collumn] = selectedObject;
+                selectedScript.collumn--;
+                swipeScript.collumn++;
+            }
+            else if (swipeAngle < -45 && swipeAngle >= -135 && selectedScript.row < 2)
+            {
+                //down swipe
+                swipeObject = multiArray[selectedScript.row + 1, selectedScript.collumn];
+                swipeScript = swipeObject.GetComponent<SlideableTile>();
+                selectedScript.endPos = swipeObject.transform.position;
+                swipeScript.endPos = clickTilePos;
+                multiArray[selectedScript.row, selectedScript.collumn] = swipeObject;
+                multiArray[swipeScript.row, swipeScript.collumn] = selectedObject;
+                selectedScript.row++;
+                swipeScript.row--;
+            }
         }
     }
 
     public void toggleSwap()
     {
-        //CMScript.toggleCharacterMove();
         RPSScript.ChangeVisibility(enableSwap);
         enableSwap = !enableSwap;
     }

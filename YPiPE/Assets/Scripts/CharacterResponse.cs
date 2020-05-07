@@ -19,7 +19,7 @@ public class CharacterResponse : MonoBehaviour
         {
             if (interactionUI)
             {
-                interactionUI.transform.position = new Vector3(roryRef.position.x + 2.3f, roryRef.position.y + 4.2f, roryRef.position.z);
+                //interactionUI.transform.position = new Vector3(roryRef.position.x + 2.3f, roryRef.position.y + 4.2f, roryRef.position.z);
                 interactionUI.SetActive(true);
             }
             if (flowRef) {
@@ -56,10 +56,10 @@ public class CharacterResponse : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (interactionUI)
+        /*if (interactionUI)
         {
             interactionUI.transform.position = new Vector3(roryRef.position.x + 2.3f, roryRef.position.y + 4.2f, roryRef.position.z);
-        }
+        }*/
         if (!disableFlip)
         {
             if (roryRef.position.x <= transform.position.x)
@@ -116,5 +116,7 @@ public class CharacterResponse : MonoBehaviour
     {
         disableFlip = !disableFlip;
     }
+
+    
 
 }

@@ -154,12 +154,12 @@ public class BodySwapPuzzle : MonoBehaviour
             if(armRLoc == specificLocations[2]||armRLoc == specificLocations[5])
             {
                 partsMatch = true;
-                Debug.Log("ArmR match");
+                //Debug.Log("ArmR match");
             }
             else
             {
                 partsMatch = false;
-                Debug.Log(armRLoc);
+                //Debug.Log(armRLoc);
             }
         }
 
@@ -192,17 +192,31 @@ public class BodySwapPuzzle : MonoBehaviour
             if (armLLoc == specificLocations[2] || armLLoc == specificLocations[5])
             {
                 partsMatch = true;
-                Debug.Log("ArmL Match");
+                //Debug.Log("ArmL Match");
             }
             else
             {
                 partsMatch = false;
-                Debug.Log(armLLoc);
+                //Debug.Log(armLLoc);
             }
         }
 
 
         outFlow.SetBooleanVariable(fungusBool, partsMatch);
+    }
+
+    public void ShelfCheck()
+    {
+        armRLoc = Draggable.partLocations[2];
+        armLLoc = Draggable.partLocations[5];
+        if (armLLoc == 0 || armRLoc == 0)
+        {
+            outFlow.SetBooleanVariable(fungusBool, true);
+        } else
+        {
+            outFlow.SetBooleanVariable(fungusBool, false);
+            Debug.Log("Left Arm" + armLLoc + "Right Arm" + armRLoc);
+        }
     }
 
 }

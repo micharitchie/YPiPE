@@ -36,8 +36,8 @@ public class HouseCtrl : MonoBehaviour
             if (targetFlowchart != null) { 
                 targetFlowchart.SetBooleanVariable(fugusBool, true);
             }
-            Vector3 buttonLocation = new Vector3(playerLoc.position.x + 2.3f, playerLoc.position.y + 4.2f, playerLoc.position.z);
-            doorUI.transform.position = buttonLocation;
+            //Vector3 buttonLocation = new Vector3(playerLoc.position.x + 2.3f, playerLoc.position.y + 4.2f, playerLoc.position.z);
+            //doorUI.transform.position = buttonLocation;
             doorUI.SetActive(true);
             doorAudio.Stop();
             if (LockedSound)
@@ -55,8 +55,8 @@ public class HouseCtrl : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        Vector3 buttonLocation = new Vector3(playerLoc.position.x + 2.3f, playerLoc.position.y + 4.2f, playerLoc.position.z);
-        doorUI.transform.position = buttonLocation;
+        //Vector3 buttonLocation = new Vector3(playerLoc.position.x + 2.3f, playerLoc.position.y + 4.2f, playerLoc.position.z);
+        //doorUI.transform.position = buttonLocation;
     }
 
     private void OnTriggerExit2D(Collider2D collision)

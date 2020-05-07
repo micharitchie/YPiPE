@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Fungus;
+using UnityEngine.SceneManagement;
+
 
 public class CustomLoading : MonoBehaviour
 {
@@ -12,7 +14,7 @@ public class CustomLoading : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        mySaveMenu = FindObjectOfType<SaveMenu>();
+        //mySaveMenu = FindObjectOfType<SaveMenu>();
         myGV = GameObject.Find("GlobalVariables").GetComponent<Flowchart>();
     }
 
@@ -26,10 +28,13 @@ public class CustomLoading : MonoBehaviour
 
     public void RestartGame()
     {
-        if (mySaveMenu != null)
+        /*if (mySaveMenu != null)
         {
             myGV.Reset(true, true);
             mySaveMenu.Restart();
-        }
+        } */
+        myGV.Reset(true, true);
+        SceneManager.LoadScene("IntroWorld");
+
     }
 }
