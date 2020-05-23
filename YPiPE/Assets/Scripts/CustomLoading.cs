@@ -8,23 +8,23 @@ using UnityEngine.SceneManagement;
 public class CustomLoading : MonoBehaviour
 {
 
-	private SaveMenu mySaveMenu;
+	//private SaveMenu mySaveMenu;
     private Flowchart myGV;
 
     // Start is called before the first frame update
     void Start()
     {
         //mySaveMenu = FindObjectOfType<SaveMenu>();
-        myGV = GameObject.Find("GlobalVariables").GetComponent<Flowchart>();
+        //myGV = GameObject.Find("GlobalVariables").GetComponent<Flowchart>();
     }
 
-    public void LoadSave()
+    /*public void LoadSave()
     {
         if (mySaveMenu != null)
         {
             mySaveMenu.Load();
         }
-    }
+    }*/
 
     public void RestartGame()
     {
@@ -33,6 +33,7 @@ public class CustomLoading : MonoBehaviour
             myGV.Reset(true, true);
             mySaveMenu.Restart();
         } */
+        myGV = GameObject.Find("GlobalVariables").GetComponent<Flowchart>();
         myGV.Reset(true, true);
         SceneManager.LoadScene("IntroWorld");
 

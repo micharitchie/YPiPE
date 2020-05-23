@@ -18,7 +18,15 @@ public class CharacterMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-                 //This section stores the location of where the user starts to press on the screen, and where they drag to
+        #region Keyboard Inputs         /*if (Input.GetAxisRaw("Horizontal") > .5f || Input.GetAxisRaw("Horizontal") < -.5f)
+        {
+            player.Translate(new Vector3 (Input.GetAxisRaw("Horizontal")*speed*Time.deltaTime,0f,0f));
+        }
+        if (Input.GetAxisRaw("Vertical") > .5f || Input.GetAxisRaw("Vertical") < -.5f)
+        {
+            player.Translate(new Vector3(0f, Input.GetAxisRaw("Vertical") * speed * Time.deltaTime, 0f));
+        }*/
+        #endregion         //This section stores the location of where the user starts to press on the screen, and where they drag to
         #region Touch Inputs         if (Input.touches.Length > 0)         {
             if (Input.touches[0].phase == TouchPhase.Began)             {
                 int tapTrack = Random.Range(1, 5);

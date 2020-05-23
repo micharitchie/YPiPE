@@ -18,11 +18,11 @@ public class StoreOrientation : MonoBehaviour
        if (GameObject.Find(thisName) != this.gameObject)
         {
             Destroy(this.gameObject);
-            Debug.Log("new object destroyed");
+            //Debug.Log("new object destroyed");
         } else
         {
             DontDestroyOnLoad(gameObject);
-            Debug.Log("first instance of object created");
+            //Debug.Log("first instance of object created");
         }
     }
 
@@ -33,7 +33,7 @@ public class StoreOrientation : MonoBehaviour
         objectName = new string[TSScript.multiArray.GetLength(0), TSScript.multiArray.GetLength(1)];
         objectPosition = new Vector2[TSScript.multiArray.GetLength(0), TSScript.multiArray.GetLength(1)];
     }
-
+    //Assigns the stored orientation to the level
     public void RememberOrientation()
     {
         SlideableTile tempTileRef;

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//This script can be deleted
 public class CameraInteractions : MonoBehaviour
 {
     public float zoomSpeed;

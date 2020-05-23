@@ -63,7 +63,7 @@ public class MayorInteraction : MonoBehaviour
     {
         if (collision.name == "VirtualRory")
         {
-            speachButton.transform.position = new Vector3(Rory.position.x + 2.3f, Rory.position.y + 4.2f, Rory.position.z);
+            //speachButton.transform.position = new Vector3(Rory.position.x + 2.3f, Rory.position.y + 4.2f, Rory.position.z);
             speachButton.SetActive(true);
             if (partyFlowchart)
             {
@@ -101,7 +101,7 @@ public class MayorInteraction : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        speachButton.transform.position = new Vector3(Rory.position.x + 2.3f, Rory.position.y + 4.2f, Rory.position.z);
+        //speachButton.transform.position = new Vector3(Rory.position.x + 2.3f, Rory.position.y + 4.2f, Rory.position.z);
         if (collision.name == "VirtualRory")
         {
             if (!Disabled)

@@ -53,7 +53,8 @@ public class TileSlide : MonoBehaviour
     {
         enableSwap = false;
         RPSScript = GameObject.Find("VirtualRory").GetComponent<RoryPartSwap>();
-        //CMScript = GameObject.Find("VirtualRory").GetComponent<CharacterMovement>();
+        //Finds the empty object with the StoreOrientation script if one exists
+        //not sure why I don't just make the script public
         if (!string.IsNullOrEmpty(storageObjectName))
         {
             storageObject = GameObject.Find(storageObjectName);
@@ -226,12 +227,14 @@ public class TileSlide : MonoBehaviour
             outFlow.SetBooleanVariable(fungusBool, true);
             //Debug.Log("success");
         }
+        //assigns finished orientation as starting orientation 
         for (var i = 0; i < multiArray.GetLength(0); i++)
         {
             for (var j = 0; j < multiArray.GetLength(1); j++)
             {
                 startingObjects[i, j] = multiArray[i, j];
                 startingPositions[i, j] = multiArray[i, j].transform.position;
+                //if there is a storage object orientation is also stored there
                 if (!string.IsNullOrEmpty(storageObjectName))
                 {
                     storeScript.objectName[i, j] = multiArray[i,j].name;

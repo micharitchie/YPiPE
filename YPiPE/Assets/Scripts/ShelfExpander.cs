@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+//this script can be deleted
 public class ShelfExpander : MonoBehaviour
 {
-	public static float maxMaskWidth = 250f;
+    public static float maxMaskWidth = 250f;
 	private float expandSpeed;
 	public static bool expandMask;
     private RectTransform maskSize;

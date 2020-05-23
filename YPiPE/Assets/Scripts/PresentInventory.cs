@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+//This script can be deleted
 public class PresentInventory : MonoBehaviour
 {
     public static List<Button> presentList = new List<Button>();
