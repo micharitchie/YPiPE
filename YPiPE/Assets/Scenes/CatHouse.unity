@@ -18816,7 +18816,7 @@ MonoBehaviour:
   puzzleSolution: 
   outFlow: {fileID: 0}
   fungusBool: 
-  storageObjectName: StoreOrientation
+  storageObjectName: CatHouseOrientation
   arrayRow1:
   - {fileID: 893802765}
   - {fileID: 290069133}
@@ -23866,6 +23866,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: RestartGame
       objectReference: {fileID: 0}
+    - target: {fileID: 8719829536998331080, guid: 157d2dd598c8b4ce2a1af0929c9137b9,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -25.00003
+      objectReference: {fileID: 0}
     - target: {fileID: 8719829537225008445, guid: 157d2dd598c8b4ce2a1af0929c9137b9,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -23975,6 +23980,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9020091953123047444, guid: 157d2dd598c8b4ce2a1af0929c9137b9,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -25.00003
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 157d2dd598c8b4ce2a1af0929c9137b9, type: 3}
@@ -28454,7 +28464,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lookUI: {fileID: 2143318098}
-  setLocation: {fileID: 1084625964}
   fungusBool: 
   targetFlowchart: {fileID: 0}
 --- !u!61 &1521163109
@@ -31560,7 +31569,7 @@ GameObject:
   - component: {fileID: 1749465215}
   - component: {fileID: 1749465214}
   m_Layer: 0
-  m_Name: StoreOrientation
+  m_Name: CatHouseOrientation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31579,7 +31588,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileGrid: {fileID: 525852210}
-  thisName: StoreOrientation
+  thisName: CatHouseOrientation
 --- !u!4 &1749465215
 Transform:
   m_ObjectHideFlags: 0
