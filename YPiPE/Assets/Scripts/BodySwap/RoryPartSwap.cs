@@ -14,9 +14,10 @@ public class RoryPartSwap : MonoBehaviour
     private Transform LegL;
     private Transform LegR;
     private Transform BodyParent;
-    private Transform parentHolder;
+    //private Transform parentHolder;
     private GameObject roryHider;
     private Vector3[] slotPositions;
+    private BoxCollider2D roryCollider;
     //private Draggable staticVarAccess;
 
     // Start is called before the first frame update
@@ -33,6 +34,7 @@ public class RoryPartSwap : MonoBehaviour
         //noParent = transform.Find("VRMover");
         //slotPositions = new Vector3[] { Head.position, Body.position, ArmR.position, LegR.position, LegL.position, ArmL.position };
         slotPositions = new Vector3[] { locationRef[0].position, locationRef[1].position, locationRef[2].position, locationRef[3].position, locationRef[4].position, locationRef[5].position };
+        roryCollider = GetComponent<BoxCollider2D>();
     }
     
     public void ClearParent()
@@ -235,6 +237,7 @@ public class RoryPartSwap : MonoBehaviour
     public void ChangeVisibility(bool RoryVisible)
     {
         roryHider.SetActive(RoryVisible);
+        roryCollider.enabled = RoryVisible;
     }
 
     public void ResetRory()

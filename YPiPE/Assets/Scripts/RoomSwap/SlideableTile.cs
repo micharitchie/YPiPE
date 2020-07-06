@@ -20,11 +20,18 @@ public class SlideableTile : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(startPos != endPos)
+        if (startPos != endPos)
         {
-            
-            transform.position = Vector2.Lerp(startPos, endPos, .3f);
+            if (Mathf.Abs(startPos.x - endPos.x) < .05f && Mathf.Abs(startPos.y - endPos.y) < .05f)
+            {
+                transform.position = endPos;
+                startPos = transform.position;
+            }
+            else
+            {
+                transform.position = Vector2.Lerp(startPos, endPos, .3f);
             startPos = transform.position;
+        }
             if (startPos == endPos)
             {
                 slideIncomplete = false;

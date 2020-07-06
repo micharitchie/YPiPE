@@ -1667,7 +1667,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lookUI: {fileID: 744349623}
-  setLocation: {fileID: 1073779843}
   fungusBool: 
   targetFlowchart: {fileID: 0}
 --- !u!61 &224788022
@@ -2437,7 +2436,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lookUI: {fileID: 725607135}
-  setLocation: {fileID: 1073779843}
   fungusBool: 
   targetFlowchart: {fileID: 0}
 --- !u!61 &409316092
@@ -9920,7 +9918,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lookUI: {fileID: 1157790085}
-  setLocation: {fileID: 1073779843}
   fungusBool: 
   targetFlowchart: {fileID: 0}
 --- !u!61 &1021192720
@@ -18624,6 +18621,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tileGrid: {fileID: 315445525}
   thisName: RoomOrientation
+  tileGridName: TileSwap2
 --- !u!1 &1220142861
 GameObject:
   m_ObjectHideFlags: 0
@@ -22238,6 +22236,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8719829536998331080, guid: 157d2dd598c8b4ce2a1af0929c9137b9,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -25.00003
+      objectReference: {fileID: 0}
     - target: {fileID: 8719829537225008445, guid: 157d2dd598c8b4ce2a1af0929c9137b9,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -22332,6 +22335,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9020091953123047444, guid: 157d2dd598c8b4ce2a1af0929c9137b9,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -25.00003
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 157d2dd598c8b4ce2a1af0929c9137b9, type: 3}

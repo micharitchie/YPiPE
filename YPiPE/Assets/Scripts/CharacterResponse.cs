@@ -11,15 +11,14 @@ public class CharacterResponse : MonoBehaviour
     public string fungusBool;
     public Flowchart flowRef;
     public bool disableFlip;
+    public bool trackUI;
     //public bool disableInteraction;
     
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.transform == roryRef)
-        {
+        
             if (interactionUI)
             {
-                //interactionUI.transform.position = new Vector3(roryRef.position.x + 2.3f, roryRef.position.y + 4.2f, roryRef.position.z);
                 interactionUI.SetActive(true);
             }
             if (flowRef) {
@@ -51,15 +50,16 @@ public class CharacterResponse : MonoBehaviour
                     objectParts[i].sortingLayerName = "NPC Front";
                 }
             }
-        }
+        
     }
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        /*if (interactionUI)
+        if (trackUI)
         {
             interactionUI.transform.position = new Vector3(roryRef.position.x + 2.3f, roryRef.position.y + 4.2f, roryRef.position.z);
-        }*/
+        }
+        
         if (!disableFlip)
         {
             if (roryRef.position.x <= transform.position.x)

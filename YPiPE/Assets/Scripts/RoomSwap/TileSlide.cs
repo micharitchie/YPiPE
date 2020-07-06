@@ -25,7 +25,7 @@ public class TileSlide : MonoBehaviour
     private Vector2 direction;
     private Vector2 endTouch;
     private Vector2 clickTilePos;
-    private Vector2 swipeTilePos;
+    //private Vector2 swipeTilePos;
     private float distance;
     //private CharacterMovement CMScript;
     private RoryPartSwap RPSScript;
@@ -47,8 +47,12 @@ public class TileSlide : MonoBehaviour
             multiArray[1, i] = arrayRow2[i];
             multiArray[2, i] = arrayRow3[i];
         }
-        
-    }
+        //if (!string.IsNullOrEmpty(storageObjectName))
+        //{
+        //    storeScript.tileGrid = this.gameObject;
+        //}
+
+        }
     void Start()
     {
         enableSwap = false;
@@ -59,6 +63,7 @@ public class TileSlide : MonoBehaviour
         {
             storageObject = GameObject.Find(storageObjectName);
             storeScript = storageObject.GetComponent<StoreOrientation>();
+
         }
         
         //storing tile info for reset button
@@ -84,9 +89,8 @@ public class TileSlide : MonoBehaviour
                 
                 Touch touch = Input.GetTouch(0);
                 RaycastHit2D rayHit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(touch.position), Camera.main.transform.forward);
-                //if (rayHit.collider.name == this.name)
-
-
+                //Debug.Log(rayHit.collider.gameObject);
+                
                 switch (touch.phase)
                 {
                     case TouchPhase.Began:
@@ -205,10 +209,38 @@ public class TileSlide : MonoBehaviour
         }
     }
 
+    //allows you to manually swap 2 tiles via parameters
+    public void ManualSwap(GameObject pieceOne, GameObject pieceTwo)
+    {
+        int tempRow;
+        int tempCol;
+        clickTilePos = pieceOne.transform.position;
+        selectedScript = pieceOne.GetComponent<SlideableTile>();
+        swipeScript = pieceTwo.GetComponent<SlideableTile>();
+        tempRow = selectedScript.row;
+        tempCol = selectedScript.collumn;
+        selectedScript.endPos = pieceTwo.transform.position;
+        swipeScript.endPos = clickTilePos;
+        multiArray[selectedScript.row, selectedScript.collumn] = pieceTwo;
+        multiArray[swipeScript.row, swipeScript.collumn] = pieceOne;
+        selectedScript.row = swipeScript.row;
+        selectedScript.collumn = swipeScript.collumn;
+        swipeScript.row = tempRow;
+        swipeScript.collumn = tempCol;
+    }
+
     public void toggleSwap()
     {
         RPSScript.ChangeVisibility(enableSwap);
         enableSwap = !enableSwap;
+        for (var i = 0; i < multiArray.GetLength(0); i++)
+        {
+            for (var j = 0; j < multiArray.GetLength(1); j++)
+            {
+                GameObject tileGlow = multiArray[i, j].transform.Find("GlowTiles").gameObject;
+                tileGlow.SetActive(enableSwap);
+            }
+        }
     }
 
     public void CheckPuzzle()
@@ -221,7 +253,8 @@ public class TileSlide : MonoBehaviour
                 s = s + multiArray[i, j].name;
             }
         }
-            //Debug.Log(s + " / " + puzzleSolution);
+        //Debug.Log(s + " / " + puzzleSolution);
+        Debug.Log(s);
         if (s == puzzleSolution)
         {
             outFlow.SetBooleanVariable(fungusBool, true);
@@ -234,11 +267,13 @@ public class TileSlide : MonoBehaviour
             {
                 startingObjects[i, j] = multiArray[i, j];
                 startingPositions[i, j] = multiArray[i, j].transform.position;
-                //if there is a storage object orientation is also stored there
+                //if there is a storage object, orientation is also stored there
                 if (!string.IsNullOrEmpty(storageObjectName))
                 {
                     storeScript.objectName[i, j] = multiArray[i,j].name;
                     storeScript.objectPosition[i, j] = multiArray[i, j].transform.position;
+                    //Debug.Log(i + "" + j + " " + storeScript.objectName[i, j]);
+                    //Debug.Log(i + "" + j + " " + storeScript.objectName[i, j] + storeScript.objectPosition[i, j]);
                 }
             }
         }
