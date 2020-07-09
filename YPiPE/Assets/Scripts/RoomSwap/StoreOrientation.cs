@@ -10,6 +10,7 @@ public class StoreOrientation : MonoBehaviour
     public GameObject tileGrid;
     public string thisName;
     public string tileGridName;
+    public bool orientationStored;
 
     private TileSlide TSScript;
     //private GameObject tileGrid;
@@ -42,24 +43,27 @@ public class StoreOrientation : MonoBehaviour
     //Assigns the stored orientation to the level
     public void RememberOrientation()
     {
-        FindTileGrid();
-        SlideableTile tempTileRef;
-        
-        for (var i = 0; i < objectName.GetLength(0); i++)
+        if (orientationStored)
         {
-            for (var j = 0; j < objectName.GetLength(1); j++)
+            FindTileGrid();
+            SlideableTile tempTileRef;
+
+            for (var i = 0; i < objectName.GetLength(0); i++)
             {
-                //assigns game objects to tile swap array via stored string
-                TSScript.multiArray[i, j] = GameObject.Find(objectName[i, j]);
-                //assigns tile to temporary reference based on position in array
-                tempTileRef = TSScript.multiArray[i, j].GetComponent<SlideableTile>();
-                //assigns position, startPos, and endPos of tile referenced via stored position value
-                tempTileRef.transform.position = tempTileRef.startPos = tempTileRef.endPos = objectPosition[i, j];
-                //assigns row and collumn of tile referenced
-                tempTileRef.row = i;
-                tempTileRef.collumn = j;
-                //Debug.Log(i + " " + j + " " + objectName[i, j]);
-                //Debug.Log(objectName[i, j] + "/" + TSScript.multiArray[i, j] + TSScript.multiArray[i, j].transform.position);
+                for (var j = 0; j < objectName.GetLength(1); j++)
+                {
+                    //assigns game objects to tile swap array via stored string
+                    TSScript.multiArray[i, j] = GameObject.Find(objectName[i, j]);
+                    //assigns tile to temporary reference based on position in array
+                    tempTileRef = TSScript.multiArray[i, j].GetComponent<SlideableTile>();
+                    //assigns position, startPos, and endPos of tile referenced via stored position value
+                    tempTileRef.transform.position = tempTileRef.startPos = tempTileRef.endPos = objectPosition[i, j];
+                    //assigns row and collumn of tile referenced
+                    tempTileRef.row = i;
+                    tempTileRef.collumn = j;
+                    //Debug.Log(i + " " + j + " " + objectName[i, j]);
+                    //Debug.Log(objectName[i, j] + "/" + TSScript.multiArray[i, j] + TSScript.multiArray[i, j].transform.position);
+                }
             }
         }
     }

@@ -26,7 +26,11 @@ public class Layering : MonoBehaviour
     {
         for (int i = 0; i < spriteObjects.Length; i++)
         {
-            spriteObjects[i].sortingOrder = (int)(transform.position.y * -100) + startingSort[i];
+            if (spriteObjects[i])
+            {
+                spriteObjects[i].sortingOrder = (int)(transform.position.y * -100) + startingSort[i];
+            }
+            
         }
         if (UILocation)
         {

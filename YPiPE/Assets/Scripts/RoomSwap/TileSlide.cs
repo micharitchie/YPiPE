@@ -272,6 +272,7 @@ public class TileSlide : MonoBehaviour
                 {
                     storeScript.objectName[i, j] = multiArray[i,j].name;
                     storeScript.objectPosition[i, j] = multiArray[i, j].transform.position;
+                    storeScript.orientationStored = true;
                     //Debug.Log(i + "" + j + " " + storeScript.objectName[i, j]);
                     //Debug.Log(i + "" + j + " " + storeScript.objectName[i, j] + storeScript.objectPosition[i, j]);
                 }
