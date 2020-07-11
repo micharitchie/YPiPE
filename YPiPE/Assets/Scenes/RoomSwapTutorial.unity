@@ -2035,8 +2035,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2bb7f50036364151867028aa45d3a9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  row: 1
-  collumn: 1
+  row: 0
+  collumn: 3
   startPos: {x: 0, y: 0}
   endPos: {x: 0, y: 0}
 --- !u!61 &226863660
@@ -2073,13 +2073,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 226863658}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.5, y: -4.5, z: 0}
+  m_LocalPosition: {x: 22.5, y: 1.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1373242695}
   - {fileID: 748135226}
   m_Father: {fileID: 315445527}
-  m_RootOrder: 6
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &287126820
 GameObject:
@@ -2286,20 +2286,20 @@ MonoBehaviour:
   fungusBool: RoomMatch
   storageObjectName: RoomOrientation
   arrayRow1:
-  - {fileID: 1888322281}
-  - {fileID: 1532982748}
-  - {fileID: 1170210128}
   - {fileID: 1338908408}
+  - {fileID: 1888322281}
+  - {fileID: 1170210128}
+  - {fileID: 226863658}
   arrayRow2:
   - {fileID: 351028389}
-  - {fileID: 226863658}
-  - {fileID: 925513946}
+  - {fileID: 1532982748}
+  - {fileID: 629267024}
   - {fileID: 1669855974}
   arrayRow3:
   - {fileID: 1182166089}
   - {fileID: 1619890357}
   - {fileID: 1191392573}
-  - {fileID: 629267024}
+  - {fileID: 925513946}
 --- !u!4 &315445527
 Transform:
   m_ObjectHideFlags: 0
@@ -2312,18 +2312,18 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1107621066}
-  - {fileID: 1888322284}
-  - {fileID: 1532982751}
-  - {fileID: 1170210131}
   - {fileID: 1338908411}
-  - {fileID: 351028392}
+  - {fileID: 1888322284}
+  - {fileID: 1170210131}
   - {fileID: 226863661}
-  - {fileID: 925513949}
+  - {fileID: 351028392}
+  - {fileID: 1532982751}
+  - {fileID: 629267027}
   - {fileID: 1669855977}
   - {fileID: 1182166092}
   - {fileID: 1619890360}
   - {fileID: 1191392576}
-  - {fileID: 629267027}
+  - {fileID: 925513949}
   - {fileID: 1759812974}
   m_Father: {fileID: 0}
   m_RootOrder: 8
@@ -6399,8 +6399,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2bb7f50036364151867028aa45d3a9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  row: 2
-  collumn: 3
+  row: 1
+  collumn: 2
   startPos: {x: 0, y: 0}
   endPos: {x: 0, y: 0}
 --- !u!61 &629267026
@@ -6437,13 +6437,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 629267024}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 22.5, y: -10.5, z: 0}
+  m_LocalPosition: {x: 16.5, y: -4.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 954253174}
   - {fileID: 1276030209}
   m_Father: {fileID: 315445527}
-  m_RootOrder: 12
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &638710598
 GameObject:
@@ -9609,8 +9609,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2bb7f50036364151867028aa45d3a9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  row: 1
-  collumn: 2
+  row: 2
+  collumn: 3
   startPos: {x: 0, y: 0}
   endPos: {x: 0, y: 0}
 --- !u!61 &925513948
@@ -9647,13 +9647,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 925513946}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.5, y: -4.5, z: 0}
+  m_LocalPosition: {x: 22.5, y: -10.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 175325768}
   - {fileID: 1474359552}
   m_Father: {fileID: 315445527}
-  m_RootOrder: 7
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &927881817
 GameObject:
@@ -12410,6 +12410,10 @@ GameObject:
   - component: {fileID: 1086820634}
   - component: {fileID: 1086820633}
   - component: {fileID: 1086820583}
+  - component: {fileID: 1086820637}
+  - component: {fileID: 1086820636}
+  - component: {fileID: 1086820635}
+  - component: {fileID: 1086820532}
   m_Layer: 0
   m_Name: RoomSwapTutorial
   m_TagString: Untagged
@@ -14019,6 +14023,10 @@ MonoBehaviour:
   - {fileID: 1086820407}
   - {fileID: 1086820529}
   - {fileID: 1086820527}
+  - {fileID: 1086820637}
+  - {fileID: 1086820636}
+  - {fileID: 1086820635}
+  - {fileID: 1086820532}
   - {fileID: 1086820426}
   - {fileID: 1086820417}
   - {fileID: 1086820533}
@@ -14374,7 +14382,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -618.6611, y: 198.22864}
+  scrollPos: {x: -361.11124, y: 196.45244}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -14386,8 +14394,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1086820513}
-  selectedCommands: []
+  - {fileID: 1086820448}
+  selectedCommands:
+  - {fileID: 1086820417}
   variables:
   - {fileID: 1086820520}
   - {fileID: 1086820458}
@@ -16512,6 +16521,34 @@ MonoBehaviour:
   hideThisOption:
     booleanRef: {fileID: 0}
     booleanVal: 0
+--- !u!114 &1086820532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086820390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 470
+  indentLevel: 1
+  storyText: If you solve everyone's puzzle, you may learn a big gift that everyone
+    will like.
+  description: 
+  character: {fileID: 950678395}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!114 &1086820533
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -19075,6 +19112,90 @@ MonoBehaviour:
   targetView: {fileID: 82855905}
   waitUntilFinished: 1
   targetCamera: {fileID: 1024867629}
+--- !u!114 &1086820635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086820390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 469
+  indentLevel: 1
+  storyText: Solving a Virtuatoid room puzzle can help you learn more about their
+    likes, which is really usefule when picking out a gift.
+  description: 
+  character: {fileID: 950678395}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1086820636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086820390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 468
+  indentLevel: 1
+  storyText: After politely asking a Virtuatoid to room swap, try to put their puzzle
+    together.
+  description: 
+  character: {fileID: 950678395}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1086820637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086820390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 467
+  indentLevel: 1
+  storyText: Virtuatoids love making puzzles out of their flooring, to help them
+    achieve feng shui in their home.
+  description: 
+  character: {fileID: 950678395}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!1 &1107621065
 GameObject:
   m_ObjectHideFlags: 0
@@ -19847,6 +19968,7 @@ MonoBehaviour:
   tileGrid: {fileID: 315445525}
   thisName: RoomOrientation
   tileGridName: TileSwap2
+  orientationStored: 0
 --- !u!1 &1220142861
 GameObject:
   m_ObjectHideFlags: 0
@@ -20811,7 +20933,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   row: 0
-  collumn: 3
+  collumn: 0
   startPos: {x: 0, y: 0}
   endPos: {x: 0, y: 0}
 --- !u!61 &1338908410
@@ -20848,13 +20970,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1338908408}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 22.5, y: 1.5, z: 0}
+  m_LocalPosition: {x: 4.5, y: 1.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 552548176}
   - {fileID: 1370684711}
   m_Father: {fileID: 315445527}
-  m_RootOrder: 4
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1340506417
 GameObject:
@@ -22245,7 +22367,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2bb7f50036364151867028aa45d3a9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  row: 0
+  row: 1
   collumn: 1
   startPos: {x: 0, y: 0}
   endPos: {x: 0, y: 0}
@@ -22283,13 +22405,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1532982748}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.5, y: 1.5, z: 0}
+  m_LocalPosition: {x: 10.5, y: -4.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 936759931}
   - {fileID: 1415827088}
   m_Father: {fileID: 315445527}
-  m_RootOrder: 2
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1557570947
 GameObject:
@@ -26110,7 +26232,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   row: 0
-  collumn: 0
+  collumn: 1
   startPos: {x: 0, y: 0}
   endPos: {x: 0, y: 0}
 --- !u!61 &1888322283
@@ -26147,13 +26269,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1888322281}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.5, y: 1.5, z: 0}
+  m_LocalPosition: {x: 10.5, y: 1.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 374390526}
   - {fileID: 565138400}
   m_Father: {fileID: 315445527}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1896102421
 GameObject:
